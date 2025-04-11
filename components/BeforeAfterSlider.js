@@ -1,10 +1,15 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function BeforeAfterSlider({ before, after, alt, description, beforeLabel = "Before", afterLabel = "After" }) {
   const [sliderValue, setSliderValue] = useState(50);
+  const [hasMounted, setHasMounted] = useState(false);
   const containerRef = useRef(null);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const snapSlider = (val) => {
     if (val < 2) return 0;
@@ -32,14 +37,17 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
     setSliderValue(Number(e.target.value));
   };
 
+  if (!hasMounted) return null;
+  
   return (
-    <div className="relative w-full max-w-2xl mx-auto select-none">
+    <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 py-10">
       {/* Image container */}
       <div
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
-        className="relative w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg"
+        className="relative w-full h-[300px] md:h-[500px] overflow-hidden rounded-xl shadow-lg"
+
       >
         {/* After image (left) */}
         <img
