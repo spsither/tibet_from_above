@@ -2,7 +2,7 @@
 
 import { useState, useRef } from 'react';
 
-export default function BeforeAfterSlider({ before, after, alt, description }) {
+export default function BeforeAfterSlider({ before, after, alt, description, beforeLabel = "Before", afterLabel = "After" }) {
   const [sliderValue, setSliderValue] = useState(50);
   const containerRef = useRef(null);
 
@@ -70,7 +70,7 @@ export default function BeforeAfterSlider({ before, after, alt, description }) {
             opacity: sliderValue > 25 ? 1 : 0,
           }}
         >
-          Before
+          {beforeLabel}
         </span>
 
         <span
@@ -79,7 +79,7 @@ export default function BeforeAfterSlider({ before, after, alt, description }) {
             opacity: sliderValue < 75 ? 1 : 0,
           }}
         >
-          After
+          {afterLabel}
         </span>
 
 
