@@ -1,15 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Import FontAwesome icons
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export default function JourneyThroughTime({ items = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
-      setHasMounted(true);
-    }, []);
+    setHasMounted(true);
+  }, []);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1));
@@ -33,30 +33,34 @@ export default function JourneyThroughTime({ items = [] }) {
             className="w-full h-full object-cover transition-all duration-500 ease-in-out"
           />
 
-          {/* Click Zones */}
-          <div
-            className="absolute top-0 left-0 w-1/2 h-full cursor-pointer"
+          {/* Arrow Buttons (Just Icons) */}
+          <button
             onClick={handlePrev}
-          />
-          <div
-            className="absolute top-0 right-0 w-1/2 h-full cursor-pointer"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 transition-opacity opacity-80 hover:opacity-100"
+          >
+            <FaChevronLeft className="text-white w-6 h-6" />
+          </button>
+          <button
             onClick={handleNext}
-          />
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 transition-opacity opacity-80 hover:opacity-100"
+          >
+            <FaChevronRight className="text-white w-6 h-6" />
+          </button>
 
           {/* Dots */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-2">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-2 z-10">
             {items.map((_, index) => (
               <span
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`transition-all cursor-pointer rounded-full ${
-                  currentIndex === index
-                    ? 'w-4 h-4 bg-white'
-                    : 'w-2 h-2 bg-white/60'
-                }`}
+                className={`transition-all cursor-pointer rounded-full ${currentIndex === index
+                    ? 'w-2.5 h-2.5 bg-white'
+                    : 'w-1.5 h-1.5 bg-white/60'
+                  }`}
               />
             ))}
           </div>
+
         </div>
 
         {/* Text Info */}
@@ -69,22 +73,6 @@ export default function JourneyThroughTime({ items = [] }) {
           </p>
         </div>
       </div>
-
-      {/* Buttons with Arrow Icons and Faded Background */}
-      {/* <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 flex gap-4">
-        <button
-          onClick={handlePrev}
-          className="flex items-center justify-center p-2 bg-gray-800 bg-opacity-50 rounded-full hover:bg-opacity-70 transition-all"
-        >
-          <FaChevronLeft className="text-white" />
-        </button>
-        <button
-          onClick={handleNext}
-          className="flex items-center justify-center p-2 bg-gray-800 bg-opacity-50 rounded-full hover:bg-opacity-70 transition-all"
-        >
-          <FaChevronRight className="text-white" />
-        </button>
-      </div> */}
     </div>
   );
 }
