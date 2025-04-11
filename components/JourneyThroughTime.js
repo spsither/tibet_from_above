@@ -19,7 +19,7 @@ export default function JourneyThroughTime({ items = [] }) {
     setCurrentIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
   };
 
-  if (!hasMounted) return null;
+  if (!hasMounted || items.length === 0) return null;
 
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 py-10">
@@ -33,22 +33,32 @@ export default function JourneyThroughTime({ items = [] }) {
             className="w-full h-full object-cover transition-all duration-500 ease-in-out"
           />
 
-          {/* Arrow Buttons (Just Icons) */}
+          {/* Clickable Halves */}
+          <div
+            onClick={handlePrev}
+            className="absolute left-0 top-0 w-1/2 h-full z-10 cursor-pointer"
+          />
+          <div
+            onClick={handleNext}
+            className="absolute right-0 top-0 w-1/2 h-full z-10 cursor-pointer"
+          />
+
+          {/* Arrow Buttons */}
           <button
             onClick={handlePrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 transition-opacity opacity-80 hover:opacity-100"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 transition-opacity opacity-80 hover:opacity-100"
           >
             <FaChevronLeft className="text-white w-6 h-6" />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 transition-opacity opacity-80 hover:opacity-100"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 transition-opacity opacity-80 hover:opacity-100"
           >
             <FaChevronRight className="text-white w-6 h-6" />
           </button>
 
           {/* Dots */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-2 z-10">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-2 z-20">
             {items.map((_, index) => (
               <span
                 key={index}
@@ -60,7 +70,6 @@ export default function JourneyThroughTime({ items = [] }) {
               />
             ))}
           </div>
-
         </div>
 
         {/* Text Info */}

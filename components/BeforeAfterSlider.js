@@ -73,7 +73,7 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
 
         {/* Labels */}
         <span
-          className="absolute top-2 left-2 bg-black/40 text-white text-[10px] px-1.5 py-0.5 rounded transition-opacity duration-500"
+          className="absolute top-2 left-2 bg-black/40 text-white text-[13px] px-1.5 py-0.5 rounded transition-opacity duration-500"
           style={{
             opacity: sliderValue > 10 ? 1 : 0,
           }}
@@ -82,7 +82,7 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
         </span>
 
         <span
-          className="absolute top-2 right-2 bg-black/40 text-white text-[10px] px-1.5 py-0.5 rounded transition-opacity duration-500"
+          className="absolute top-2 right-2 bg-black/40 text-white text-[13px] px-1.5 py-0.5 rounded transition-opacity duration-500"
           style={{
             opacity: sliderValue < 90 ? 1 : 0,
           }}
@@ -100,7 +100,7 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
         max="100"
         value={sliderValue}
         onChange={handleSliderChange}
-        className="w-full mt-4 appearance-none h-2 rounded-lg bg-gray-300 cursor-pointer"
+        className="w-full mt-4 appearance-none h-2 rounded-lg bg-gray-300 cursor-pointer accent-gray-500"
       />
 
       {/* Description */}
