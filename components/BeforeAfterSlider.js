@@ -75,7 +75,7 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
         <span
           className="absolute top-2 left-2 bg-black/40 text-white text-[10px] px-1.5 py-0.5 rounded transition-opacity duration-500"
           style={{
-            opacity: sliderValue > 25 ? 1 : 0,
+            opacity: sliderValue > 10 ? 1 : 0,
           }}
         >
           {beforeLabel}
@@ -84,7 +84,7 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
         <span
           className="absolute top-2 right-2 bg-black/40 text-white text-[10px] px-1.5 py-0.5 rounded transition-opacity duration-500"
           style={{
-            opacity: sliderValue < 75 ? 1 : 0,
+            opacity: sliderValue < 90 ? 1 : 0,
           }}
         >
           {afterLabel}
