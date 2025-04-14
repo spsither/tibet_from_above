@@ -9,7 +9,7 @@ export default function TimeSlices({ slices = [] }) {
   );
 
   const [isDragging, setIsDragging] = useState(false);
-
+  const [isFullScreen, setIsFullScreen] = useState(false);
   const imageRef = useRef(null);
   const containerRef = useRef(null);
   const start = useRef({ x: 0, y: 0 });
@@ -81,12 +81,57 @@ export default function TimeSlices({ slices = [] }) {
     }
   };
 
+
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      const isNowFullscreen =
+        document.fullscreenElement ||
+        document.webkitFullscreenElement ||
+        document.mozFullScreenElement ||
+        document.msFullscreenElement;
+
+      if (isNowFullscreen) {
+        setIsFullScreen(true);
+      } else {
+        setIsFullScreen(false);
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+    document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+      document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
+      document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
+      document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
+    };
+  }, []);
+
+
   const toggleFullscreen = () => {
     const elem = containerRef.current;
-    if (elem.requestFullscreen) elem.requestFullscreen();
-    else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
-    else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
-    else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+
+    const isCurrentlyFullscreen =
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement;
+
+    if (isCurrentlyFullscreen) {
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+      else if (document.msExitFullscreen) document.msExitFullscreen();
+    } else {
+      if (elem.requestFullscreen) elem.requestFullscreen();
+      else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
+      else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+      else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+    }
   };
 
   useEffect(() => {
@@ -113,31 +158,7 @@ export default function TimeSlices({ slices = [] }) {
   }, [currentZoom]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-10 relative">
-      {/* Fullscreen toggle button */}
-      <button
-        onClick={toggleFullscreen}
-        className="absolute top-1 right-4 z-20 bg-white/30 p-2 rounded-full text-black backdrop-blur-lg shadow hover:bg-white/60 transition"
-      >
-        <FaExpand size={20} />
-      </button>
-
-      {/* Slice Buttons */}
-      <div className="absolute top-14 sm:top-2 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center gap-2 z-20 px-2">
-        {slices.map((slice, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`px-3 py-1 text-sm rounded-full font-medium transition-colors duration-200 ${index === current
-                ? 'bg-black text-white'
-                : 'bg-gray-200 text-gray-800 hover:bg-white'
-              }`}
-          >
-            {slice.label}
-          </button>
-        ))}
-      </div>
-
+    <div className="w-full max-w-6xl mx-auto px-4 py-10">
       {/* Image container */}
       <div
         ref={containerRef}
@@ -154,6 +175,14 @@ export default function TimeSlices({ slices = [] }) {
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
       >
+        {/* Fullscreen toggle button (moved here) */}
+        <button
+          onClick={toggleFullscreen}
+          className="absolute top-2 right-2 z-20 bg-white/30 p-2 rounded-full text-black backdrop-blur-lg shadow hover:bg-white/60 transition"
+        >
+          {isFullScreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
+        </button>
+
         <img
           ref={imageRef}
           src={slices[current].image}
@@ -169,6 +198,24 @@ export default function TimeSlices({ slices = [] }) {
           draggable={false}
         />
       </div>
+
+      {/* Slice Buttons */}
+      <div className="mt-4 px-2 flex flex-wrap justify-center gap-2 z-20">
+        {slices.map((slice, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrent(index)}
+            className={`px-3 py-1 text-sm rounded-full font-medium transition-colors duration-200 ${index === current
+              ? 'bg-black text-white'
+              : 'bg-gray-200 text-gray-800 hover:bg-white'
+              }`}
+          >
+            {slice.label}
+          </button>
+        ))}
+      </div>
     </div>
   );
+
+
 }
