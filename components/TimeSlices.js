@@ -37,8 +37,8 @@ export default function TimeSlices({ slices = [] }) {
 
   const handleStart = (e) => {
     e.preventDefault();
-    const clientX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
-    const clientY = e.type === 'touchstart' ? e.touches[0].clientY : e.clientY;
+    const clientX = e.clientX;
+    const clientY = e.clientY;
 
     setIsDragging(true);
     start.current = { x: clientX, y: clientY };
@@ -47,8 +47,8 @@ export default function TimeSlices({ slices = [] }) {
   const handleMove = (e) => {
     if (!isDragging) return;
 
-    const clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-    const clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+    const clientX = e.clientX;
+    const clientY = e.clientY;
 
     const dx = clientX - start.current.x;
     const dy = clientY - start.current.y;
@@ -165,10 +165,8 @@ export default function TimeSlices({ slices = [] }) {
   useEffect(() => {
     const onUp = () => setIsDragging(false);
     window.addEventListener('mouseup', onUp);
-    window.addEventListener('touchend', onUp);
     return () => {
       window.removeEventListener('mouseup', onUp);
-      window.removeEventListener('touchend', onUp);
     };
   }, []);
 
@@ -194,11 +192,7 @@ export default function TimeSlices({ slices = [] }) {
         onMouseDown={handleStart}
         onMouseMove={handleMove}
         onMouseUp={handleEnd}
-        onTouchStart={handleStart}
-        onTouchMove={handleMove}
-        onTouchEnd={handleEnd}
         style={{
-          touchAction: 'none',
           userSelect: 'none',
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
@@ -218,7 +212,7 @@ export default function TimeSlices({ slices = [] }) {
           src={slices[current].image}
           alt={slices[current].label}
           loading="lazy"
-          className="absolute w-full h-full object-cover object-center transition-transform duration-300 ease-in-out"
+          className="absolute w-full h-full object-cover object-center"
           style={{
             transform: `scale(${currentZoom / 100})`,
             transformOrigin: 'center',
