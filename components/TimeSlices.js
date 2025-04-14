@@ -81,7 +81,7 @@ export default function TimeSlices({ slices = [] }) {
     }
   };
 
-
+  const scrollPosition = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -91,10 +91,12 @@ export default function TimeSlices({ slices = [] }) {
         document.mozFullScreenElement ||
         document.msFullscreenElement;
 
-      if (isNowFullscreen) {
-        setIsFullScreen(true);
-      } else {
-        setIsFullScreen(false);
+      if (!isNowFullscreen) {
+          window.scrollTo({
+          top: scrollPosition.current.y,
+          left: scrollPosition.current.x,
+          behavior: 'auto',
+        });
       }
     };
 
@@ -127,6 +129,10 @@ export default function TimeSlices({ slices = [] }) {
       else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
       else if (document.msExitFullscreen) document.msExitFullscreen();
     } else {
+      scrollPosition.current = {
+        x: window.scrollX,
+        y: window.scrollY,
+      };
       if (elem.requestFullscreen) elem.requestFullscreen();
       else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
       else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
@@ -175,7 +181,7 @@ export default function TimeSlices({ slices = [] }) {
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
       >
-        {/* Fullscreen toggle button (moved here) */}
+        {/* Fullscreen toggle button */}
         <button
           onClick={toggleFullscreen}
           className="absolute top-2 right-2 z-20 bg-white/30 p-2 rounded-full text-black backdrop-blur-lg shadow hover:bg-white/60 transition"
@@ -216,6 +222,4 @@ export default function TimeSlices({ slices = [] }) {
       </div>
     </div>
   );
-
-
 }
