@@ -108,6 +108,8 @@ export default function TimeSlices({ slices = [] }) {
           behavior: 'auto',
         });
       }
+
+      setIsFullScreen(isNowFullscreen);
     };
 
     document.addEventListener('fullscreenchange', handleFullscreenChange);
