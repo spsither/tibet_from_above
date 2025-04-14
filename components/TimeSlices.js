@@ -1,4 +1,5 @@
 'use client';
+
 import { useState, useRef, useEffect } from 'react';
 import { FaExpand, FaCompress } from 'react-icons/fa';
 
@@ -14,6 +15,7 @@ export default function TimeSlices({ slices = [] }) {
   const containerRef = useRef(null);
   const start = useRef({ x: 0, y: 0 });
   const animationFrame = useRef(null);
+  const [isMobile, setIsMobile] = useState(false); // State to track if the user is on mobile
 
   const currentZoom = imageStates[current]?.zoom ?? 100;
   const currentPosition = imageStates[current]?.position ?? { x: 0, y: 0 };
@@ -84,6 +86,14 @@ export default function TimeSlices({ slices = [] }) {
   const scrollPosition = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
+    // Detect if the device is mobile (screen width <= 768px)
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile(); // Check on component mount
+    window.addEventListener('resize', checkMobile); // Re-check on window resize
+
     const handleFullscreenChange = () => {
       const isNowFullscreen =
         document.fullscreenElement ||
@@ -92,7 +102,7 @@ export default function TimeSlices({ slices = [] }) {
         document.msFullscreenElement;
 
       if (!isNowFullscreen) {
-          window.scrollTo({
+        window.scrollTo({
           top: scrollPosition.current.y,
           left: scrollPosition.current.x,
           behavior: 'auto',
@@ -110,9 +120,9 @@ export default function TimeSlices({ slices = [] }) {
       document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
       document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
       document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
+      window.removeEventListener('resize', checkMobile); // Clean up on unmount
     };
   }, []);
-
 
   const toggleFullscreen = () => {
     const elem = containerRef.current;
@@ -133,10 +143,20 @@ export default function TimeSlices({ slices = [] }) {
         x: window.scrollX,
         y: window.scrollY,
       };
-      if (elem.requestFullscreen) elem.requestFullscreen();
-      else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
-      else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
-      else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+
+      // Check if on mobile device and request fullscreen accordingly
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) {
+        elem.mozRequestFullScreen(); // Firefox
+      } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen(); // Safari
+      } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen(); // IE/Edge
+      } else if (elem.requestFullscreen) {
+        // In case mobile-specific logic is required
+        alert("Fullscreen API is not supported on this device.");
+      }
     }
   };
 
@@ -181,13 +201,15 @@ export default function TimeSlices({ slices = [] }) {
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
       >
-        {/* Fullscreen toggle button */}
-        <button
-          onClick={toggleFullscreen}
-          className="absolute top-2 right-2 z-20 bg-white/30 p-2 rounded-full text-black backdrop-blur-lg shadow hover:bg-white/60 transition"
-        >
-          {isFullScreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
-        </button>
+        {/* Conditionally render Fullscreen toggle button on mobile */}
+        {!isMobile && (
+          <button
+            onClick={toggleFullscreen}
+            className="absolute top-2 right-2 z-20 bg-white/30 p-2 rounded-full text-black backdrop-blur-lg shadow hover:bg-white/60 transition"
+          >
+            {isFullScreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
+          </button>
+        )}
 
         <img
           ref={imageRef}
