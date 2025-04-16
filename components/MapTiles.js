@@ -7,72 +7,16 @@ export default function MapTiles() {
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
     const [popupInfo, setPopupInfo] = useState(null)
-    
-    
-    // order matters here. make sure smaller images are in bottom
-    const imageFootprints = {
-        type: 'FeatureCollection',
-        features: [
-            {
-                type: 'Feature',
-                properties: {
-                    id: 'spsither-8paw29o6',
-                    name: '8paw29o6',
-                    description: 'Aaaaaaa',
-                    downloadUrl: 'https://your-bucket.s3.amazonaws.com/queens-2023.tif',
-                },
-                geometry: {
-                    type: 'Polygon',
-                    coordinates: [[
-                        [91.80, 29.41],
-                        [91.80, 29.50],
-                        [91.89, 29.50],
-                        [91.89, 29.41],
-                        [91.80, 29.41],
-                    ]],
-                },
-            },
-            {
-                type: 'Feature',
-                properties: {
-                    id: 'spsither-7v4yjgnb',
-                    name: '7v4yjgnb',
-                    description: 'Cccccccccc',
-                    downloadUrl: 'https://your-bucket.s3.amazonaws.com/queens-2023.tif',
-                },
-                geometry: {
-                    type: 'Polygon',
-                    coordinates: [[
-                        [91.7804885, 29.4118306],
-                        [91.7804885, 29.3395028],
-                        [91.8834562, 29.3395028],
-                        [91.8834562, 29.4118306],
-                        [91.7804885, 29.4118306],
-                    ]],
-                },
-            },
-            {
-                type: 'Feature',
-                properties: {
-                    id: 'spsither-bx930aj9',
-                    name: 'bx930aj9',
-                    description: 'Bbbbbbb',
-                    downloadUrl: 'https://your-bucket.s3.amazonaws.com/nyc-2024.tif',
-                },
-                geometry: {
-                    type: 'Polygon',
-                    coordinates: [[
-                        [91.85776150750003, 29.40640162272011],
-                        [91.89185912457732, 29.43578169010002],
-                        [91.82769921369037, 29.49883565521099],
-                        [91.79655459094582, 29.45691042696243],
-                        [91.85776150750003, 29.40640162272011],
-                    ]],
-                },
-            },
 
-        ],
-    };
+
+    // order matters here. make sure smaller images are in bottom
+    const [geojson, setGeojson] = useState(null);
+
+    useEffect(() => {
+        fetch('/output.json')
+            .then((res) => res.json())
+            .then((data) => setGeojson(data));
+    }, []);
 
 
     useEffect(() => {
@@ -89,27 +33,29 @@ export default function MapTiles() {
         mapRef.current = map;
 
         map.on('load', () => {
-
+            
             map.addSource('image-footprints', {
                 type: 'geojson',
-                data: imageFootprints,
+                data: geojson,
             });
-
+            
             map.addLayer({
                 id: 'image-footprint-layer',
                 type: 'fill',
                 source: 'image-footprints',
                 paint: {
-                    'fill-opacity': 0.3, // fully transparent but still clickable
-                },
+                    'fill-color':         'rgba(0, 0, 0, 0.05)',
+                    'fill-outline-color': 'rgba(0, 0, 0, 0.2)'
+                }
             });
 
             // Image layer click
             map.on('click', 'image-footprint-layer', (e) => {
+                if (!geojson) return;
                 const feature = e.features?.[0];
                 const id = feature?.properties?.id;
-                const imageInfo = imageFootprints.features.find(({ properties }) => properties.id == id).properties;
-                
+                const imageInfo = geojson.features.find(({ properties }) => properties.id == id).properties;
+
                 if (imageInfo) {
                     setPopupInfo({
                         lngLat: e.lngLat,
@@ -129,7 +75,7 @@ export default function MapTiles() {
 
 
         return () => map.remove();
-    }, []);
+    }, [geojson]);
 
     return (
         <div className="relative w-screen h-screen">
