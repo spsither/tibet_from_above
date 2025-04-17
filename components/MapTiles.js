@@ -8,7 +8,6 @@ export default function MapTiles() {
     const mapContainerRef = useRef(null);
     const [downloadPopUp, setDownloadPopUp] = useState(null);
     const [monasteryPopup, setMonasteryPopup] = useState(null);
-    const [popupScreenPos, setPopupScreenPos] = useState(null);
     const monasteryPopupRef = useRef(null);
 
     const [layerVisibility, setLayerVisibility] = useState({});
@@ -90,13 +89,15 @@ export default function MapTiles() {
                 const feature = e.features?.[0];
                 if (!feature) return;
 
+                const point = map.project([e.lngLat.lng, e.lngLat.lat]);
+
                 setMonasteryPopup({
                     lngLat: e.lngLat,
                     properties: feature.properties,
+                    point: point
                 });
 
-                const point = map.project([e.lngLat.lng, e.lngLat.lat]);
-                setPopupScreenPos(point);
+
             });
 
             map.on('mouseenter', 'monasteries', () => {
@@ -116,13 +117,12 @@ export default function MapTiles() {
                     if (!map.getBounds().contains([lng, lat])) {
                         setMonasteryPopup(null);
                         monasteryPopupRef.current = null;
-                        setPopupScreenPos(null);
                     } else if (
-                        !popupScreenPos ||
-                        point.x !== popupScreenPos.x ||
-                        point.y !== popupScreenPos.y
+                        !popup.point ||
+                        point.x !== popup.point.x ||
+                        point.y !== popup.point.y
                     ) {
-                        setPopupScreenPos(point);
+                        setMonasteryPopup(prev => ({ ...prev, point: point, lngLat: popup.lngLat }));
                     }
                 }
             };
@@ -197,19 +197,18 @@ export default function MapTiles() {
             )}
 
             {/* Monastery popup */}
-            {monasteryPopup && popupScreenPos && (
+            {monasteryPopup && (
                 <div
                     className="absolute z-10 bg-white rounded-lg shadow-lg p-4 max-w-xs w-72"
                     style={{
                         transform: 'translate(-50%, -100%)',
-                        left: `${popupScreenPos.x}px`,
-                        top: `${popupScreenPos.y}px`,
+                        left: `${monasteryPopup.point.x}px`,
+                        top: `${monasteryPopup.point.y}px`,
                     }}
                 >
                     <button
                         onClick={() => {
                             setMonasteryPopup(null);
-                            setPopupScreenPos(null);
                         }}
                         className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg"
                         aria-label="Close"
