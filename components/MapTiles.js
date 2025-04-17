@@ -37,7 +37,8 @@ export default function MapTiles() {
             style: 'mapbox://styles/spsither/cm9airhyv003y01qk0utl3821',
             center: [91.8319723, 29.3756667],
             zoom: 12,
-        });
+            attributionControl: false
+        }).addControl(new mapboxgl.AttributionControl({customAttribution: `<a rel="noopener noreferrer" target="_blank" href="https://www.nyandak.com/">Studio Nyandak</a>`}));
 
         mapRef.current = map;
 
