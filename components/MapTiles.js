@@ -80,33 +80,31 @@ export default function MapTiles() {
                     map.getCanvas().style.cursor = '';
                 });
             }
+            
+            const popup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            })
 
-            map.on('click', 'monasteries', (e) => {
+            map.on('mouseenter', 'monasteries', (e) => {
+                map.getCanvas().style.cursor = 'pointer';
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const description = e.features[0].properties.description;
-                const title = e.features[0].properties.title
+                const title = e.features[0].properties.title;
 
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
 
-                new mapboxgl.Popup()
-                    .setLngLat(coordinates)
-                    .setHTML(`
-                        <div>
+                popup.setLngLat(coordinates).setHTML(`<div>
                             <h1 style="font-size: 1.25rem; font-weight: bold;">${title}</h1>
                             <p  style="margin-top: 1rem; color: #555;">${description}</p>
-                        </div>
-                    `)
-                    .addTo(mapRef.current);
-            });
-
-            map.on('mouseenter', 'monasteries', () => {
-                map.getCanvas().style.cursor = 'pointer';
+                        </div>`).addTo(map);
             });
 
             map.on('mouseleave', 'monasteries', () => {
                 map.getCanvas().style.cursor = '';
+                popup.remove();
             });
             // Capture all current layer IDs for visibility control
             const layers = map.getStyle().layers;
