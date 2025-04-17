@@ -1,3 +1,4 @@
+
 'use client';
 import mapboxgl from 'mapbox-gl';
 import { useEffect, useRef, useState } from 'react';
@@ -6,8 +7,15 @@ import { FaTimes, FaDownload } from 'react-icons/fa';
 export default function MapTiles() {
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
-    const [popupInfo, setPopupInfo] = useState(null)
+    const [downloadPopUp, setDownloadPopUp] = useState(null)
+    const [monasteryPopup, setMonasteryPopup] = useState(null);
+    const [popupScreenPos, setPopupScreenPos] = useState(null);
 
+    const monasteryPopupRef = useRef(null);
+
+    useEffect(() => {
+        monasteryPopupRef.current = monasteryPopup;
+    }, [monasteryPopup]);
 
     // order matters here. make sure smaller images are in bottom
     const [geojson, setGeojson] = useState(null);
@@ -33,18 +41,18 @@ export default function MapTiles() {
         mapRef.current = map;
 
         map.on('load', () => {
-            
+
             map.addSource('image-footprints', {
                 type: 'geojson',
                 data: geojson,
             });
-            
+
             map.addLayer({
                 id: 'image-footprint-layer',
                 type: 'fill',
                 source: 'image-footprints',
                 paint: {
-                    'fill-color':         'rgba(0, 0, 0, 0.05)',
+                    'fill-color': 'rgba(0, 0, 0, 0.05)',
                     'fill-outline-color': 'rgba(0, 0, 0, 0.2)'
                 }
             });
@@ -57,7 +65,7 @@ export default function MapTiles() {
                 const imageInfo = geojson.features.find(({ properties }) => properties.id == id).properties;
 
                 if (imageInfo) {
-                    setPopupInfo({
+                    setDownloadPopUp({
                         lngLat: e.lngLat,
                         imageInfo,
                     });
@@ -71,6 +79,44 @@ export default function MapTiles() {
             map.on('mouseleave', 'image-footprint-layer', () => {
                 map.getCanvas().style.cursor = '';
             });
+
+            map.on('click', 'monasteries', (e) => {
+
+                const feature = e.features?.[0];
+                if (!feature) return;
+
+                console.log('setting up the popup')
+                setMonasteryPopup({
+                    lngLat: e.lngLat,
+                    properties: feature.properties,
+                });
+
+                const { lng, lat } = e.lngLat;
+                const point = map.project([lng, lat]);
+                setPopupScreenPos(point);
+
+            });
+
+            map.on('mouseenter', 'monasteries', () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'monasteries', () => {
+                map.getCanvas().style.cursor = '';
+            });
+
+            map.on('move', () => {
+                const popup = monasteryPopupRef.current;
+                if (popup) {
+                    const { lng, lat } = popup.lngLat;
+                    const point = map.project([lng, lat]);
+                    setPopupScreenPos(point);
+                }
+            });
+
+            map.on('zoom', updatePopupPos);
+            map.on('dragend', updatePopupPos);
+
         });
 
 
@@ -82,22 +128,22 @@ export default function MapTiles() {
             {/* Map container */}
             <div className="absolute inset-0" ref={mapContainerRef} />
 
-            {/* Info Panel (only shows when popupInfo is set) */}
-            {popupInfo && (
+            {/* Info Panel (only shows when downloadPopUp is set) */}
+            {downloadPopUp && (
                 <div className="absolute top-4 left-4 bg-white rounded-lg shadow-lg p-4 max-w-xs w-72 relative">
                     {/* Close (X) Button */}
                     <button
-                        onClick={() => setPopupInfo(null)}
+                        onClick={() => setDownloadPopUp(null)}
                         className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg"
                         aria-label="Close"
                     >
                         <FaTimes />
                     </button>
 
-                    <h2 className="text-lg font-bold">{popupInfo.imageInfo.name}</h2>
-                    <p className="text-sm text-gray-700 mt-2">{popupInfo.imageInfo.description}</p>
+                    <h2 className="text-lg font-bold">{downloadPopUp.imageInfo.name}</h2>
+                    <p className="text-sm text-gray-700 mt-2">{downloadPopUp.imageInfo.description}</p>
                     <a
-                        href={popupInfo.imageInfo.downloadUrl}
+                        href={downloadPopUp.imageInfo.downloadUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         download
@@ -107,6 +153,33 @@ export default function MapTiles() {
                     </a>
                 </div>
             )}
+            {/* PopUp (only shows when monasteryPopup is set) */}
+            {/* {monasteryPopup ? 'true': 'false'} */}
+            {monasteryPopup && popupScreenPos && (
+                <div
+                    className="absolute z-10 bg-white rounded-lg shadow-lg p-4 max-w-xs w-72"
+                    style={{
+                        transform: 'translate(-50%, -100%)',
+                        left: `${popupScreenPos.x}px`,
+                        top: `${popupScreenPos.y}px`,
+                    }}
+                >
+                    <button
+                        onClick={() => {
+                            setMonasteryPopup(null);
+                            setPopupScreenPos(null);
+                        }}
+                        className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg"
+                        aria-label="Close"
+                    >
+                        <FaTimes />
+                    </button>
+                    <h2 className="text-lg font-bold">{monasteryPopup.properties.title}</h2>
+                    <p className="text-sm text-gray-700 mt-2">{monasteryPopup.properties.description}</p>
+                </div>
+            )}
+
+
 
 
         </div>
