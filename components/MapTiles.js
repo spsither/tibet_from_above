@@ -1,7 +1,7 @@
 'use client';
 import mapboxgl from 'mapbox-gl';
 import { useEffect, useRef, useState } from 'react';
-import { FaTimes, FaDownload, FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { FaTimes, FaDownload, FaChevronDown, FaChevronRight, FaLayerGroup } from 'react-icons/fa';
 import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function MapTiles() {
@@ -13,7 +13,7 @@ export default function MapTiles() {
     const [satelliteGroupOpen, setSatelliteGroupOpen] = useState(true);
 
     const [geojson, setGeojson] = useState(null);
-
+    const [layerOpen, setLayerOpen] = useState(true);
 
     useEffect(() => {
         const loadGeoJSON = async () => {
@@ -38,7 +38,7 @@ export default function MapTiles() {
             center: [91.8319723, 29.3756667],
             zoom: 12,
             attributionControl: false
-        }).addControl(new mapboxgl.AttributionControl({customAttribution: `<a rel="noopener noreferrer" target="_blank" href="https://www.nyandak.com/">© Studio Nyandak</a>`}));
+        }).addControl(new mapboxgl.AttributionControl({ customAttribution: `<a rel="noopener noreferrer" target="_blank" href="https://www.nyandak.com/">© Studio Nyandak</a>` }));
 
         mapRef.current = map;
 
@@ -81,7 +81,7 @@ export default function MapTiles() {
                     map.getCanvas().style.cursor = '';
                 });
             }
-            
+
             const popup = new mapboxgl.Popup({
                 closeButton: false,
                 closeOnClick: false
@@ -171,62 +171,71 @@ export default function MapTiles() {
                 </div>
             )}
             {/* Layer picker */}
-            <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-4 w-72 max-h-[70vh] overflow-y-auto text-sm space-y-2">
-                <lable className="text-lg font-bold">Layer Picker</lable>
-                <div>
-                    <label className="font-bold">Footprint</label>
-                    <input
-                        type="checkbox"
-                        className="ml-2"
-                        checked={layerVisibility['image-footprint-layer'] ?? true}
-                        onChange={(e) => toggleLayer('image-footprint-layer', e.target.checked)}
-                    />
-                </div>
-                <div>
-                    <label className="font-bold">Monasteries</label>
-                    <input
-                        type="checkbox"
-                        className="ml-2"
-                        checked={layerVisibility['monasteries'] ?? true}
-                        onChange={(e) => toggleLayer('monasteries', e.target.checked)}
-                    />
-                </div>
-                <div>
+            {layerOpen ? (
+                <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-4 w-72 max-h-[70vh] overflow-y-auto text-sm space-y-2">
                     <button
-                        onClick={() => setSatelliteGroupOpen(!satelliteGroupOpen)}
-                        className="flex items-center gap-2 font-bold focus:outline-none"
+                        onClick={() => setLayerOpen(false)}
+                        className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg"
+                        aria-label="Close"
                     >
-                        {satelliteGroupOpen ? (
-                            <FaChevronDown className="transition-transform duration-200" />
-                        ) : (
-                            <FaChevronRight className="transition-transform duration-200" />
-                        )}
-                        <label className="font-bold">Satellite Layers</label><input
-                            type="checkbox"
-                            checked={allSatelliteVisible}
-                            onChange={(e) => toggleSatelliteGroup(e.target.checked)}
-                        />
+                        <FaTimes />
                     </button>
+                    <lable className="text-lg font-bold">Layer Picker</lable>
+                    <div className="flex items-center">
+                        <input
+                            type="checkbox"
+                            checked={layerVisibility['image-footprint-layer'] ?? true}
+                            onChange={(e) => toggleLayer('image-footprint-layer', e.target.checked)}
+                        />
+                        <label className="font-bold ml-2">Footprint</label>
+                    </div>
+                    <div className="flex items-center">
+                        <input
+                            type="checkbox"
+                            checked={layerVisibility['monasteries'] ?? true}
+                            onChange={(e) => toggleLayer('monasteries', e.target.checked)}
+                        />
+                        <label className="font-bold ml-2">Monasteries</label>
+                    </div>
+                    <div>
+                        <button
+                            onClick={() => setSatelliteGroupOpen(!satelliteGroupOpen)}
+                            className="flex items-center gap-2 font-bold focus:outline-none"
+                        >
+                            {satelliteGroupOpen ? (
+                                <FaChevronDown className="transition-transform duration-200" />
+                            ) : (
+                                <FaChevronRight className="transition-transform duration-200" />
+                            )}
+                            <input
+                                type="checkbox"
+                                checked={allSatelliteVisible}
+                                onChange={(e) => toggleSatelliteGroup(e.target.checked)}
+                            />
+                            <label className="font-bold">Satellite Layers</label>
+                        </button>
 
-                    {satelliteGroupOpen && (
-                        <div className="pl-6 mt-2 space-y-1">
-                            {Object.entries(layerVisibility)
-                                .filter(([id]) => id.startsWith('spsither'))
-                                .map(([layerId, visible]) => (
-                                    <div key={layerId} className="flex justify-start">
-                                        <label>{layerId}</label>
-                                        <input
-                                            type="checkbox"
-                                            className="ml-2"
-                                            checked={visible}
-                                            onChange={(e) => toggleLayer(layerId, e.target.checked)}
-                                        />
-                                    </div>
-                                ))}
-                        </div>
-                    )}
+                        {satelliteGroupOpen && (
+                            <div className="pl-6 mt-2 space-y-1">
+                                {Object.entries(layerVisibility)
+                                    .filter(([id]) => id.startsWith('spsither'))
+                                    .map(([layerId, visible]) => (
+                                        <div key={layerId} className="flex justify-start items-center">
+                                            <input
+                                                type="checkbox"
+                                                checked={visible}
+                                                onChange={(e) => toggleLayer(layerId, e.target.checked)}
+                                            />
+                                            <label className='ml-2'>{layerId}</label>
+                                        </div>
+                                    ))}
+                            </div>
+                        )}
+                    </div>
                 </div>
-            </div>
+            ) : <div className='absolute top-4 right-4 bg-white rounded-lg shadow-lg p-3 text-gray-500 text-lg hover:text-gray-800'>
+                <button onClick={() => setLayerOpen(true)}><FaLayerGroup /></button>
+            </div>}
         </div>
     );
 }
