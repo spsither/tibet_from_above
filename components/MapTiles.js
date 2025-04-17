@@ -1,23 +1,19 @@
 'use client';
 import mapboxgl from 'mapbox-gl';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaTimes, FaDownload, FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function MapTiles() {
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
     const [downloadPopUp, setDownloadPopUp] = useState(null);
-    const [monasteryPopup, setMonasteryPopup] = useState(null);
-    const monasteryPopupRef = useRef(null);
 
     const [layerVisibility, setLayerVisibility] = useState({});
     const [satelliteGroupOpen, setSatelliteGroupOpen] = useState(true);
 
     const [geojson, setGeojson] = useState(null);
 
-    useEffect(() => {
-        monasteryPopupRef.current = monasteryPopup;
-    }, [monasteryPopup]);
 
     useEffect(() => {
         const loadGeoJSON = async () => {
@@ -86,18 +82,23 @@ export default function MapTiles() {
             }
 
             map.on('click', 'monasteries', (e) => {
-                const feature = e.features?.[0];
-                if (!feature) return;
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const description = e.features[0].properties.description;
+                const title = e.features[0].properties.title
 
-                const point = map.project([e.lngLat.lng, e.lngLat.lat]);
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
 
-                setMonasteryPopup({
-                    lngLat: e.lngLat,
-                    properties: feature.properties,
-                    point: point
-                });
-
-
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`
+                        <div>
+                            <h1 style="font-size: 1.25rem; font-weight: bold;">${title}</h1>
+                            <p  style="margin-top: 1rem; color: #555;">${description}</p>
+                        </div>
+                    `)
+                    .addTo(mapRef.current);
             });
 
             map.on('mouseenter', 'monasteries', () => {
@@ -107,30 +108,6 @@ export default function MapTiles() {
             map.on('mouseleave', 'monasteries', () => {
                 map.getCanvas().style.cursor = '';
             });
-
-            const updatePopupIfVisible = () => {
-                const popup = monasteryPopupRef.current;
-                const map = mapRef.current;
-                if (popup && map) {
-                    const { lng, lat } = popup.lngLat;
-                    const point = map.project([lng, lat]);
-                    if (!map.getBounds().contains([lng, lat])) {
-                        setMonasteryPopup(null);
-                        monasteryPopupRef.current = null;
-                    } else if (
-                        !popup.point ||
-                        point.x !== popup.point.x ||
-                        point.y !== popup.point.y
-                    ) {
-                        setMonasteryPopup(prev => ({ ...prev, point: point, lngLat: popup.lngLat }));
-                    }
-                }
-            };
-
-            map.on('move', updatePopupIfVisible);
-            map.on('dragend', updatePopupIfVisible);
-            map.on('zoomend', updatePopupIfVisible);
-
             // Capture all current layer IDs for visibility control
             const layers = map.getStyle().layers;
             const initialVisibility = {};
@@ -169,11 +146,10 @@ export default function MapTiles() {
 
     return (
         <div className="relative w-screen h-screen">
-            <div className="absolute inset-0" ref={mapContainerRef} />
-
+            <div className="relative w-screen h-screen top-0 left-0 inset-0" ref={mapContainerRef} />
             {/* Info panel for image download */}
             {downloadPopUp && (
-                <div className="absolute top-4 left-4 bg-white rounded-lg shadow-lg p-4 max-w-xs w-72 relative">
+                <div className="absolute top-4 left-4 bg-white rounded-lg shadow-lg p-4 max-w-xs w-72">
                     <button
                         onClick={() => setDownloadPopUp(null)}
                         className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg"
@@ -195,31 +171,6 @@ export default function MapTiles() {
                     </a>
                 </div>
             )}
-
-            {/* Monastery popup */}
-            {monasteryPopup && (
-                <div
-                    className="absolute z-10 bg-white rounded-lg shadow-lg p-4 max-w-xs w-72"
-                    style={{
-                        transform: 'translate(-50%, -100%)',
-                        left: `${monasteryPopup.point.x}px`,
-                        top: `${monasteryPopup.point.y}px`,
-                    }}
-                >
-                    <button
-                        onClick={() => {
-                            setMonasteryPopup(null);
-                        }}
-                        className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-lg"
-                        aria-label="Close"
-                    >
-                        <FaTimes />
-                    </button>
-                    <h2 className="text-lg font-bold">{monasteryPopup.properties.title}</h2>
-                    <p className="text-sm text-gray-700 mt-2">{monasteryPopup.properties.description}</p>
-                </div>
-            )}
-
             {/* Layer picker */}
             <div className="absolute top-4 right-4 bg-white rounded-lg shadow-lg p-4 w-72 max-h-[70vh] overflow-y-auto text-sm space-y-2">
                 <lable className="text-lg font-bold">Layer Picker</lable>
