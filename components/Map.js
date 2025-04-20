@@ -7,7 +7,7 @@ export default function Map() {
   const mapContainerRef = useRef()
 
   useEffect(() => {
-    mapboxgl.accessToken = 'pk.eyJ1Ijoic3BzaXRoZXIiLCJhIjoiY203d2hyeHp5MDV1azJzcHkzeDE1dHE2ZCJ9.TCnxqlrr20DJG_sJUN9Eww'
+    mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/spsither/cm8yoo0ek000h01s8baq20pmz',
