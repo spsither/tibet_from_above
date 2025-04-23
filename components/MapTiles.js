@@ -254,7 +254,7 @@ export default function MapTiles() {
                                                     toggleLayer(layerId, e.target.checked)
                                                 }
                                             />
-                                            <label className="ml-2">{layerId}</label>
+                                            <label className="ml-2">{layerId.replace("spsither-", "")}</label>
                                         </div>
                                     ))}
                             </div>

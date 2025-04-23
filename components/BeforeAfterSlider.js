@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-
+import Image from 'next/image'
 export default function BeforeAfterSlider({ before, after, alt, description, beforeLabel = "Before", afterLabel = "After" }) {
   const [sliderValue, setSliderValue] = useState(50);
   const [hasMounted, setHasMounted] = useState(false);
@@ -50,14 +50,16 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
 
       >
         {/* After image (left) */}
-        <img
+        <Image
+          fill={true}
           src={after}
           alt={alt || 'After'}
           className="absolute inset-0 w-full h-full object-cover"
         />
 
         {/* Before image (right) */}
-        <img
+        <Image
+          fill={true}
           src={before}
           alt={alt || 'Before'}
           className={`absolute inset-0 w-full h-full object-cover ${sliderValue <= 5 || sliderValue >= 95

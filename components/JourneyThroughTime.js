@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Image from 'next/image'
 
 export default function JourneyThroughTime({ items = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +27,8 @@ export default function JourneyThroughTime({ items = [] }) {
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 lg:gap-12">
         {/* Image Container */}
         <div className="relative flex-1 h-[400px] sm:h-[500px] rounded-xl overflow-hidden shadow-xl group">
-          <img
+          <Image
+            fill={true}
             src={items[currentIndex].image}
             alt={items[currentIndex].label}
             loading="lazy"

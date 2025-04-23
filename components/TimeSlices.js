@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FaExpand, FaCompress } from 'react-icons/fa';
+import Image from 'next/image'
 
 export default function TimeSlices({ slices = [] }) {
   const [current, setCurrent] = useState(0);
@@ -207,7 +208,8 @@ export default function TimeSlices({ slices = [] }) {
           </button>
         )}
 
-        <img
+        <Image
+          fill={true}
           ref={imageRef}
           src={slices[current].image}
           alt={slices[current].label}

@@ -1,8 +1,6 @@
 import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import JourneyThroughTime from '@/components/JourneyThroughTime';
 import TimeSlices from '@/components/TimeSlices';
-import Map from '@/components/Map';
-import MapTiles from '@/components/MapTiles';
 
 export default function Page() {
   const images = [
@@ -28,7 +26,7 @@ const slices = [
 ]
   return (
     <>
-      {/* <BeforeAfterSlider
+      <BeforeAfterSlider
         before="/images/Ganden - 1963 - U2.jpg"
         after="/images/Ganden - 1976 - Hexagon.png"
         alt="Before and After Comparison"
@@ -39,9 +37,8 @@ const slices = [
 
       <JourneyThroughTime items={items} />
 
-      <TimeSlices slices={slices}/> */}
-
-      <MapTiles/>
+      <TimeSlices slices={slices}/>
+      
     </>
   );
 }
