@@ -19,6 +19,17 @@ export default function MapTiles() {
     const [geojson, setGeojson] = useState(null);
     const [layerOpen, setLayerOpen] = useState(true);
 
+    const featureMap = useRef({});
+    useEffect(() => {
+        if (geojson) {
+            const map = {};
+            geojson.features.forEach(f => {
+                map[f.properties.id] = f;
+            });
+            featureMap.current = map;
+        }
+    }, [geojson]);
+
     useEffect(() => {
         const loadGeoJSON = async () => {
             try {
@@ -62,8 +73,8 @@ export default function MapTiles() {
                     type: 'fill',
                     source: 'image-footprints',
                     paint: {
-                        'fill-color': 'rgba(0, 0, 0, 0.05)',
-                        'fill-outline-color': 'rgba(0, 0, 0, 0.2)'
+                        'fill-color': 'rgba(0, 0, 0, 0)',
+                        'fill-outline-color': 'rgba(0, 117, 255, 1)'
                     }
                 });
 
@@ -111,9 +122,9 @@ export default function MapTiles() {
                     .setLngLat(coordinates)
                     .setHTML(
                         `<div>
-              <h1 style="font-size: 1.25rem; color: #111;">${title}</h1>
-              <p style="margin-top: 1rem; color: #7d7d7d;">${description}</p>
-            </div>`
+                            <h1 style="font-size: 1.25rem; color: #111;">${title}</h1>
+                            <p style="margin-top: 1rem; color: #7d7d7d;">${description}</p>
+                        </div>`
                     )
                     .addTo(map);
             });
@@ -124,6 +135,8 @@ export default function MapTiles() {
             });
 
             const layers = map.getStyle().layers;
+
+            console.log(layers);
             const initialVisibility = {};
             layers.forEach((layer) => {
                 if (
@@ -157,6 +170,33 @@ export default function MapTiles() {
     const allSatelliteVisible = Object.entries(layerVisibility)
         .filter(([id]) => id.startsWith('spsither'))
         .every(([, visible]) => visible);
+
+    const flyToLayer = (layerId) => {
+
+        console.log(layerId, featureMap)
+        const feature = featureMap.current[layerId];
+        const map = mapRef.current;
+        if (!feature || !map) return;
+
+        const geometry = feature.geometry;
+        if (geometry.type === 'Polygon' || geometry.type === 'MultiPolygon') {
+            const coordinates = geometry.type === 'Polygon'
+                ? geometry.coordinates[0]
+                : geometry.coordinates[0][0];
+
+            const bounds = coordinates.reduce(
+                (b, [lng, lat]) => b.extend([lng, lat]),
+                new mapboxgl.LngLatBounds(coordinates[0], coordinates[0])
+            );
+
+            map.fitBounds(bounds, { padding: 50 });
+        } else if (geometry.type === 'Point') {
+            const [lng, lat] = geometry.coordinates;
+            map.flyTo({ center: [lng, lat], zoom: 16 });
+        }
+    };
+
+
 
     return (
         <div className="relative w-screen h-screen">
@@ -195,20 +235,7 @@ export default function MapTiles() {
                     >
                         <FaTimes />
                     </button>
-                    <label className="text-lg font-bold">Layer Picker</label>
-                    <div className="flex items-center">
-                        <input
-                            id="footprint-checkbox"
-                            type="checkbox"
-                            checked={layerVisibility['image-footprint-layer'] ?? true}
-                            onChange={(e) =>
-                                toggleLayer('image-footprint-layer', e.target.checked)
-                            }
-                        />
-                        <label htmlFor="footprint-checkbox" className="font-bold ml-2">
-                            Footprint
-                        </label>
-                    </div>
+                    <label className="text-lg font-bold">Layers</label>
                     <div className="flex items-center">
                         <input
                             type="checkbox"
@@ -217,7 +244,7 @@ export default function MapTiles() {
                                 toggleLayer('monasteries', e.target.checked)
                             }
                         />
-                        <label className="font-bold ml-2">Monasteries</label>
+                        <label className="font-bold ml-2">Temples of Tibet</label>
                     </div>
                     <div>
                         <button
@@ -236,7 +263,7 @@ export default function MapTiles() {
                                     toggleSatelliteGroup(e.target.checked)
                                 }
                             />
-                            <label className="font-bold">Satellite Layers</label>
+                            <label className="font-bold">Aerial Images</label>
                         </button>
                         {satelliteGroupOpen && (
                             <div className="pl-6 mt-2 space-y-1">
@@ -254,7 +281,15 @@ export default function MapTiles() {
                                                     toggleLayer(layerId, e.target.checked)
                                                 }
                                             />
-                                            <label className="ml-2">{layerId.replace("spsither-", "")}</label>
+                                            <button
+                                                onClick={() => flyToLayer(layerId)}
+                                                className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none"
+                                            >
+                                                {layerId
+                                                    .replace("spsither-", "")           // remove prefix
+                                                    .replace(/-/g, " ")
+                                                    .replace(/\b\w/g, l => l.toUpperCase())}
+                                            </button>
                                         </div>
                                     ))}
                             </div>

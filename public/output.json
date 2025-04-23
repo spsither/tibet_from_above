@@ -4,9 +4,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-d8e752f7",
-                "name": "Nedong Tsetsokpa",
-                "description": "1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "id": "spsither-nedong-tsetsokpa-1963-u2-g",
+                "name": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L.tif"
             },
             "geometry": {
@@ -40,9 +40,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-6626b7e6",
-                "name": "Ganden Chokhor Ling",
-                "description": "1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "id": "spsither-ganden-chokhor-ling-1963-u2",
+                "name": "Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L.tif"
             },
             "geometry": {
@@ -76,9 +76,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-7a7af851",
-                "name": "Ralung",
-                "description": "1964 - U2 - T334A - 3 -9L - 368",
+                "id": "spsither-ralung-1964-u2-t334a-3",
+                "name": "Ralung - 1964 - U2 - T334A - 3 -9L - 368",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Ralung - 1964 - U2 - T334A - 3 -9L - 368.tif"
             },
             "geometry": {
@@ -112,9 +112,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-6e32b030",
-                "name": "Ngari Dratsang",
-                "description": "1963 - U2 - G3236 - 8R - 940 - 1L (1)",
+                "id": "spsither-ngari-dratsang-1963-u2-g32",
+                "name": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1).tif"
             },
             "geometry": {
@@ -148,9 +148,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-8cd07629",
-                "name": "Dingpoche",
-                "description": "- 1963 - U2 - G3236 - 9R - 988 - 1R",
+                "id": "spsither-dingpoche-1963-u2-g3236",
+                "name": "Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R.tif"
             },
             "geometry": {
@@ -184,9 +184,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-91b7e3b3",
-                "name": "Samye Monastery",
-                "description": "- 1963 - U2 - 3236 - 9R - 971 (11)",
+                "id": "spsither-samye-monastery-1963-u2-32",
+                "name": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11).tif"
             },
             "geometry": {
@@ -220,9 +220,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-e4154f29",
-                "name": "Nenying",
-                "description": "- 1964 - U2 - T334A - 3 - 9L -327 (1)",
+                "id": "spsither-nenying-1964-u2-t334a-3",
+                "name": "Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1).tif"
             },
             "geometry": {
@@ -256,9 +256,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-75dcd263",
-                "name": "Monkar Namseling",
-                "description": "- 1963 - U2 - G3236 - 8R - 966 (2)",
+                "id": "spsither-monkar-namseling-1963-u2-g",
+                "name": "Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2).tif"
             },
             "geometry": {
@@ -292,9 +292,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-91ff7d89",
-                "name": "Kangmar",
-                "description": "- 1964 - U2 - T334A - 3 - 9L - 327",
+                "id": "spsither-kangmar-1964-u2-t334a-3",
+                "name": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Kangmar - 1964 - U2 - T334A - 3 - 9L - 327.tif"
             },
             "geometry": {
@@ -328,9 +328,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-3e91d2a8",
-                "name": "Khorchak Gon",
-                "description": "- 1963 - U2 - 3227 - 9R - 0029 -1L (3)",
+                "id": "spsither-khorchak-gon-1963-u2-3227",
+                "name": "Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3).tif"
             },
             "geometry": {
@@ -364,9 +364,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-adc690a9",
-                "name": "Gangsi Village_Ngari",
-                "description": " - 1963 - U2 - 3227 - 9R - 0039 - 1L",
+                "id": "spsither-gangsi-village-ngari-1963-u2",
+                "name": "Gangsi Village_Ngari - 1963 - U2 - 3227 - 9R - 0039 - 1L",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Gangsi Village_Ngari - 1963 - U2 - 3227 - 9R - 0039 - 1L.tif"
             },
             "geometry": {
@@ -400,9 +400,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither-7f0ba195",
-                "name": "Shengjie Village_Ngari",
-                "description": " - 1963 - U2 - 3227 - 0045 - V",
+                "id": "spsither-shengjie-village-ngari-1963",
+                "name": "Shengjie Village_Ngari - 1963 - U2 - 3227 - 0045 - V",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://your-bucket.s3.amazonaws.com/Shengjie Village_Ngari - 1963 - U2 - 3227 - 0045 - V.tif"
             },
             "geometry": {
