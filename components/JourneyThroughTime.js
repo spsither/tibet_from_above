@@ -26,13 +26,14 @@ export default function JourneyThroughTime({ items = [] }) {
     <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 py-10">
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 lg:gap-12">
         {/* Image Container */}
-        <div className="relative flex-1 h-[400px] sm:h-[500px] rounded-xl overflow-hidden shadow-xl group">
+        <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] rounded-xl overflow-hidden shadow-xl group">
+
           <Image
             fill={true}
             src={items[currentIndex].image}
             alt={items[currentIndex].label}
             loading="lazy"
-            className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+            className="object-cover transition-all duration-500 ease-in-out"
           />
 
           {/* Clickable Halves */}
@@ -65,6 +66,7 @@ export default function JourneyThroughTime({ items = [] }) {
               <span
                 key={index}
                 onClick={() => setCurrentIndex(index)}
+                aria-label={`Go to item ${index + 1}`}
                 className={`transition-all cursor-pointer rounded-full ${currentIndex === index
                     ? 'w-2.5 h-2.5 bg-white'
                     : 'w-1.5 h-1.5 bg-white/60'
