@@ -41,6 +41,7 @@ export default function Page() {
 
       <div className='flex justify-center'>
         <Link href='map' className="text-blue-600 hover:underline">Map</Link>
+        <Link href="https://excalidraw.com/#json=BqQhPzxyFjq3qmx5aNM2C,SrT4-hpnxAgj11LElsZcYg" className='text-blue-600 hover:underline ml-2'>Outline</Link>
       </div>
     </>
   );

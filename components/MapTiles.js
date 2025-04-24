@@ -245,7 +245,7 @@ export default function MapTiles() {
                 </div>
             )}
             {layerOpen ? (
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 w-72 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50 transition-all duration-300">
+                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 w-72 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50">
                     <button
                         onClick={() => setLayerOpen(false)}
                         className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
@@ -318,7 +318,7 @@ export default function MapTiles() {
                 <div className="absolute top-4 right-4 z-50">
                     <button
                         onClick={() => setLayerOpen(true)}
-                        className="bg-white dark:bg-gray-900 rounded-full p-3 shadow-md text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white hover:shadow-lg transition-all"
+                        className="bg-white dark:bg-gray-900 rounded-full p-3 shadow-md text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white hover:shadow-lg"
                         aria-label="Open Layer Picker"
                     >
                         <FaLayerGroup />
