@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { FaExpand, FaCompress } from 'react-icons/fa';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function TimeSlices({ slices = [] }) {
   const [current, setCurrent] = useState(0);
@@ -12,11 +12,13 @@ export default function TimeSlices({ slices = [] }) {
 
   const [isDragging, setIsDragging] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
   const imageRef = useRef(null);
   const containerRef = useRef(null);
   const start = useRef({ x: 0, y: 0 });
   const animationFrame = useRef(null);
-  const [isMobile, setIsMobile] = useState(false); // State to track if the user is on mobile
+  const scrollPosition = useRef({ x: 0, y: 0 });
 
   const currentZoom = imageStates[current]?.zoom ?? 100;
   const currentPosition = imageStates[current]?.position ?? { x: 0, y: 0 };
@@ -38,8 +40,8 @@ export default function TimeSlices({ slices = [] }) {
 
   const handleStart = (e) => {
     e.preventDefault();
-    const clientX = e.clientX;
-    const clientY = e.clientY;
+    const clientX = e.clientX ?? e.touches?.[0]?.clientX;
+    const clientY = e.clientY ?? e.touches?.[0]?.clientY;
 
     setIsDragging(true);
     start.current = { x: clientX, y: clientY };
@@ -48,8 +50,8 @@ export default function TimeSlices({ slices = [] }) {
   const handleMove = (e) => {
     if (!isDragging) return;
 
-    const clientX = e.clientX;
-    const clientY = e.clientY;
+    const clientX = e.clientX ?? e.touches?.[0]?.clientX;
+    const clientY = e.clientY ?? e.touches?.[0]?.clientY;
 
     const dx = clientX - start.current.x;
     const dy = clientY - start.current.y;
@@ -71,30 +73,57 @@ export default function TimeSlices({ slices = [] }) {
     }
   };
 
-  const handleEnd = () => {
-    setIsDragging(false);
-  };
+  const handleEnd = () => setIsDragging(false);
 
   const handleWheel = (e) => {
-    if (containerRef.current && containerRef.current.contains(e.target) && !e.ctrlKey) {
-      e.preventDefault();
-      const zoomChange = e.deltaY < 0 ? 10 : -10;
-      const newZoom = Math.min(300, Math.max(100, currentZoom + zoomChange));
-      updateImageState({ zoom: newZoom });
+    if (!containerRef.current?.contains(e.target) || e.ctrlKey) return;
+
+    e.preventDefault();
+    const zoomChange = e.deltaY < 0 ? 10 : -10;
+    const newZoom = Math.min(300, Math.max(100, currentZoom + zoomChange));
+    updateImageState({ zoom: newZoom });
+  };
+
+  const toggleFullscreen = () => {
+    const elem = containerRef.current;
+    if (!elem) return;
+
+    scrollPosition.current = {
+      x: window.scrollX,
+      y: window.scrollY,
+    };
+
+    const isCurrentlyFullscreen =
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement;
+
+    const requestFullscreen = () => {
+      if (elem.requestFullscreen) return elem.requestFullscreen();
+      if (elem.mozRequestFullScreen) return elem.mozRequestFullScreen();
+      if (elem.webkitRequestFullscreen) return elem.webkitRequestFullscreen();
+      if (elem.msRequestFullscreen) return elem.msRequestFullscreen();
+      alert('Fullscreen API not supported.');
+    };
+
+    const exitFullscreen = () => {
+      if (document.exitFullscreen) return document.exitFullscreen();
+      if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
+      if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+      if (document.msExitFullscreen) return document.msExitFullscreen();
+    };
+
+    if (isCurrentlyFullscreen) {
+      exitFullscreen();
+    } else {
+      requestFullscreen().catch((err) => {
+        console.warn('Failed to enter fullscreen:', err);
+      });
     }
   };
 
-  const scrollPosition = useRef({ x: 0, y: 0 });
-
   useEffect(() => {
-    // Detect if the device is mobile (screen width <= 768px)
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    checkMobile(); // Check on component mount
-    window.addEventListener('resize', checkMobile); // Re-check on window resize
-
     const handleFullscreenChange = () => {
       const isNowFullscreen =
         document.fullscreenElement ||
@@ -110,8 +139,15 @@ export default function TimeSlices({ slices = [] }) {
         });
       }
 
-      setIsFullScreen(isNowFullscreen);
+      setIsFullScreen(Boolean(isNowFullscreen));
     };
+
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
 
     document.addEventListener('fullscreenchange', handleFullscreenChange);
     document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
@@ -123,51 +159,7 @@ export default function TimeSlices({ slices = [] }) {
       document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
       document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
       document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
-      window.removeEventListener('resize', checkMobile); // Clean up on unmount
-    };
-  }, []);
-
-  const toggleFullscreen = () => {
-    const elem = containerRef.current;
-
-    const isCurrentlyFullscreen =
-      document.fullscreenElement ||
-      document.webkitFullscreenElement ||
-      document.mozFullScreenElement ||
-      document.msFullscreenElement;
-
-    if (isCurrentlyFullscreen) {
-      if (document.exitFullscreen) document.exitFullscreen();
-      else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
-      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-      else if (document.msExitFullscreen) document.msExitFullscreen();
-    } else {
-      scrollPosition.current = {
-        x: window.scrollX,
-        y: window.scrollY,
-      };
-
-      // Check if on mobile device and request fullscreen accordingly
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.mozRequestFullScreen) {
-        elem.mozRequestFullScreen(); // Firefox
-      } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen(); // Safari
-      } else if (elem.msRequestFullscreen) {
-        elem.msRequestFullscreen(); // IE/Edge
-      } else if (elem.requestFullscreen) {
-        // In case mobile-specific logic is required
-        alert("Fullscreen API is not supported on this device.");
-      }
-    }
-  };
-
-  useEffect(() => {
-    const onUp = () => setIsDragging(false);
-    window.addEventListener('mouseup', onUp);
-    return () => {
-      window.removeEventListener('mouseup', onUp);
+      window.removeEventListener('resize', checkMobile);
     };
   }, []);
 
@@ -182,23 +174,30 @@ export default function TimeSlices({ slices = [] }) {
     return () => {
       container.removeEventListener('wheel', handleWheel);
     };
-  }, [currentZoom]);
+  }, [currentZoom, current]);
+
+  useEffect(() => {
+    const onUp = () => setIsDragging(false);
+    window.addEventListener('mouseup', onUp);
+    return () => window.removeEventListener('mouseup', onUp);
+  }, []);
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-10">
-      {/* Image container */}
       <div
         ref={containerRef}
         className="relative w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg bg-black"
         onMouseDown={handleStart}
         onMouseMove={handleMove}
         onMouseUp={handleEnd}
+        onTouchStart={handleStart}
+        onTouchMove={handleMove}
+        onTouchEnd={handleEnd}
         style={{
           userSelect: 'none',
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
       >
-        {/* Conditionally render Fullscreen toggle button on mobile */}
         {!isMobile && (
           <button
             onClick={toggleFullscreen}
@@ -225,7 +224,6 @@ export default function TimeSlices({ slices = [] }) {
         />
       </div>
 
-      {/* Slice Buttons */}
       <div className="mt-4 px-2 flex flex-wrap justify-center gap-2 z-20">
         {slices.map((slice, index) => (
           <button
