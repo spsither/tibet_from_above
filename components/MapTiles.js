@@ -3,10 +3,11 @@ import mapboxgl from 'mapbox-gl';
 import { useEffect, useRef, useState } from 'react';
 import {
     FaTimes,
-    FaDownload,
+    FaImage,
+    FaFileDownload,
     FaChevronDown,
     FaChevronRight,
-    FaLayerGroup
+    FaLayerGroup,
 } from 'react-icons/fa';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -215,15 +216,27 @@ export default function MapTiles() {
                     </button>
                     <h2 className="text-lg font-bold">{downloadPopUp.imageInfo.name}</h2>
                     <p className="text-sm mt-2">{downloadPopUp.imageInfo.description}</p>
-                    <a
-                        href={downloadPopUp.imageInfo.downloadUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        download
-                        className="mt-4 inline-block text-blue-600 dark:text-blue-400 underline"
-                    >
-                        <FaDownload />
-                    </a>
+                    <div className='mt-4 flex items-center justify-evenly '>
+
+                        <a
+                            href={downloadPopUp.imageInfo.downloadUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:underline"
+                        >
+                            <FaImage /> <span>Image</span>
+                        </a>
+                        <a
+                            href={downloadPopUp.imageInfo.downloadUrlTIFF}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                            className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:underline"
+                        >
+                            <FaFileDownload /> <span>GeoTIFF</span>
+                        </a>
+                    </div>
                 </div>
             )}
             {layerOpen ? (

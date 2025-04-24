@@ -5,9 +5,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-nedong-tsetsokpa-1963-u2-g",
-                "name": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L.tif"
+                "name": "Nedong Tsetsokpa",
+                "description": "1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -41,9 +42,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-ganden-chokhor-ling-1963-u2",
-                "name": "Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L.tif"
+                "name": "Ganden Chokhor Ling",
+                "description": "1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -77,9 +79,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-ralung-1964-u2-t334a-3",
-                "name": "Ralung - 1964 - U2 - T334A - 3 -9L - 368",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Ralung - 1964 - U2 - T334A - 3 -9L - 368.tif"
+                "name": "Ralung",
+                "description": "1964 - U2 - T334A - 3 -9L - 368",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -113,9 +116,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-ngari-dratsang-1963-u2-g32",
-                "name": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1).tif"
+                "name": "Ngari Dratsang",
+                "description": "1963 - U2 - G3236 - 8R - 940 - 1L (1)",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -149,9 +153,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-dingpoche-1963-u2-g3236",
-                "name": "Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R.tif"
+                "name": "Dingpoche",
+                "description": "1963 - U2 - G3236 - 9R - 988 - 1R",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -185,9 +190,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-samye-monastery-1963-u2-32",
-                "name": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11).tif"
+                "name": "Samye Monastery",
+                "description": "1963 - U2 - 3236 - 9R - 971 (11)",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -221,9 +227,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-nenying-1964-u2-t334a-3",
-                "name": "Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1)",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1).tif"
+                "name": "Nenying",
+                "description": "1964 - U2 - T334A - 3 - 9L -327 (1)",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -257,9 +264,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-monkar-namseling-1963-u2-g",
-                "name": "Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2)",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2).tif"
+                "name": "Monkar Namseling",
+                "description": "1963 - U2 - G3236 - 8R - 966 (2)",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -293,9 +301,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-kangmar-1964-u2-t334a-3",
-                "name": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Kangmar - 1964 - U2 - T334A - 3 - 9L - 327.tif"
+                "name": "Kangmar",
+                "description": "1964 - U2 - T334A - 3 - 9L - 327",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -329,9 +338,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-khorchak-gon-1963-u2-3227",
-                "name": "Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3)",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3).tif"
+                "name": "Khorchak Gon",
+                "description": "1963 - U2 - 3227 - 9R - 0029 -1L (3)",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -365,9 +375,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-gangsi-village-ngari-1963-u2",
-                "name": "Gangsi Village_Ngari - 1963 - U2 - 3227 - 9R - 0039 - 1L",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Gangsi Village_Ngari - 1963 - U2 - 3227 - 9R - 0039 - 1L.tif"
+                "name": "Gangsi Village_Ngari",
+                "description": "1963 - U2 - 3227 - 9R - 0039 - 1L",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.tif"
             },
             "geometry": {
                 "type": "Polygon",
@@ -401,9 +412,10 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-shengjie-village-ngari-1963",
-                "name": "Shengjie Village_Ngari - 1963 - U2 - 3227 - 0045 - V",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://your-bucket.s3.amazonaws.com/Shengjie Village_Ngari - 1963 - U2 - 3227 - 0045 - V.tif"
+                "name": "Shengjie Village_Ngari",
+                "description": "1963 - U2 - 3227 - 0045 - V",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.tif"
             },
             "geometry": {
                 "type": "Polygon",
