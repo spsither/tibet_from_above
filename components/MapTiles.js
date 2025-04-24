@@ -88,10 +88,7 @@ export default function MapTiles() {
                     )?.properties;
 
                     if (imageInfo) {
-                        setDownloadPopUp({
-                            lngLat: e.lngLat,
-                            imageInfo
-                        });
+                        setDownloadPopUp(imageInfo);
                     }
                 });
 
@@ -174,6 +171,14 @@ export default function MapTiles() {
 
     const flyToLayer = (layerId) => {
 
+        const imageInfo = geojson.features.find(
+            ({ properties }) => properties.id == layerId
+        )?.properties;
+
+        if (imageInfo) {
+            setDownloadPopUp(imageInfo);
+        }
+
         console.log(layerId, featureMap)
         const feature = featureMap.current[layerId];
         const map = mapRef.current;
@@ -214,12 +219,12 @@ export default function MapTiles() {
                     >
                         <FaTimes />
                     </button>
-                    <h2 className="text-lg font-bold">{downloadPopUp.imageInfo.name}</h2>
-                    <p className="text-sm mt-2">{downloadPopUp.imageInfo.description}</p>
+                    <h2 className="text-lg font-bold">{downloadPopUp.name}</h2>
+                    <p className="text-sm mt-2">{downloadPopUp.description}</p>
                     <div className='mt-4 flex items-center justify-evenly '>
 
                         <a
-                            href={downloadPopUp.imageInfo.downloadUrl}
+                            href={downloadPopUp.downloadUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             download
@@ -228,7 +233,7 @@ export default function MapTiles() {
                             <FaImage /> <span>Image</span>
                         </a>
                         <a
-                            href={downloadPopUp.imageInfo.downloadUrlTIFF}
+                            href={downloadPopUp.downloadUrlTIFF}
                             target="_blank"
                             rel="noopener noreferrer"
                             download
