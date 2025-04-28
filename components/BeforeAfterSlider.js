@@ -38,7 +38,7 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
   };
 
   if (!hasMounted) return null;
-  
+
   return (
     <div className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 py-10">
       {/* Image container */}
@@ -63,8 +63,8 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
           src={before}
           alt={alt || 'Before'}
           className={`absolute inset-0 w-full h-full object-cover ${sliderValue <= 5 || sliderValue >= 95
-              ? 'transition-[clip-path] duration-150 ease-out'
-              : 'transition-none'
+            ? 'transition-[clip-path] duration-150 ease-out'
+            : 'transition-none'
             }`}
           style={{
             clipPath: `inset(0 ${100 - sliderValue}% 0 0)`,
@@ -102,8 +102,9 @@ export default function BeforeAfterSlider({ before, after, alt, description, bef
         max="100"
         value={sliderValue}
         onChange={handleSliderChange}
-        className="w-full mt-4 appearance-none h-2 rounded-lg bg-gray-300 cursor-pointer accent-gray-500"
+        className="custom-slider w-full"
       />
+
 
       {/* Description */}
       {description && (

@@ -104,7 +104,7 @@ export default function TimeSlices({ slices = [] }) {
       if (elem.mozRequestFullScreen) return elem.mozRequestFullScreen();
       if (elem.webkitRequestFullscreen) return elem.webkitRequestFullscreen();
       if (elem.msRequestFullscreen) return elem.msRequestFullscreen();
-      alert('Fullscreen API not supported.');
+      return Promise.reject(new Error('Fullscreen API not supported.'));
     };
 
     const exitFullscreen = () => {
@@ -119,9 +119,11 @@ export default function TimeSlices({ slices = [] }) {
     } else {
       requestFullscreen().catch((err) => {
         console.warn('Failed to enter fullscreen:', err);
+        alert('Fullscreen API not supported.');
       });
     }
   };
+
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -198,14 +200,14 @@ export default function TimeSlices({ slices = [] }) {
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
       >
-        {!isMobile && (
-          <button
-            onClick={toggleFullscreen}
-            className="absolute top-2 right-2 z-20 bg-white/30 p-2 rounded-full text-black backdrop-blur-lg shadow hover:bg-white/60 transition"
-          >
-            {isFullScreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
-          </button>
-        )}
+
+        <button
+          onClick={toggleFullscreen}
+          className="absolute top-3 right-3 z-20 p-2 bg-black/40 text-white hover:border-2 rounded-full backdrop-blur-lg shadow transition"
+        >
+          {isFullScreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
+        </button>
+
 
         <Image
           fill={true}
@@ -222,22 +224,40 @@ export default function TimeSlices({ slices = [] }) {
           }}
           draggable={false}
         />
+
+        {/* absolute top-2 left-2 bg-black/40 text-white text-[13px] px-1.5 py-0.5 rounded transition-opacity duration-500 */}
+        {!isMobile && (
+          <div className="absolute top-3 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center gap-2 z-20">
+            {slices.map((slice, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrent(index)}
+                className={`bg-black/40 text-white px-1.5 py-0.5 rounded ${index === current && 'border-2 border-white shadow-md'}`}
+              >
+                {slice.label}
+              </button>
+            ))}
+          </div>
+        )}
+
       </div>
 
-      <div className="mt-4 px-2 flex flex-wrap justify-center gap-2 z-20">
-        {slices.map((slice, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`px-3 py-1 text-sm rounded-full font-medium transition-colors duration-200 ${index === current
-              ? 'bg-black text-white'
-              : 'bg-gray-200 text-gray-800 hover:bg-white'
-              }`}
-          >
-            {slice.label}
-          </button>
-        ))}
-      </div>
+      {isMobile && (
+        <div className="mt-2 px-2 flex flex-wrap justify-center gap-2 z-20">
+          {slices.map((slice, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`px-2 py-1 text-sm rounded-md font-medium ${index === current
+                ? 'bg-black text-white'
+                : 'bg-gray-200 text-gray-800'
+                }`}
+            >
+              {slice.label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
