@@ -12,6 +12,8 @@ import {
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export default function MapTiles() {
+    const [baseMapStyle, setBaseMapStyle] = useState('mapbox://styles/spsither/cm9airhyv003y01qk0utl3821')
+    const [isSatellite, setIsSatellite] = useState(false);
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
     const [downloadPopUp, setDownloadPopUp] = useState(null);
@@ -19,8 +21,45 @@ export default function MapTiles() {
     const [satelliteGroupOpen, setSatelliteGroupOpen] = useState(true);
     const [geojson, setGeojson] = useState(null);
     const [layerOpen, setLayerOpen] = useState(true);
-
     const featureMap = useRef({});
+
+    const imageTilesets = [
+        'spsither.ralung_-_1964_-_u2_-_t334a_-_3_-',
+        'spsither.nedong_tsetsokpa_-_1963_-_u2_-_g',
+        'spsither.khorchak_gon_-_1963_-_u2_-_3227_',
+        'spsither.kangmar_-_1964_-_u2_-_t334a_-_3_',
+        'spsither.ngari_dratsang_-_1963_-_u2_-_g32',
+        'spsither.ganden_chokhor_ling_-_1963_-_u2_',
+        'spsither.dingpoche_-_1963_-_u2_-_g3236_-_',
+        'spsither.samye_monastery_-_1963_-_u2_-_32',
+        'spsither.monkar_namseling_-_1963_-_u2_-_g',
+        'spsither.gangsi_village_ngari_-_1963_-_u2',
+        'spsither.shengjie_village_ngari_-_1963_-_',
+        'spsither.nenying_-_1964_-_u2_-_t334a_-_3_'
+    ];
+    
+    function addImageTilesetLayers(map){
+        imageTilesets.forEach((tilesetId) => {
+            const sourceId = `source-${tilesetId}`;
+            const layerId = `layer-${tilesetId}`;
+
+            map.addSource(sourceId, {
+                type: 'raster',
+                url: `mapbox://${tilesetId}`,  // <-- Notice the full URL
+                tileSize: 256  // Or 512 depending on your tileset
+            });
+
+            map.addLayer({
+                id: layerId,
+                type: 'raster',
+                source: sourceId,
+                paint: {
+                    'raster-opacity': 0.85
+                }
+            });
+        });
+    }
+
     useEffect(() => {
         if (geojson) {
             const map = {};
@@ -50,7 +89,7 @@ export default function MapTiles() {
 
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
-            style: 'mapbox://styles/spsither/cm9airhyv003y01qk0utl3821',
+            style: baseMapStyle,
             center: [91.76423888888888, 29.22076111111111],
             zoom: 12,
             attributionControl: false
@@ -79,6 +118,8 @@ export default function MapTiles() {
                     }
                 });
 
+                addImageTilesetLayers(map);
+                
                 map.on('click', 'image-footprint-layer', (e) => {
                     if (!geojson) return;
                     const feature = e.features?.[0];
@@ -134,7 +175,6 @@ export default function MapTiles() {
 
             const layers = map.getStyle().layers;
 
-            console.log(layers);
             const initialVisibility = {};
             layers.forEach((layer) => {
                 if (
@@ -144,6 +184,7 @@ export default function MapTiles() {
                     initialVisibility[layer.id] = true;
                 }
             });
+            initialVisibility.satellite = false;
             setLayerVisibility(initialVisibility);
         });
 
@@ -179,7 +220,6 @@ export default function MapTiles() {
             setDownloadPopUp(imageInfo);
         }
 
-        console.log(layerId, featureMap)
         const feature = featureMap.current[layerId];
         const map = mapRef.current;
         if (!feature || !map) return;
@@ -263,6 +303,72 @@ export default function MapTiles() {
                             }
                         />
                         <label className="font-bold ml-2">Temples of Tibet</label>
+                    </div>
+                    <div className="flex items-center">
+                        <input
+                            type="checkbox"
+                            checked={isSatellite ?? false}
+                            
+                            onClick={() => {
+                                const newStyle = baseMapStyle.includes('satellite-streets')
+                                    ? 'mapbox://styles/spsither/cm9airhyv003y01qk0utl3821' // back to custom street view
+                                    : 'mapbox://styles/mapbox/satellite-streets-v12';       // switch to Mapbox satellite
+                            
+                                setBaseMapStyle(newStyle);
+                                mapRef.current.setStyle(newStyle);
+                                setIsSatellite((prev) => !prev);
+                            
+                                mapRef.current.once('style.load', () => {
+                                    const map = mapRef.current;
+                                    if (!map) return;
+                            
+                                    // Re-add GeoJSON source and layer
+                                    if (geojson && !map.getSource('image-footprints')) {
+                                        map.addSource('image-footprints', {
+                                            type: 'geojson',
+                                            data: geojson,
+                                        });
+                            
+                                        map.addLayer({
+                                            id: 'image-footprint-layer',
+                                            type: 'fill',
+                                            source: 'image-footprints',
+                                            paint: {
+                                                'fill-color': 'rgba(0, 0, 0, 0)',
+                                                'fill-outline-color': 'rgba(0, 117, 255, 1)'
+                                            }
+                                        });
+                            
+                                        // Re-bind click events etc. if necessary
+                                        map.on('click', 'image-footprint-layer', (e) => {
+                                            if (!geojson) return;
+                                            const feature = e.features?.[0];
+                                            const id = feature?.properties?.id;
+                                            const imageInfo = geojson.features.find(
+                                                ({ properties }) => properties.id == id
+                                            )?.properties;
+                            
+                                            if (imageInfo) {
+                                                setDownloadPopUp(imageInfo);
+                                            }
+                                        });
+                            
+                                        map.on('mouseenter', 'image-footprint-layer', () => {
+                                            map.getCanvas().style.cursor = 'pointer';
+                                        });
+                            
+                                        map.on('mouseleave', 'image-footprint-layer', () => {
+                                            map.getCanvas().style.cursor = '';
+                                        });
+                                    }
+                            
+                                    addImageTilesetLayers(map);
+                                });
+                            }}
+                            
+                        />
+                        <label className="font-bold ml-2">Satellite</label>
+
                     </div>
                     <div>
                         <button
