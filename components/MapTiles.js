@@ -38,10 +38,21 @@ export default function MapTiles() {
         'spsither.nenying_-_1964_-_u2_-_t334a_-_3_'
     ];
     
+    function TilesetIdToLayerId(tilesetId){
+        const layerId = tilesetId
+                .replace("spsither.", "spsither-")
+                .replace(/_/g, "-")
+                .replace(/-+/g, "-") // This line collapses multiple dashes into one
+                .replace(/-+$/, "");      // Remove trailing dashes
+        
+        return layerId;
+    }
     function addImageTilesetLayers(map){
         imageTilesets.forEach((tilesetId) => {
             const sourceId = `source-${tilesetId}`;
-            const layerId = `layer-${tilesetId}`;
+            
+            const layerId = TilesetIdToLayerId(tilesetId);
+
 
             map.addSource(sourceId, {
                 type: 'raster',
@@ -102,6 +113,7 @@ export default function MapTiles() {
         mapRef.current = map;
 
         map.on('load', () => {
+            addImageTilesetLayers(map);
             if (geojson && !map.getSource('image-footprints')) {
                 map.addSource('image-footprints', {
                     type: 'geojson',
@@ -118,7 +130,6 @@ export default function MapTiles() {
                     }
                 });
 
-                addImageTilesetLayers(map);
                 
                 map.on('click', 'image-footprint-layer', (e) => {
                     if (!geojson) return;
@@ -173,18 +184,19 @@ export default function MapTiles() {
                 popup.remove();
             });
 
-            const layers = map.getStyle().layers;
-
-            const initialVisibility = {};
-            layers.forEach((layer) => {
-                if (
-                    layer.id.startsWith('spsither') ||
-                    ['image-footprint-layer', 'monasteries'].includes(layer.id)
-                ) {
-                    initialVisibility[layer.id] = true;
-                }
+            const initialVisibility = {
+                satellite: false,
+                'image-footprint-layer': true,
+                'monasteries': true,
+            };
+            
+            // Add all raster image layer IDs explicitly
+            imageTilesets.forEach((tilesetId) => {
+                const layerId = TilesetIdToLayerId(tilesetId);
+                initialVisibility[layerId] = true;
             });
-            initialVisibility.satellite = false;
+            
+            console.log('here: ', initialVisibility)
             setLayerVisibility(initialVisibility);
         });
 
@@ -212,6 +224,7 @@ export default function MapTiles() {
 
     const flyToLayer = (layerId) => {
 
+        console.log(geojson.features);
         const imageInfo = geojson.features.find(
             ({ properties }) => properties.id == layerId
         )?.properties;
@@ -410,9 +423,10 @@ export default function MapTiles() {
                                                 className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none"
                                             >
                                                 {layerId
-                                                    .replace("spsither-", "")           // remove prefix
+                                                    .replace("spsither-", "")
                                                     .replace(/-/g, " ")
-                                                    .replace(/\b\w/g, l => l.toUpperCase())}
+                                                    .replace(/\b\w/g, l => l.toUpperCase())
+                                                    }
                                             </button>
                                         </div>
                                     ))}
