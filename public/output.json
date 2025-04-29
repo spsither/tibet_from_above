@@ -4,9 +4,601 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-3227-9r-0103",
+                "name": "3227-9R-0103",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0103.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0103.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            81.9753132897443,
+                            32.17724128964202
+                        ],
+                        [
+                            83.49189513071268,
+                            32.63269665195348
+                        ],
+                        [
+                            81.14118334469065,
+                            30.66837145020778
+                        ],
+                        [
+                            80.99997574830675,
+                            30.69897398946364
+                        ],
+                        [
+                            81.9753132897443,
+                            32.17724128964202
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-g3236-9r-0971",
+                "name": "G3236-9R-0971",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            91.42100348754146,
+                            29.42892202397714
+                        ],
+                        [
+                            91.59915735635299,
+                            29.32177923390625
+                        ],
+                        [
+                            91.57307461686553,
+                            29.23400914851431
+                        ],
+                        [
+                            91.42174682780868,
+                            29.29121788825685
+                        ],
+                        [
+                            91.42100348754146,
+                            29.42892202397714
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0368",
+                "name": "T344A-9L-0368",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            90.05256217865193,
+                            28.86276999519793
+                        ],
+                        [
+                            90.21392596515567,
+                            28.9615009219659
+                        ],
+                        [
+                            90.22424540078984,
+                            28.85375749843088
+                        ],
+                        [
+                            90.09323814965525,
+                            28.78120262567446
+                        ],
+                        [
+                            90.05256217865193,
+                            28.86276999519793
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-g3236-9r-0998",
+                "name": "G3236-9R-0998",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            91.24359033495887,
+                            29.20551129324082
+                        ],
+                        [
+                            91.37038442282869,
+                            29.1896924988996
+                        ],
+                        [
+                            91.37191458769588,
+                            29.1101219841355
+                        ],
+                        [
+                            91.26026833115867,
+                            29.11638518084493
+                        ],
+                        [
+                            91.24359033495887,
+                            29.20551129324082
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0720-dwags-po-bshad-sgr",
+                "name": "T344A-9L-0720 DWAGS PO BSHAD SGRUB GLING, GELUK",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.46422846991264,
+                            29.20308925110646
+                        ],
+                        [
+                            92.61412912048024,
+                            29.17768769554009
+                        ],
+                        [
+                            92.64740383828557,
+                            29.11359724911401
+                        ],
+                        [
+                            92.53484931303981,
+                            29.11777372856509
+                        ],
+                        [
+                            92.46422846991264,
+                            29.20308925110646
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-g3236-9r-0966",
+                "name": "G3236-9R-0966",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            91.51488877115293,
+                            29.26353692160225
+                        ],
+                        [
+                            91.63019008657113,
+                            29.28761057096429
+                        ],
+                        [
+                            91.64658071296735,
+                            29.22354783107299
+                        ],
+                        [
+                            91.52873573128083,
+                            29.19703689314428
+                        ],
+                        [
+                            91.51488877115293,
+                            29.26353692160225
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-g3236-9r-0948",
+                "name": "G3236-9R-0948",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            91.73461038807127,
+                            29.21197911641824
+                        ],
+                        [
+                            91.75864812747008,
+                            29.29118125682969
+                        ],
+                        [
+                            91.83777674520813,
+                            29.27887835917538
+                        ],
+                        [
+                            91.80539101418996,
+                            29.18207397857746
+                        ],
+                        [
+                            91.73461038807127,
+                            29.21197911641824
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-g3236-9r-0940",
+                "name": "G3236-9R-0940",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            91.7853023658831,
+                            29.25792480085346
+                        ],
+                        [
+                            91.82944842889493,
+                            29.33543908313517
+                        ],
+                        [
+                            91.88146370440796,
+                            29.31217107263705
+                        ],
+                        [
+                            91.85194568067166,
+                            29.22358749648619
+                        ],
+                        [
+                            91.7853023658831,
+                            29.25792480085346
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-3227-9r-0029",
+                "name": "3227-9R-0029",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            81.25397039256282,
+                            30.23003130761414
+                        ],
+                        [
+                            81.34393115656114,
+                            30.20807217970866
+                        ],
+                        [
+                            81.33337974711549,
+                            30.15505359363883
+                        ],
+                        [
+                            81.23005566347211,
+                            30.17258576929699
+                        ],
+                        [
+                            81.25397039256282,
+                            30.23003130761414
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-3227-9r-0045",
+                "name": "3227-9R-0045",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            81.18571785668367,
+                            30.32473775211029
+                        ],
+                        [
+                            81.27310856864834,
+                            30.28901755591358
+                        ],
+                        [
+                            81.24487573863976,
+                            30.23715255632739
+                        ],
+                        [
+                            81.15670924419885,
+                            30.27290296388685
+                        ],
+                        [
+                            81.18571785668367,
+                            30.32473775211029
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-3227-9r-0039",
+                "name": "3227-9R-0039",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            81.18677639372592,
+                            30.26065492985315
+                        ],
+                        [
+                            81.28184935981339,
+                            30.25861525914413
+                        ],
+                        [
+                            81.28245438141651,
+                            30.20317159666474
+                        ],
+                        [
+                            81.1823196741066,
+                            30.20527236582088
+                        ],
+                        [
+                            81.18677639372592,
+                            30.26065492985315
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0327",
+                "name": "T344A-9L-0327",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            89.6565668409564,
+                            28.89240057007374
+                        ],
+                        [
+                            89.69217141501004,
+                            28.82984423130848
+                        ],
+                        [
+                            89.64771200272462,
+                            28.79718755724281
+                        ],
+                        [
+                            89.58338890693788,
+                            28.86849013587905
+                        ],
+                        [
+                            89.6565668409564,
+                            28.89240057007374
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0704-cijiao-si-geluk",
+                "name": "T344A-9L-0704 CIJIAO SI, GELUK",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.43337005324275,
+                            28.99160699388144
+                        ],
+                        [
+                            92.48266184180495,
+                            28.99021020121258
+                        ],
+                        [
+                            92.49682508543322,
+                            28.9641931989962
+                        ],
+                        [
+                            92.44926827007077,
+                            28.95569349212644
+                        ],
+                        [
+                            92.43337005324275,
+                            28.99160699388144
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0712-ican-rag-kha-thog",
+                "name": "T344A-9L-0712 ICAN RAG KHA THOG, GELUK",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.53597965480989,
+                            29.0141364218417
+                        ],
+                        [
+                            92.57058523848312,
+                            29.00545737803639
+                        ],
+                        [
+                            92.59082243052555,
+                            28.97515746483354
+                        ],
+                        [
+                            92.57604491454813,
+                            28.96967860967604
+                        ],
+                        [
+                            92.53597965480989,
+                            29.0141364218417
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0729-rwa-sgreng-khrungs",
+                "name": "T344A-9L-0729 RWA SGRENG KHRUNGS KHANG",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+KHRUNGS+KHANG.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+KHRUNGS+KHANG.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.74736846486731,
+                            29.09453230198287
+                        ],
+                        [
+                            92.76812215819004,
+                            29.08960718589085
+                        ],
+                        [
+                            92.76391124056128,
+                            29.06547797156689
+                        ],
+                        [
+                            92.74120363486206,
+                            29.07785297491704
+                        ],
+                        [
+                            92.74736846486731,
+                            29.09453230198287
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0704-redanlin-ritro-ka",
+                "name": "T344A-9L-0704 REDANLIN RITRO, KAGYU",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.52092534415071,
+                            28.96922849623837
+                        ],
+                        [
+                            92.54380147132653,
+                            28.97182204733515
+                        ],
+                        [
+                            92.55097886142927,
+                            28.95071645707117
+                        ],
+                        [
+                            92.53355145086806,
+                            28.94727980657879
+                        ],
+                        [
+                            92.52092534415071,
+                            28.96922849623837
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-nedong-tsetsokpa-1963-u2-g",
-                "name": "Nedong Tsetsokpa",
-                "description": "1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "name": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif"
             },
@@ -28,7 +620,7 @@
                         ],
                         [
                             91.7797638888889,
-                            29.212275
+                            29.21227500000001
                         ],
                         [
                             91.76423888888888,
@@ -41,9 +633,46 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-t334a-9r-0710-senmy-si-kagku",
+                "name": "T334A-9R-0710 SENMY SI, KAGKU",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.78278052472045,
+                            28.85548896292795
+                        ],
+                        [
+                            92.77192705193266,
+                            28.86472058804
+                        ],
+                        [
+                            92.78447401012696,
+                            28.87950697135037
+                        ],
+                        [
+                            92.79920346134108,
+                            28.87058380149711
+                        ],
+                        [
+                            92.78278052472045,
+                            28.85548896292795
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-ganden-chokhor-ling-1963-u2",
-                "name": "Ganden Chokhor Ling",
-                "description": "1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "name": "Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif"
             },
@@ -78,9 +707,46 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-t344a-9l-0730-ganden-lin-lakang",
+                "name": "T344A-9L-0730 GANDEN LIN LAKANG",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.89761445089565,
+                            29.0856947358832
+                        ],
+                        [
+                            92.9097673260122,
+                            29.07413321615268
+                        ],
+                        [
+                            92.89634628476753,
+                            29.06296523903527
+                        ],
+                        [
+                            92.882847828923,
+                            29.07485047607291
+                        ],
+                        [
+                            92.89761445089565,
+                            29.0856947358832
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-ralung-1964-u2-t334a-3",
-                "name": "Ralung",
-                "description": "1964 - U2 - T334A - 3 -9L - 368",
+                "name": "Ralung - 1964 - U2 - T334A - 3 -9L - 368",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.tif"
             },
@@ -116,8 +782,8 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-ngari-dratsang-1963-u2-g32",
-                "name": "Ngari Dratsang",
-                "description": "1963 - U2 - G3236 - 8R - 940 - 1L (1)",
+                "name": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).tif"
             },
@@ -152,9 +818,231 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-t334a-9l-0743-nang-dzong",
+                "name": "T334A-9L-0743 NANG DZONG",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            93.08599525939893,
+                            29.05576796631198
+                        ],
+                        [
+                            93.08195485681198,
+                            29.04102550060655
+                        ],
+                        [
+                            93.06507784866177,
+                            29.04564814530105
+                        ],
+                        [
+                            93.0700627879544,
+                            29.05999370909052
+                        ],
+                        [
+                            93.08599525939893,
+                            29.05576796631198
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0720-gongsha-ritro",
+                "name": "T344A-9L-0720 GONGSHA RITRO",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.61980126992879,
+                            29.1159651342135
+                        ],
+                        [
+                            92.63564396118086,
+                            29.11546820330197
+                        ],
+                        [
+                            92.64496677576642,
+                            29.09927139534505
+                        ],
+                        [
+                            92.63090010097343,
+                            29.09959805224017
+                        ],
+                        [
+                            92.61980126992879,
+                            29.1159651342135
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0715-zilie-si",
+                "name": "T344A-9L-0715 ZILIE SI",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.83707755158356,
+                            28.8923425668014
+                        ],
+                        [
+                            92.84467851865783,
+                            28.88031281744596
+                        ],
+                        [
+                            92.83031797748082,
+                            28.8736775347015
+                        ],
+                        [
+                            92.82344650983393,
+                            28.88691652594711
+                        ],
+                        [
+                            92.83707755158356,
+                            28.8923425668014
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0733-dwags-iha-sgam-po",
+                "name": "T344A-9L-0733 DWAGS IHA SGAM PO, KAGYU",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.80442489352694,
+                            29.13294723164331
+                        ],
+                        [
+                            92.816328201354,
+                            29.12434682504868
+                        ],
+                        [
+                            92.80993015664268,
+                            29.11568493527587
+                        ],
+                        [
+                            92.79295830121708,
+                            29.12349073124242
+                        ],
+                        [
+                            92.80442489352694,
+                            29.13294723164331
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0720-rdo-kha-gling-nyi",
+                "name": "T344A-9L-0720 RDO KHA GLING, NYINGMA",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.5461009730915,
+                            29.11507283864759
+                        ],
+                        [
+                            92.55759169906035,
+                            29.11575619045608
+                        ],
+                        [
+                            92.56192469986115,
+                            29.10212713143106
+                        ],
+                        [
+                            92.55217382287894,
+                            29.09882542874089
+                        ],
+                        [
+                            92.5461009730915,
+                            29.11507283864759
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0710-qlangue-wansa-quli",
+                "name": "T344A-9L-0710 QLANGUE WANSA QULIN SI",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.77305114564126,
+                            28.89644938864107
+                        ],
+                        [
+                            92.78386774056749,
+                            28.88901792272403
+                        ],
+                        [
+                            92.77574295310787,
+                            28.87989649198931
+                        ],
+                        [
+                            92.76523956127723,
+                            28.88686999919788
+                        ],
+                        [
+                            92.77305114564126,
+                            28.89644938864107
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-dingpoche-1963-u2-g3236",
-                "name": "Dingpoche",
-                "description": "1963 - U2 - G3236 - 9R - 988 - 1R",
+                "name": "Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.tif"
             },
@@ -189,9 +1077,46 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-t344a-9l-0734-jiujie-lakang",
+                "name": "T344A-9L-0734 JIUJIE LAKANG",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.9240630851625,
+                            29.10139682996487
+                        ],
+                        [
+                            92.93053313464979,
+                            29.0932777428386
+                        ],
+                        [
+                            92.91857892171858,
+                            29.08789450460089
+                        ],
+                        [
+                            92.91124121321201,
+                            29.09652239632729
+                        ],
+                        [
+                            92.9240630851625,
+                            29.10139682996487
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-samye-monastery-1963-u2-32",
-                "name": "Samye Monastery",
-                "description": "1963 - U2 - 3236 - 9R - 971 (11)",
+                "name": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).tif"
             },
@@ -227,8 +1152,8 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-nenying-1964-u2-t334a-3",
-                "name": "Nenying",
-                "description": "1964 - U2 - T334A - 3 - 9L -327 (1)",
+                "name": "Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).tif"
             },
@@ -263,9 +1188,83 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-t344a-9l-0722-ganden-rabten-and",
+                "name": "T344A-9L-0722 GANDEN RABTEN AND TASHIGANG LHAKHANG",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.JPG",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.84816500428859,
+                            28.99612266673201
+                        ],
+                        [
+                            92.85685014606963,
+                            28.99029761808354
+                        ],
+                        [
+                            92.84993251735466,
+                            28.98175746222214
+                        ],
+                        [
+                            92.84144318714769,
+                            28.98708960021791
+                        ],
+                        [
+                            92.84816500428859,
+                            28.99612266673201
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "spsither-t344a-9l-0730-lari-lakang",
+                "name": "T344A-9L-0730 LARI LAKANG",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            92.88621495291476,
+                            29.1057372644504
+                        ],
+                        [
+                            92.89190549907572,
+                            29.09822161915721
+                        ],
+                        [
+                            92.88348597779898,
+                            29.09286738709779
+                        ],
+                        [
+                            92.87750167617435,
+                            29.09808729725397
+                        ],
+                        [
+                            92.88621495291476,
+                            29.1057372644504
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-monkar-namseling-1963-u2-g",
-                "name": "Monkar Namseling",
-                "description": "1963 - U2 - G3236 - 8R - 966 (2)",
+                "name": "Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).tif"
             },
@@ -300,9 +1299,46 @@
         {
             "type": "Feature",
             "properties": {
+                "id": "spsither-regang-village-shannan-1963",
+                "name": "Regang Village_Shannan - 1963 - U2 - G3236 - 0998 - 1R",
+                "description": "Aerial imagery from KMZ",
+                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R.jpg",
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R.tif"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            91.30859828873092,
+                            29.14951454751086
+                        ],
+                        [
+                            91.30766880264602,
+                            29.15591763068448
+                        ],
+                        [
+                            91.31894095051298,
+                            29.15683212324013
+                        ],
+                        [
+                            91.31898519533684,
+                            29.14843425568536
+                        ],
+                        [
+                            91.30859828873092,
+                            29.14951454751086
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "id": "spsither-kangmar-1964-u2-t334a-3",
-                "name": "Kangmar",
-                "description": "1964 - U2 - T334A - 3 - 9L - 327",
+                "name": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.tif"
             },
@@ -338,8 +1374,8 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-khorchak-gon-1963-u2-3227",
-                "name": "Khorchak Gon",
-                "description": "1963 - U2 - 3227 - 9R - 0029 -1L (3)",
+                "name": "Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3)",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).tif"
             },
@@ -375,8 +1411,8 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-gangsi-village-ngari-1963-u2",
-                "name": "Gangsi Village_Ngari",
-                "description": "1963 - U2 - 3227 - 9R - 0039 - 1L",
+                "name": "Gangsi Village_Ngari - 1963 - U2 - 3227 - 9R - 0039 - 1L",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.tif"
             },
@@ -412,8 +1448,8 @@
             "type": "Feature",
             "properties": {
                 "id": "spsither-shengjie-village-ngari-1963",
-                "name": "Shengjie Village_Ngari",
-                "description": "1963 - U2 - 3227 - 0045 - V",
+                "name": "Shengjie Village_Ngari - 1963 - U2 - 3227 - 0045 - V",
+                "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.tif"
             },
