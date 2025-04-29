@@ -24,20 +24,49 @@ export default function MapTiles() {
     const featureMap = useRef({});
 
     const imageTilesets = [
-        'spsither.ralung_-_1964_-_u2_-_t334a_-_3_-',
-        'spsither.nedong_tsetsokpa_-_1963_-_u2_-_g',
-        'spsither.khorchak_gon_-_1963_-_u2_-_3227_',
-        'spsither.kangmar_-_1964_-_u2_-_t334a_-_3_',
-        'spsither.ngari_dratsang_-_1963_-_u2_-_g32',
-        'spsither.ganden_chokhor_ling_-_1963_-_u2_',
-        'spsither.dingpoche_-_1963_-_u2_-_g3236_-_',
-        'spsither.samye_monastery_-_1963_-_u2_-_32',
-        'spsither.monkar_namseling_-_1963_-_u2_-_g',
-        'spsither.gangsi_village_ngari_-_1963_-_u2',
-        'spsither.shengjie_village_ngari_-_1963_-_',
-        'spsither.nenying_-_1964_-_u2_-_t334a_-_3_'
+        'spsither.nenying_-_1964_-_u2_-_t334a_-_3_', 
+        // 'spsither.cm8yokatl30mq1poe9ld2fkkx-4i7pr', 
+        'spsither.ganden_chokhor_ling_-_1963_-_u2_', 
+        'spsither.t334a-9r-0710_senmy_si__kagku', 
+        'spsither.t334a-9l-0743_nang_dzong', 
+        'spsither.t344a-9l-0722_ganden_rabten_and_', 
+        'spsither.t344a-9l-0704_redanlin_ritro__ka', 
+        'spsither.t344a-9l-0720_gongsha_ritro', 
+        'spsither.nedong_tsetsokpa_-_1963_-_u2_-_g', 
+        'spsither.gangsi_village_ngari_-_1963_-_u2', 
+        'spsither.shengjie_village_ngari_-_1963_-_', 
+        'spsither.t344a-9l-0734_jiujie_lakang', 
+        'spsither.dingpoche_-_1963_-_u2_-_g3236_-_', 
+        'spsither.ngari_dratsang_-_1963_-_u2_-_g32', 
+        'spsither.g3236-9r-0966', 
+        'spsither.3227-9r-0029', 
+        'spsither.t344a-9l-0720_dwags_po_bshad_sgr', 
+        'spsither.t344a-9l-0368', 
+        'spsither.t344a-9l-0704_cijiao_si__geluk', 
+        'spsither.t344a-9l-0715_zilie_si', 
+        'spsither.g3236-9r-0998', 
+        'spsither.t344a-9l-0730_lari_lakang', 
+        'spsither.t344a-9l-0729_rwa_sgreng_khrungs', 
+        'spsither.samye_monastery_-_1963_-_u2_-_32', 
+        'spsither.3227-9r-0045', 
+        'spsither.t344a-9l-0712_ican_rag_kha_thog_', 
+        'spsither.3227-9r-0039', 
+        'spsither.regang_village_shannan_-_1963_-_', 
+        'spsither.t344a-9l-0733_dwags_iha_sgam_po_', 
+        'spsither.monkar_namseling_-_1963_-_u2_-_g', 
+        'spsither.3227-9r-0103', 
+        'spsither.t344a-9l-0327', 
+        'spsither.t344a-9l-0720_rdo_kha_gling__nyi', 
+        'spsither.g3236-9r-0971', 
+        'spsither.t344a-9l-0730_ganden_lin_lakang', 
+        'spsither.kangmar_-_1964_-_u2_-_t334a_-_3_', 
+        'spsither.g3236-9r-0940', 
+        'spsither.g3236-9r-0948', 
+        'spsither.ralung_-_1964_-_u2_-_t334a_-_3_-', 
+        'spsither.khorchak_gon_-_1963_-_u2_-_3227_', 
+        'spsither.t344a-9l-0710_qlangue_wansa_quli'
     ];
-    
+
     function TilesetIdToLayerId(tilesetId){
         const layerId = tilesetId
                 .replace("spsither.", "spsither-")
@@ -332,7 +361,7 @@ export default function MapTiles() {
                 </div>
             )}
             {layerOpen ? (
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 w-72 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50">
+                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 w-1/7 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50">
                     <button
                         onClick={() => setLayerOpen(false)}
                         className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
