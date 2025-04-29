@@ -42,8 +42,8 @@ export default function MapTiles() {
         const layerId = tilesetId
                 .replace("spsither.", "spsither-")
                 .replace(/_/g, "-")
-                .replace(/-+/g, "-") // This line collapses multiple dashes into one
-                .replace(/-+$/, "");      // Remove trailing dashes
+                .replace(/-+/g, "-") // Collapse multiple dashes into one
+                .replace(/-+$/, ""); // Remove trailing dashes
         
         return layerId;
     }
@@ -64,6 +64,7 @@ export default function MapTiles() {
                 id: layerId,
                 type: 'raster',
                 source: sourceId,
+                slot:'middle',
                 paint: {
                     'raster-opacity': 0.85
                 }
@@ -71,6 +72,79 @@ export default function MapTiles() {
         });
     }
 
+    function addImageFootPrintLayer(map){
+
+        map.addSource('image-footprints', {
+            type: 'geojson',
+            data: geojson,
+        });
+
+        map.addLayer({
+            id: 'image-footprint-layer',
+            type: 'fill',
+            source: 'image-footprints',
+            slot: 'top',
+            paint: {
+                'fill-color': 'rgba(0, 0, 0, 0)',
+                'fill-outline-color': 'rgba(0, 117, 255, 1)'
+            }
+        });
+
+        // Re-bind click events etc. if necessary
+        map.on('click', 'image-footprint-layer', (e) => {
+            if (!geojson) return;
+            const feature = e.features?.[0];
+            const id = feature?.properties?.id;
+            const imageInfo = geojson.features.find(
+                ({ properties }) => properties.id == id
+            )?.properties;
+
+            if (imageInfo) {
+                setDownloadPopUp(imageInfo);
+            }
+        });
+
+        map.on('mouseenter', 'image-footprint-layer', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'image-footprint-layer', () => {
+            map.getCanvas().style.cursor = '';
+        });
+
+    }
+    function toggleSatelliteLayer(){
+
+        const map = mapRef.current;
+        const layerId = 'monasteries';
+
+        const layer = map.getLayer(layerId);
+        if (layer) {
+            const sourceId = layer.source;
+            const source = map.getSource(sourceId);
+            console.log('Layer:', layer);
+            console.log('Source ID:', sourceId);
+            console.log('Source:', source);
+        } else {
+            console.warn(`Layer ${layerId} not found`);
+        }
+
+        const newStyle = baseMapStyle.includes('cma2txklf002k01qp4is4e2rq')
+            ? 'mapbox://styles/spsither/cm9airhyv003y01qk0utl3821'  // back to custom street view
+            : 'mapbox://styles/spsither/cma2txklf002k01qp4is4e2rq'; // switch to Mapbox satellite
+    
+        setBaseMapStyle(newStyle);
+        mapRef.current.setStyle(newStyle);
+        setIsSatellite((prev) => !prev);
+    
+        mapRef.current.once('style.load', () => {
+            const map = mapRef.current;
+            if (!map) return;
+    
+            addImageTilesetLayers(map);
+            addImageFootPrintLayer(map);
+        });
+    }
     useEffect(() => {
         if (geojson) {
             const map = {};
@@ -114,44 +188,7 @@ export default function MapTiles() {
 
         map.on('load', () => {
             addImageTilesetLayers(map);
-            if (geojson && !map.getSource('image-footprints')) {
-                map.addSource('image-footprints', {
-                    type: 'geojson',
-                    data: geojson
-                });
-
-                map.addLayer({
-                    id: 'image-footprint-layer',
-                    type: 'fill',
-                    source: 'image-footprints',
-                    paint: {
-                        'fill-color': 'rgba(0, 0, 0, 0)',
-                        'fill-outline-color': 'rgba(0, 117, 255, 1)'
-                    }
-                });
-
-                
-                map.on('click', 'image-footprint-layer', (e) => {
-                    if (!geojson) return;
-                    const feature = e.features?.[0];
-                    const id = feature?.properties?.id;
-                    const imageInfo = geojson.features.find(
-                        ({ properties }) => properties.id == id
-                    )?.properties;
-
-                    if (imageInfo) {
-                        setDownloadPopUp(imageInfo);
-                    }
-                });
-
-                map.on('mouseenter', 'image-footprint-layer', () => {
-                    map.getCanvas().style.cursor = 'pointer';
-                });
-
-                map.on('mouseleave', 'image-footprint-layer', () => {
-                    map.getCanvas().style.cursor = '';
-                });
-            }
+            addImageFootPrintLayer(map)
 
             const popup = new mapboxgl.Popup({
                 closeButton: false,
@@ -196,7 +233,6 @@ export default function MapTiles() {
                 initialVisibility[layerId] = true;
             });
             
-            console.log('here: ', initialVisibility)
             setLayerVisibility(initialVisibility);
         });
 
@@ -223,8 +259,6 @@ export default function MapTiles() {
         .every(([, visible]) => visible);
 
     const flyToLayer = (layerId) => {
-
-        console.log(geojson.features);
         const imageInfo = geojson.features.find(
             ({ properties }) => properties.id == layerId
         )?.properties;
@@ -321,63 +355,7 @@ export default function MapTiles() {
                         <input
                             type="checkbox"
                             checked={isSatellite ?? false}
-                            
-                            onClick={() => {
-                                const newStyle = baseMapStyle.includes('satellite-streets')
-                                    ? 'mapbox://styles/spsither/cm9airhyv003y01qk0utl3821' // back to custom street view
-                                    : 'mapbox://styles/mapbox/satellite-streets-v12';       // switch to Mapbox satellite
-                            
-                                setBaseMapStyle(newStyle);
-                                mapRef.current.setStyle(newStyle);
-                                setIsSatellite((prev) => !prev);
-                            
-                                mapRef.current.once('style.load', () => {
-                                    const map = mapRef.current;
-                                    if (!map) return;
-                            
-                                    // Re-add GeoJSON source and layer
-                                    if (geojson && !map.getSource('image-footprints')) {
-                                        map.addSource('image-footprints', {
-                                            type: 'geojson',
-                                            data: geojson,
-                                        });
-                            
-                                        map.addLayer({
-                                            id: 'image-footprint-layer',
-                                            type: 'fill',
-                                            source: 'image-footprints',
-                                            paint: {
-                                                'fill-color': 'rgba(0, 0, 0, 0)',
-                                                'fill-outline-color': 'rgba(0, 117, 255, 1)'
-                                            }
-                                        });
-                            
-                                        // Re-bind click events etc. if necessary
-                                        map.on('click', 'image-footprint-layer', (e) => {
-                                            if (!geojson) return;
-                                            const feature = e.features?.[0];
-                                            const id = feature?.properties?.id;
-                                            const imageInfo = geojson.features.find(
-                                                ({ properties }) => properties.id == id
-                                            )?.properties;
-                            
-                                            if (imageInfo) {
-                                                setDownloadPopUp(imageInfo);
-                                            }
-                                        });
-                            
-                                        map.on('mouseenter', 'image-footprint-layer', () => {
-                                            map.getCanvas().style.cursor = 'pointer';
-                                        });
-                            
-                                        map.on('mouseleave', 'image-footprint-layer', () => {
-                                            map.getCanvas().style.cursor = '';
-                                        });
-                                    }
-                            
-                                    addImageTilesetLayers(map);
-                                });
-                            }}
+                            onChange={toggleSatelliteLayer}
                             
                         />
                         <label className="font-bold ml-2">Satellite</label>
@@ -395,7 +373,7 @@ export default function MapTiles() {
                             )}
                             <input
                                 type="checkbox"
-                                checked={allSatelliteVisible}
+                                checked={allSatelliteVisible ?? true}
                                 onChange={(e) =>
                                     toggleSatelliteGroup(e.target.checked)
                                 }
@@ -413,7 +391,7 @@ export default function MapTiles() {
                                         >
                                             <input
                                                 type="checkbox"
-                                                checked={visible}
+                                                checked={visible ?? true}
                                                 onChange={(e) =>
                                                     toggleLayer(layerId, e.target.checked)
                                                 }
