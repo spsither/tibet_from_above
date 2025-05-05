@@ -25,74 +25,19 @@ export default function MapTiles() {
     const [layerOpen, setLayerOpen] = useState(true);
     const featureMap = useRef({});
 
-    const imageTilesets = [
-        'spsither.nenying_-_1964_-_u2_-_t334a_-_3_',
-        // 'spsither.cm8yokatl30mq1poe9ld2fkkx-4i7pr', 
-        'spsither.ganden_chokhor_ling_-_1963_-_u2_',
-        'spsither.t334a-9r-0710_senmy_si__kagku',
-        'spsither.t334a-9l-0743_nang_dzong',
-        'spsither.t344a-9l-0722_ganden_rabten_and_',
-        'spsither.t344a-9l-0704_redanlin_ritro__ka',
-        'spsither.t344a-9l-0720_gongsha_ritro',
-        'spsither.nedong_tsetsokpa_-_1963_-_u2_-_g',
-        'spsither.gangsi_village_ngari_-_1963_-_u2',
-        'spsither.shengjie_village_ngari_-_1963_-_',
-        'spsither.t344a-9l-0734_jiujie_lakang',
-        'spsither.dingpoche_-_1963_-_u2_-_g3236_-_',
-        'spsither.ngari_dratsang_-_1963_-_u2_-_g32',
-        'spsither.g3236-9r-0966',
-        'spsither.3227-9r-0029',
-        'spsither.t344a-9l-0720_dwags_po_bshad_sgr',
-        'spsither.t344a-9l-0368',
-        'spsither.t344a-9l-0704_cijiao_si__geluk',
-        'spsither.t344a-9l-0715_zilie_si',
-        'spsither.g3236-9r-0998',
-        'spsither.t344a-9l-0730_lari_lakang',
-        'spsither.t344a-9l-0729_rwa_sgreng_khrungs',
-        'spsither.samye_monastery_-_1963_-_u2_-_32',
-        'spsither.3227-9r-0045',
-        'spsither.t344a-9l-0712_ican_rag_kha_thog_',
-        'spsither.3227-9r-0039',
-        'spsither.regang_village_shannan_-_1963_-_',
-        'spsither.t344a-9l-0733_dwags_iha_sgam_po_',
-        'spsither.monkar_namseling_-_1963_-_u2_-_g',
-        'spsither.3227-9r-0103',
-        'spsither.t344a-9l-0327',
-        'spsither.t344a-9l-0720_rdo_kha_gling__nyi',
-        'spsither.g3236-9r-0971',
-        'spsither.t344a-9l-0730_ganden_lin_lakang',
-        'spsither.kangmar_-_1964_-_u2_-_t334a_-_3_',
-        'spsither.g3236-9r-0940',
-        'spsither.g3236-9r-0948',
-        'spsither.ralung_-_1964_-_u2_-_t334a_-_3_-',
-        'spsither.khorchak_gon_-_1963_-_u2_-_3227_',
-        'spsither.t344a-9l-0710_qlangue_wansa_quli'
-    ];
-
-    function TilesetIdToLayerId(tilesetId) {
-        const layerId = tilesetId
-            .replace("spsither.", "spsither-")
-            .replace(/_/g, "-")
-            .replace(/-+/g, "-") // Collapse multiple dashes into one
-            .replace(/-+$/, ""); // Remove trailing dashes
-
-        return layerId;
-    }
     function addImageTilesetLayers(map) {
-        imageTilesets.forEach((tilesetId) => {
-            const sourceId = `source-${tilesetId}`;
 
-            const layerId = TilesetIdToLayerId(tilesetId);
-
+        geojson.features.forEach(({ properties: { id: id } }) => {
+            const sourceId = `source-${id}`;
 
             map.addSource(sourceId, {
                 type: 'raster',
-                url: `mapbox://${tilesetId}`,  // <-- Notice the full URL
+                url: `mapbox://${id}`,
                 tileSize: 256  // Or 512 depending on your tileset
             });
 
             map.addLayer({
-                id: layerId,
+                id: id,
                 type: 'raster',
                 source: sourceId,
                 slot: 'middle',
@@ -100,7 +45,7 @@ export default function MapTiles() {
                     'raster-opacity': 0.85
                 },
                 layout: {
-                    visibility: layerVisibility[layerId] !== false ? 'visible' : 'none'
+                    visibility: layerVisibility[id] !== false ? 'visible' : 'none'
                 }
             });
         });
@@ -267,12 +212,19 @@ export default function MapTiles() {
             };
 
             // Add all raster image layer IDs explicitly
-            imageTilesets.forEach((tilesetId) => {
-                const layerId = TilesetIdToLayerId(tilesetId);
-                initialVisibility[layerId] = true;
+            geojson.features.forEach(({ properties: { id: id } }) => {
+                initialVisibility[id] = true;
             });
 
-            setLayerVisibility(initialVisibility);
+            const sorted = Object.keys(initialVisibility)
+                .sort() // sorts the keys alphabetically
+                .reduce((acc, key) => {
+                    acc[key] = initialVisibility[key];
+                    return acc;
+                }, {});
+
+            console.log('Initial Layer Visibility:', sorted);
+            setLayerVisibility(sorted);
         });
 
         return () => map.remove();
@@ -453,8 +405,8 @@ export default function MapTiles() {
                                                 className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none"
                                             >
                                                 {layerId
-                                                    .replace("spsither-", "")
-                                                    .replace(/-/g, " ")
+                                                    .replace("spsither.", "")
+                                                    .replace(/[-_]/g, " ")
                                                     .replace(/\b\w/g, l => l.toUpperCase())
                                                 }
                                             </button>
