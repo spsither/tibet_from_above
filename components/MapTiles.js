@@ -352,11 +352,9 @@ export default function MapTiles() {
                         <FaTimes />
                     </button>
                     <h2 className="text-lg font-bold">{downloadPopUp.name}
-                        {layerVisibility[downloadPopUp.id] ? (
-                            <buttton className="hover:underline text-blue-600 dark:text-blue-400 hover:cursor-pointer" onClick={() => toggleLayer(downloadPopUp.id, false)}><FaEye /> </buttton>
-                        ) : (
-                            <buttton className="hover:underline text-blue-600 dark:text-blue-400 hover:cursor-pointer" onClick={() => toggleLayer(downloadPopUp.id, true)}><FaEyeSlash /></buttton>
-                        )}
+                        <button className="ml-2 hover:underline text-blue-600 dark:text-blue-400 hover:cursor-pointer" onClick={() => toggleLayer(downloadPopUp.id, !layerVisibility[downloadPopUp.id])}>
+                            {layerVisibility[downloadPopUp.id] ? <FaEye /> : <FaEyeSlash />}
+                        </button>
                     </h2>
                     <p className="text-sm mt-2">{downloadPopUp.description}</p>
                     <div className='mt-4 flex items-center justify-evenly '>
@@ -382,10 +380,10 @@ export default function MapTiles() {
                 </div>
             )}
             {layerOpen ? (
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50">
+                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80 max-h-[85vh]">
                     <button
                         onClick={() => setLayerOpen(false)}
-                        className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
+                        className="absolute top-4 right-4 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
                         aria-label="Close"
                     >
                         <FaTimes />
