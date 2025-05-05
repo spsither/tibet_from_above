@@ -269,6 +269,8 @@ export default function MapTiles() {
     }, [geojson]);
 
     const toggleLayer = (layerId, visible) => {
+
+        visible = typeof visible === 'undefined' ? !layerVisibility[layerId] : visible;
         const map = mapRef.current;
         if (!map) return;
         map.setLayoutProperty(layerId, 'visibility', visible ? 'visible' : 'none');
@@ -361,7 +363,7 @@ export default function MapTiles() {
                 </div>
             )}
             {layerOpen ? (
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 w-1/7 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50">
+                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 max-h-[70vh] overflow-y-auto text-sm space-y-2 z-50">
                     <button
                         onClick={() => setLayerOpen(false)}
                         className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
@@ -426,7 +428,11 @@ export default function MapTiles() {
                                                 }
                                             />
                                             <button
-                                                onClick={() => flyToLayer(layerId)}
+                                                onClick={(e) => {
+                                                    toggleLayer(layerId, e.target.checked)
+                                                    flyToLayer(layerId)
+                                                }
+                                                }
                                                 className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none"
                                             >
                                                 {layerId
