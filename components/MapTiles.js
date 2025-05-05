@@ -20,7 +20,7 @@ export default function MapTiles() {
     const mapContainerRef = useRef(null);
     const [downloadPopUp, setDownloadPopUp] = useState(null);
     const [layerVisibility, setLayerVisibility] = useState({});
-    const [satelliteGroupOpen, setSatelliteGroupOpen] = useState(true);
+    const [aerialImagesGroupOpen, setAerialImagesGroupOpen] = useState(true);
     const [geojson, setGeojson] = useState(null);
     const [layerOpen, setLayerOpen] = useState(true);
     const featureMap = useRef({});
@@ -279,7 +279,6 @@ export default function MapTiles() {
     }, [geojson]);
 
     const toggleLayer = (layerId, visible) => {
-
         visible = typeof visible === 'undefined' ? true : visible;
         const map = mapRef.current;
         if (!map) return;
@@ -410,15 +409,16 @@ export default function MapTiles() {
 
                     </div>
                     <div>
-                        <button
-                            onClick={() => setSatelliteGroupOpen(!satelliteGroupOpen)}
-                            className="flex items-center gap-2 font-bold focus:outline-none"
-                        >
-                            {satelliteGroupOpen ? (
-                                <FaChevronDown className="transition-transform duration-200" />
-                            ) : (
-                                <FaChevronRight className="transition-transform duration-200" />
-                            )}
+                        <div className="flex items-center gap-2 font-bold focus:outline-none">
+                            <button
+                                onClick={() => setAerialImagesGroupOpen(!aerialImagesGroupOpen)}
+                            >
+                                {aerialImagesGroupOpen ? (
+                                    <FaChevronDown className="transition-transform duration-200" />
+                                ) : (
+                                    <FaChevronRight className="transition-transform duration-200" />
+                                )}
+                            </button>
                             <input
                                 type="checkbox"
                                 checked={allSatelliteVisible ?? true}
@@ -427,8 +427,8 @@ export default function MapTiles() {
                                 }
                             />
                             <label className="font-bold">Aerial Images</label>
-                        </button>
-                        {satelliteGroupOpen && (
+                        </div>
+                        {aerialImagesGroupOpen && (
                             <div className="pl-6 mt-2 space-y-1">
                                 {Object.entries(layerVisibility)
                                     .filter(([id]) => id.startsWith('spsither'))
