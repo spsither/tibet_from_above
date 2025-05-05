@@ -25,6 +25,19 @@ export default function MapTiles() {
     const [layerOpen, setLayerOpen] = useState(true);
     const featureMap = useRef({});
 
+    function getTitleFromId(id) {
+        const title = geojson.features.find(
+            ({ properties }) => properties.id == id
+        )?.properties.title;
+
+        if (title) {
+            return title;
+        }
+        return id
+            .replace("spsither.", "")
+            .replace(/[-_]/g, " ")
+            .replace(/\b\w/g, l => l.toUpperCase());
+    }
     function addImageTilesetLayers(map) {
 
         geojson.features.forEach(({ properties: { id: id } }) => {
@@ -294,7 +307,7 @@ export default function MapTiles() {
                 ref={mapContainerRef}
             />
             {downloadPopUp && (
-                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 max-w-xs w-72">
+                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 max-w-xs w-80">
                     <button
                         onClick={() => setDownloadPopUp(null)}
                         className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
@@ -302,7 +315,7 @@ export default function MapTiles() {
                     >
                         <FaTimes />
                     </button>
-                    <h2 className="text-lg font-bold">{downloadPopUp.name}
+                    <h2 className="text-lg font-bold">{downloadPopUp.title}
                         <button className="ml-2 hover:underline text-blue-600 dark:text-blue-400 hover:cursor-pointer" onClick={() => toggleLayer(downloadPopUp.id, !layerVisibility[downloadPopUp.id])}>
                             {layerVisibility[downloadPopUp.id] ? <FaEye /> : <FaEyeSlash />}
                         </button>
@@ -404,11 +417,7 @@ export default function MapTiles() {
                                                 }
                                                 className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none"
                                             >
-                                                {layerId
-                                                    .replace("spsither.", "")
-                                                    .replace(/[-_]/g, " ")
-                                                    .replace(/\b\w/g, l => l.toUpperCase())
-                                                }
+                                                { getTitleFromId(layerId) }
                                             </button>
                                         </div>
                                     ))}

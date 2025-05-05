@@ -8,7 +8,8 @@
                 "name": "3227-9R-0103",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0103.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0103.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0103.tif",
+                "title": "Mount Kailash"
             },
             "geometry": {
                 "type": "Polygon",
@@ -45,7 +46,8 @@
                 "name": "G3236-9R-0971",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.tif",
+                "title": "Samye Monastery"
             },
             "geometry": {
                 "type": "Polygon",
@@ -82,7 +84,8 @@
                 "name": "T344A-9L-0368",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.tif",
+                "title": "T344A-9L-0368"
             },
             "geometry": {
                 "type": "Polygon",
@@ -119,7 +122,8 @@
                 "name": "G3236-9R-0998",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.tif",
+                "title": "Dingpoche Monastery and Regang Village"
             },
             "geometry": {
                 "type": "Polygon",
@@ -156,7 +160,8 @@
                 "name": "T344A-9L-0720 DWAGS PO BSHAD SGRUB GLING, GELUK",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.tif",
+                "title": "T344A-9L-0720 DWAGS PO BSHAD SGRUB GLING, GELUK"
             },
             "geometry": {
                 "type": "Polygon",
@@ -193,7 +198,8 @@
                 "name": "G3236-9R-0966",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.tif",
+                "title": "G3236-9R-0966"
             },
             "geometry": {
                 "type": "Polygon",
@@ -230,7 +236,8 @@
                 "name": "G3236-9R-0948",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.tif",
+                "title": "Ganden Chokhor Ling and Nedong Tsetsokpa"
             },
             "geometry": {
                 "type": "Polygon",
@@ -267,7 +274,8 @@
                 "name": "G3236-9R-0940",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.tif",
+                "title": "Ngari Dratsang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -304,7 +312,8 @@
                 "name": "3227-9R-0029",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.tif",
+                "title": "Khorchak Gon"
             },
             "geometry": {
                 "type": "Polygon",
@@ -341,7 +350,8 @@
                 "name": "3227-9R-0045",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.tif",
+                "title": "Shengji Village"
             },
             "geometry": {
                 "type": "Polygon",
@@ -378,7 +388,8 @@
                 "name": "3227-9R-0039",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.tif",
+                "title": "Gangsi Village"
             },
             "geometry": {
                 "type": "Polygon",
@@ -415,7 +426,8 @@
                 "name": "T344A-9L-0327",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.tif",
+                "title": "Khangmar and Nenying"
             },
             "geometry": {
                 "type": "Polygon",
@@ -452,7 +464,8 @@
                 "name": "T344A-9L-0704 CIJIAO SI, GELUK",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.tif",
+                "title": "T344A-9L-0704 CIJIAO SI, GELUK"
             },
             "geometry": {
                 "type": "Polygon",
@@ -489,7 +502,8 @@
                 "name": "T344A-9L-0712 ICAN RAG KHA THOG, GELUK",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.tif",
+                "title": "T344A-9L-0712 ICAN RAG KHA THOG, GELUK"
             },
             "geometry": {
                 "type": "Polygon",
@@ -526,7 +540,8 @@
                 "name": "T344A-9L-0729 RWA SGRENG 'KHRUNGS KHANG",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+'KHRUNGS+KHANG.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+'KHRUNGS+KHANG.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+'KHRUNGS+KHANG.tif",
+                "title": "T344A-9L-0729 RWA SGRENG 'KHRUNGS KHANG"
             },
             "geometry": {
                 "type": "Polygon",
@@ -563,7 +578,8 @@
                 "name": "T344A-9L-0704 REDANLIN RITRO, KAGYU",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.tif",
+                "title": "T344A-9L-0704 REDANLIN RITRO, KAGYU"
             },
             "geometry": {
                 "type": "Polygon",
@@ -600,7 +616,8 @@
                 "name": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif",
+                "title": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L"
             },
             "geometry": {
                 "type": "Polygon",
@@ -637,7 +654,8 @@
                 "name": "T334A-9R-0710 SENMY SI, KAGKU",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.tif",
+                "title": "T334A-9R-0710 SENMY SI, KAGKU"
             },
             "geometry": {
                 "type": "Polygon",
@@ -672,9 +690,10 @@
             "properties": {
                 "id": "spsither.ganden_chokhor_ling_-_1963_-_u2_",
                 "name": "Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L",
-                "description": "Aerial imagery from KMZ",
+                "description": "Ganden Chokhor Ling is a Geluk monastery in the Yarlung Valley. It was established as a Kadam monastery in the twelfth century. (Source: The Treasury of Lives)\u00a0",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif",
+                "title": "Ganden Chokhor Ling High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -711,7 +730,8 @@
                 "name": "T344A-9L-0730 GANDEN LIN LAKANG",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.tif",
+                "title": "T344A-9L-0730 GANDEN LIN LAKANG"
             },
             "geometry": {
                 "type": "Polygon",
@@ -746,9 +766,10 @@
             "properties": {
                 "id": "spsither.ralung_-_1964_-_u2_-_t334a_-_3_",
                 "name": "Ralung - 1964 - U2 - T334A - 3 -9L - 368",
-                "description": "Aerial imagery from KMZ",
+                "description": "Ralung, located in Gyantse in Tsang, was founded in 1180 by\u00a0Tsangpa Gyare. (Source: The treasury of Lives)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368.tif",
+                "title": "Ralung High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -783,9 +804,10 @@
             "properties": {
                 "id": "spsither.ngari_dratsang_-_1963_-_u2_-_g32",
                 "name": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)",
-                "description": "Aerial imagery from KMZ",
+                "description": "Ngari Dratsang is a Geluk monastery in Nedong that was founded in 1541 by the\u00a0Second Dalai Lama. (Source: The Treasury of Lives)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1).tif",
+                "title": "Ngari Dratsang High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -822,7 +844,8 @@
                 "name": "T334A-9L-0743 NANG DZONG",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.tif",
+                "title": "T334A-9L-0743 NANG DZONG"
             },
             "geometry": {
                 "type": "Polygon",
@@ -859,7 +882,8 @@
                 "name": "T344A-9L-0720 GONGSHA RITRO",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.tif",
+                "title": "T344A-9L-0720 GONGSHA RITRO"
             },
             "geometry": {
                 "type": "Polygon",
@@ -896,7 +920,8 @@
                 "name": "T344A-9L-0715 ZILIE SI",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.tif",
+                "title": "T344A-9L-0715 ZILIE SI"
             },
             "geometry": {
                 "type": "Polygon",
@@ -933,7 +958,8 @@
                 "name": "T344A-9L-0733 DWAGS IHA SGAM PO, KAGYU",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU.tif",
+                "title": "T344A-9L-0733 DWAGS IHA SGAM PO, KAGYU"
             },
             "geometry": {
                 "type": "Polygon",
@@ -970,7 +996,8 @@
                 "name": "T344A-9L-0720 RDO KHA GLING, NYINGMA",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.tif",
+                "title": "T344A-9L-0720 RDO KHA GLING, NYINGMA"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1007,7 +1034,8 @@
                 "name": "T344A-9L-0710 QLANGUE WANSA QULIN SI",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.tif",
+                "title": "T344A-9L-0710 QLANGUE WANSA QULIN SI"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1042,9 +1070,10 @@
             "properties": {
                 "id": "spsither.dingpoche_-_1963_-_u2_-_g3236_-_",
                 "name": "Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R",
-                "description": "Aerial imagery from KMZ",
+                "description": "Dingpoche is a Drukpa Kagyu monastery in Dranang, Lhodrak. It was founded in 1567 by\u00a0Rinchen Pelzang, a student of\u00a0Pema Karpo. (Source: The treasurly of Lives)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R.tif",
+                "title": "Dingpoche Monastery High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1081,7 +1110,8 @@
                 "name": "T344A-9L-0734 JIUJIE LAKANG",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.tif",
+                "title": "T344A-9L-0734 JIUJIE LAKANG"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1116,9 +1146,10 @@
             "properties": {
                 "id": "spsither.samye_monastery_-_1963_-_u2_-_32",
                 "name": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)",
-                "description": "Aerial imagery from KMZ",
+                "description": "Samye, Tibet's first monastery, was likely completed in 775 and inaugurated in 779, although the Tibetan historian Buton gives construction dates of 787-799 and the Tang Annals state it was built in 763. (Source: The Treasury of Lives)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11).tif",
+                "title": "Samye Monastery High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1153,9 +1184,10 @@
             "properties": {
                 "id": "spsither.nenying_-_1964_-_u2_-_t334a_-_3_",
                 "name": "Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1)",
-                "description": "Aerial imagery from KMZ",
+                "description": "Nenying is a Geluk monastery just south of Gyantse. It was first established in the eighth century by\u00a0Samye\u00a0head Gya Jampel Sangwa, a teacher to emperors Trisong Detsen, Tridesongtsen and Trisukdetsen. (Source: The Treasury of Lives)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1).tif",
+                "title": "Nenying High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1192,7 +1224,8 @@
                 "name": "T344A-9L-0722 GANDEN RABTEN AND TASHIGANG LHAKHANG",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.JPG",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.tif",
+                "title": "T344A-9L-0722 GANDEN RABTEN AND TASHIGANG LHAKHANG"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1229,7 +1262,8 @@
                 "name": "T344A-9L-0730 LARI LAKANG",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.tif",
+                "title": "T344A-9L-0730 LARI LAKANG"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1264,9 +1298,10 @@
             "properties": {
                 "id": "spsither.monkar_namseling_-_1963_-_u2_-_g",
                 "name": "Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2)",
-                "description": "Aerial imagery from KMZ",
+                "description": "Monkhar Namseling is a Karma Kagyu manor house and monastery in Dranang, the seat of the Namseling Zhamar incarnation line, which branched off from the main line after the death of the\u00a0Eighth Zhamar. It was controlled by the Namseling family. (Source: The Treasury of Lives)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2).tif",
+                "title": "Monkar Namseling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1303,7 +1338,8 @@
                 "name": "Regang Village_Shannan - 1963 - U2 - G3236 - 0998 - 1R",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R.tif",
+                "title": "Regang Village High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1340,7 +1376,8 @@
                 "name": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327",
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327.tif",
+                "title": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1375,9 +1412,10 @@
             "properties": {
                 "id": "spsither.khorchak_gon_-_1963_-_u2_-_3227_",
                 "name": "Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3)",
-                "description": "Aerial imagery from KMZ",
+                "description": "Khorchak Gon,  a Sakya monastery founded by Khorrre and his son Lhade in 1050.",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3).tif",
+                "title": "Khorchak Gon High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1412,9 +1450,10 @@
             "properties": {
                 "id": "spsither.gangsi_village_ngari_-_1963_-_u2",
                 "name": "Gangsi Village_Ngari - 1963 - U2 - 3227 - 9R - 0039 - 1L",
-                "description": "Aerial imagery from KMZ",
+                "description": "A village in Purang County, Ngari",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Gangsi+Village_Ngari+-+1963+-+U2+-+3227+-+9R+-+0039+-+1L.tif",
+                "title": "Gangsi Village High Res"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1449,9 +1488,10 @@
             "properties": {
                 "id": "spsither.shengjie_village_ngari_-_1963_-_",
                 "name": "Shengjie Village_Ngari - 1963 - U2 - 3227 - 0045 - V",
-                "description": "Aerial imagery from KMZ",
+                "description": "A village in Purang County, Ngari",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.tif"
+                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Shengjie+Village_Ngari+-+1963+-+U2+-+3227+-+0045+-+V.tif",
+                "title": "Shengji Village High Res"
             },
             "geometry": {
                 "type": "Polygon",
