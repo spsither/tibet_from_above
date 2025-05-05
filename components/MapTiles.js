@@ -379,10 +379,10 @@ export default function MapTiles() {
                 </div>
             )}
             {layerOpen ? (
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-xl shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80 max-h-[85vh]">
+                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80 max-h-[85vh]">
                     <button
                         onClick={() => setLayerOpen(false)}
-                        className="absolute top-4 right-4 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
+                        className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
                         aria-label="Close"
                     >
                         <FaTimes />
