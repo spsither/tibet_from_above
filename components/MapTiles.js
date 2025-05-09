@@ -113,7 +113,7 @@ export default function MapTiles() {
     function toggleSatelliteLayer() {
 
         const map = mapRef.current;
-        const layerId = 'monasteries';
+        const layerId = 'tot';
 
         const layer = map.getLayer(layerId);
         if (layer) {
@@ -192,11 +192,11 @@ export default function MapTiles() {
                 closeOnClick: false
             });
 
-            map.on('mouseenter', 'monasteries', (e) => {
+            map.on('mouseenter', 'tot', (e) => {
                 map.getCanvas().style.cursor = 'pointer';
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const description = e.features[0].properties.description;
-                const title = e.features[0].properties.title;
+                const name = e.features[0].properties.Tibetan;
 
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
@@ -206,14 +206,14 @@ export default function MapTiles() {
                     .setLngLat(coordinates)
                     .setHTML(
                         `<div>
-                            <h1 style="font-size: 1.25rem; color: #111;">${title}</h1>
+                            <h1 style="font-size: 1.25rem; color: #111;">${name}</h1>
                             <p style="margin-top: 1rem; color: #7d7d7d;">${description}</p>
                         </div>`
                     )
                     .addTo(map);
             });
 
-            map.on('mouseleave', 'monasteries', () => {
+            map.on('mouseleave', 'tot', () => {
                 map.getCanvas().style.cursor = '';
                 popup.remove();
             });
@@ -221,7 +221,7 @@ export default function MapTiles() {
             const initialVisibility = {
                 satellite: false,
                 'image-footprint-layer': true,
-                'monasteries': true,
+                'tot': true,
             };
 
             // Add all raster image layer IDs explicitly
@@ -356,9 +356,9 @@ export default function MapTiles() {
                     <div className="flex items-center">
                         <input
                             type="checkbox"
-                            checked={layerVisibility['monasteries'] ?? true}
+                            checked={layerVisibility['tot'] ?? true}
                             onChange={(e) =>
-                                toggleLayer('monasteries', e.target.checked)
+                                toggleLayer('tot', e.target.checked)
                             }
                         />
                         <label className="font-bold ml-2">Temples of Tibet</label>
