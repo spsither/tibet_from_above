@@ -47,7 +47,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_3_2.tif",
-                "title": "Dakpo Shedrupling, Gongsha Ritro and Dhokha Ling"
+                "title": "T344A-9L-0720-2L_3_2"
             },
             "geometry": {
                 "type": "Polygon",
@@ -85,7 +85,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_3_2.tif",
-                "title": "Changra Khathok"
+                "title": "T344A-9L-0712-2L_3_2"
             },
             "geometry": {
                 "type": "Polygon",
@@ -123,7 +123,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_3_2.tif",
-                "title": "Tsogyal and Ridakling Ritro "
+                "title": "T344A-9L-0704-2L_3_2"
             },
             "geometry": {
                 "type": "Polygon",
@@ -310,10 +310,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0720_dwags_po_bshad_sgr",
                 "name": "T344A-9L-0720 DWAGS PO BSHAD SGRUB GLING, GELUK",
-                "description": "Aerial imagery from KMZ",
+                "description": "Dakpo Shedrupling (Tib. Dwags po bshad sgrub gling), also known as Dakpo Dratsang, was founded in the mid-15th century by Je Lodro Tenzin, student of Je Tsongkhapa,  founder of the Geluk sect of Buddhism. Lodro Tenzin's students eventually settled at the site which had formerly been a Kagyu monastery founded by the 9th Karmapa. 200 monks lived at Dakpo Shedrupling, while about 500 at a time were associated with the monastery but had roles travelling. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK.tif",
-                "title": "T344A-9L-0720 DWAGS PO BSHAD SGRUB GLING, GELUK"
+                "title": "Dakpo Shedrupling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1222,10 +1222,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0704_cijiao_si__geluk",
                 "name": "T344A-9L-0704 CIJIAO SI, GELUK",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as \"Cijao si.\" Cijao si was a small Geluk Monastery. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+CIJIAO+SI,+GELUK.tif",
-                "title": "T344A-9L-0704 CIJIAO SI, GELUK"
+                "title": "Tsogyal"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1298,10 +1298,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0712_ican_rag_kha_thog_",
                 "name": "T344A-9L-0712 ICAN RAG KHA THOG, GELUK",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Lhading Karduo.\" Lhading Karduo was founded as a Geluk monastery. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK.tif",
-                "title": "T344A-9L-0712 ICAN RAG KHA THOG, GELUK"
+                "title": "Changra Khathok High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1374,10 +1374,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0729_rwa_sgreng__khrung",
                 "name": "T344A-9L-0729 RWA SGRENG 'KHRUNGS KHANG",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Redang si.\" Redang si was founded in 1925 as a Geluk Monastery. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+'KHRUNGS+KHANG.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729+RWA+SGRENG+'KHRUNGS+KHANG.tif",
-                "title": "T344A-9L-0729 RWA SGRENG 'KHRUNGS KHANG"
+                "title": "Reting Trungkhang High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1412,10 +1412,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0704_redanlin_ritro__ka",
                 "name": "T344A-9L-0704 REDANLIN RITRO, KAGYU",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Rendalin Ritro.\" Rendalin Ritro si was a working Kagyu retreat center. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704+REDANLIN+RITRO,+KAGYU.tif",
-                "title": "T344A-9L-0704 REDANLIN RITRO, KAGYU"
+                "title": "Ridakling Ritro"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1450,10 +1450,10 @@
             "properties": {
                 "id": "spsither.nedong_tsetsokpa_-_1963_-_u2_-_g",
                 "name": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Nedong Tsetsokpa was established in the 13th century by Shakyashri, disciple of Pakpa Lordro Gyeltsen. It was established as a Sakya monastery, built in the city of Nedong, along the bank of the Yarlung river. Its surrounding city of Nedong was once the capitol city of Tibet, and the seat of the Pakmodru Dynasty in the 15th century. Nedong Tsetsokpa was entirely destroyed in the 1960s and is longer standing. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L_1.tif",
-                "title": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L_1"
+                "title": "Nedong Tsetsokpa High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1564,10 +1564,10 @@
             "properties": {
                 "id": "spsither.t334a-9r-0710_senmy_si__kagku",
                 "name": "T334A-9R-0710 SENMY SI, KAGKU",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as \"Senmu si.\" Senmu si was founded in 1517 as a medium sized Kagyu monastery. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9R-0710+SENMY+SI,+KAGKU.tif",
-                "title": "T334A-9R-0710 SENMY SI, KAGKU"
+                "title": "Semu High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1602,10 +1602,10 @@
             "properties": {
                 "id": "spsither.ganden_chokhor_ling_-_1963_-_u2_",
                 "name": "Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Ganden Chokhor Ling (Tib. dga' ldan chos 'khor gling) is one of the most important monasteries in the town of Tsetang in the Yarlung Valley in Central Tibet. It was originally established in the 12th century as a Kadam Monastery, later converting to Geluk. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ganden+Chokhor+Ling+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L_1.tif",
-                "title": "Ganden Chokhor Ling - 1963 - U2 - G3236 - 8R - 0948 - 1L_1"
+                "title": "Ganden Chokhor Ling High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1678,10 +1678,10 @@
             "properties": {
                 "id": "spsither.t344a-9r-0758_gdung_dkai_grags__",
                 "name": "T344A-9R-0758 GDUNG DKAI GRAGS, GELUK",
-                "description": "Aerial imagery from KMZ",
+                "description": "Dungkar (Tib. gDung dkar grags) is a Monastery in Guge, southern Tibet, and a branch of the nearby Toling Monastery. Dungkar is a Geluk Monastery, founded between 15th-16th century and continues as the seat of the Dungkar lineage. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758+GDUNG+DKAI+GRAGS,+GELUK.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758+GDUNG+DKAI+GRAGS,+GELUK.tif",
-                "title": "T344A-9R-0758 GDUNG DKAI GRAGS, GELUK"
+                "title": "Dungkar Drak High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1716,10 +1716,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0735_pengren_qude",
                 "name": "T344A-9L-0735 PENGREN QUDE",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Pengren Qude si.\" Pengren Qude si was founded in 1150 as a Kagyu monastery and converted to the Geluk sect in 1650. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735+PENGREN+QUDE.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735+PENGREN+QUDE.tif",
-                "title": "T344A-9L-0735 PENGREN QUDE"
+                "title": "Bangrim Chode High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1754,10 +1754,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0730_ganden_lin_lakang",
                 "name": "T344A-9L-0730 GANDEN LIN LAKANG",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as the Geluk \"Ganden Lin Lakang.\" (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.tif",
-                "title": "T344A-9L-0730 GANDEN LIN LAKANG"
+                "title": "Ganden Lin Lakang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1792,10 +1792,10 @@
             "properties": {
                 "id": "spsither.ralung_-_1964_-_u2_-_t334a_-_3_-",
                 "name": "Ralung - 1964 - U2 - T334A - 3 -9L - 368_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Ralung Monastery was founded in Gyantse province in 1180. The 'Ra' in Ralung, means 'goat,' and its full name refers to the legend of its origins; Drukpa Kagyu teacher Lingrepa Pema Dorje was said to have meditated at the site in the 12th century after hearing that a goat's milk had fallen on a rock on the hillside in the auspicious shapes of 'Om' and 'Ah.' Lingrepa and his primary disciple, Tsangpa Gyare, established the Ralung Monastery soon after and it continued as a primary seat for the Drukpa Kagyu sec, as well as a center for ascetic meditation. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ralung+-+1964+-+U2+-+T334A+-+3+-9L+-+368_1.tif",
-                "title": "Ralung - 1964 - U2 - T334A - 3 -9L - 368_1"
+                "title": "Ralung High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1830,10 +1830,10 @@
             "properties": {
                 "id": "spsither.ngari_dratsang_-_1963_-_u2_-_g32",
                 "name": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Ngari Dratsang, located in on Valley in Western Tibet, was built in 1541, founded by the Second Dalai Lama, Genden Gyatso. It was founded as a Geluk Monastery amidst the 15th-16th century period of growing support for Geluk teachings in its region of Ngari. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1)_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1)_1.tif",
-                "title": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)_1"
+                "title": "Ngari Dratsang High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1906,10 +1906,10 @@
             "properties": {
                 "id": "spsither.t334a-9l-0743_nang_dzong",
                 "name": "T334A-9L-0743 NANG DZONG",
-                "description": "Aerial imagery from KMZ",
+                "description": "Nang Dzong is a town along the southern bank of the Yarlung Tsangpo river. It is located in Central Tibet, about 70 km away from Gyatsa. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T334A-9L-0743+NANG+DZONG.tif",
-                "title": "T334A-9L-0743 NANG DZONG"
+                "title": "Nang Dzong High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1944,10 +1944,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0720_gongsha_ritro",
                 "name": "T344A-9L-0720 GONGSHA RITRO",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Gongsha Ritro.\" (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO.tif",
-                "title": "T344A-9L-0720 GONGSHA RITRO"
+                "title": "Gongsha Ritro"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1982,10 +1982,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0734_jiujie_lakang",
                 "name": "T344A-9L-0734 JIUJIE LAKANG",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as the Geluk \"Jiujie Lakang.\" (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.tif",
-                "title": "T344A-9L-0734 JIUJIE LAKANG"
+                "title": "Chogyal Lhakang High Resolution "
             },
             "geometry": {
                 "type": "Polygon",
@@ -2020,10 +2020,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0715_zilie_si",
                 "name": "T344A-9L-0715 ZILIE SI",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Zilie si.\" Zilie si was founded in 1200 as a Nyingma monastery, and converted in 1650 to the Geluk sect. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI.tif",
-                "title": "T344A-9L-0715 ZILIE SI"
+                "title": "Tsele High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2058,10 +2058,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0733_dwags_iha_sgam_po_",
                 "name": "T344A-9L-0733 DWAGS IHA SGAM PO, KAGYU_0",
-                "description": "Aerial imagery from KMZ",
+                "description": "Daklha Gampo (Tib. Dwags Iha sgam po) is a Kagyu Monastery founded in 1121 by Milarepa's disciple, Gampopa Dakpo Lhaje. The Gampopa lineage established Daklha Gampo Monastery as an early seat of the Kagyu sect, and it was originally ruled through the Gampopa family line, and then through their incarnation line. It is located in the Gyabpurong-chu Valley, on a site that is by legend the head of a rock ogress that was defeated by Tibetan King Songtsen Gampo. Dakhla Gampo is therefore thought to be an especially sacred Tibetan Buddhist site. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU_0.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0733+DWAGS+IHA+SGAM+PO,+KAGYU_0.tif",
-                "title": "T344A-9L-0733 DWAGS IHA SGAM PO, KAGYU_0"
+                "title": "Daklha Gampo High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2096,10 +2096,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0305_drongtse",
                 "name": "T344A-9L-0305 Drongtse",
-                "description": "Aerial imagery from KMZ",
+                "description": "Drongtse (Tib. 'brong dkar rtse dgon pa) was founded as a Geluk monastery in 1442 by Rinchen Gyatso. It is said that Rinchen Gyatso founded the monastery after it was prophesied by scholar and religious leader, Tsongkhapa. Drongtse held colleges for religious study and was eventually considered a branch of the nearby Tashilhunpo Monastery. Today, the only active structure on its campus is the renovated assembly hall. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0305+Drongtse.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0305+Drongtse.tif",
-                "title": "T344A-9L-0305 Drongtse"
+                "title": "Drongtse High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2248,10 +2248,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0720_rdo_kha_gling__nyi",
                 "name": "T344A-9L-0720 RDO KHA GLING, NYINGMA",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Duojilin si.\" Duojilin si was founded in 1180 as a Nyingma monastery. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA.tif",
-                "title": "T344A-9L-0720 RDO KHA GLING, NYINGMA"
+                "title": "Dokhaling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2324,10 +2324,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0710_qlangue_wansa_quli",
                 "name": "T344A-9L-0710 QLANGUE WANSA QULIN SI",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Qiangjue Wense Qulin si.\" Qiangjue Wense Qulin si was foounded in 1200 as a Nyingma Monastery and converted to Geluk in 1650. It was also referred to as Jiu Ritro. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710+QLANGUE+WANSA+QULIN+SI.tif",
-                "title": "T344A-9L-0710 QLANGUE WANSA QULIN SI"
+                "title": "Gyal Choling High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2362,10 +2362,10 @@
             "properties": {
                 "id": "spsither.dingpoche_-_1963_-_u2_-_g3236_-_",
                 "name": "Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Dingpoche Monastery is a Drukpa Kagyu Monastery in Dranang, Lhodrak, founded in 1567 by Rinchen Pelzang, a student of the Kagyu teacher, Pema Karpo. The Monastery was destroyed in the 18th Century during the Dzungar civil war, and again in the 1960s. Efforts to rebuild the monastery started in 1984. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Dingpoche+-+1963+-+U2+-+G3236+-+9R+-+988+-+1R_1.tif",
-                "title": "Dingpoche - 1963 - U2 - G3236 - 9R - 988 - 1R_1"
+                "title": "Dingpoche Monastery High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2400,10 +2400,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0278_gadong_gon_closer",
                 "name": "T344A-9L-0278 Gadong Gon Closer",
-                "description": "Aerial imagery from KMZ",
+                "description": "Gadong (Tib. Dga' bag dong dgon) was founded in the 11th century by Zingpo Sherpa as a Kadampa Monastery. It became the seat of the oracle of Phehar Gyelpo, known as the Gadong Oracle. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0278+Gadong+Gon+Closer.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0278+Gadong+Gon+Closer.tif",
-                "title": "T344A-9L-0278 Gadong Gon Closer"
+                "title": "Gadong Gon High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2438,10 +2438,10 @@
             "properties": {
                 "id": "spsither.samye_monastery_-_1963_-_u2_-_32",
                 "name": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Samye Gonpa is one of the most well-known monasteries in Tibet, its establishment iconic of the Tibetan Empire's 8th century budding endorsement of Buddhism. Samye was commissioned to be built by Tibetan Emperor Trisong Detsen in 766 in Yarlung Valley, 50 km Southeast of Lhasa. Difficulties in the construction process are said to have been quelled by rituals performed by the Nyingma Tantric master, Padmasambhava. Its campus was arranged in the shape of a Mandala, with its central temple, Tsuglakhang, representing the Buddhist holy mountain, Mount Meru. The monastic campus is surrounded by a large, circular enclosure wall with four gateway points, pointing due North, South, East, and West. Throughout its long history, it has been ruled under the Kadam, then Sakya, and lastly Geluk sects. The monastery is now restored, and continues as a key religious and pilgrimage site across sects.  ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11)_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11)_1.tif",
-                "title": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)_1"
+                "title": "Samye Monastery High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2476,10 +2476,10 @@
             "properties": {
                 "id": "spsither.nenying_-_1964_-_u2_-_t334a_-_3_",
                 "name": "Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1)_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Nenying Monastery was established in the 8th century by a tantric monk of Samye Monastery and religious teacher of Trisong Detsen, Jampel Sangwa. Though it is now a Geluk monastery, it has undergone numerous shifts in ruling sects. It was originally developed jointly as Bodongpa and Gelukpa in the valley of Drumpayu-chu, 15 km south of Gyantse. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1)_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nenying+-+1964+-+U2+-+T334A+-+3+-+9L+-327+(1)_1.tif",
-                "title": "Nenying - 1964 - U2 - T334A - 3 - 9L -327 (1)_1"
+                "title": "Nenying High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2514,10 +2514,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0722_ganden_rabten_and_",
                 "name": "T344A-9L-0722 GANDEN RABTEN AND TASHIGANG LHAKHANG",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Gandanraodeng si.\" Gandanraodeng si was founded in 1855 as a Geluk monastery. (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG.tif",
-                "title": "T344A-9L-0722 GANDEN RABTEN AND TASHIGANG LHAKHANG"
+                "title": "Ganden Rabten and Tashigang Lhakhang High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2590,10 +2590,10 @@
             "properties": {
                 "id": "spsither.t344a-9l-0730_lari_lakang",
                 "name": "T344A-9L-0730 LARI LAKANG",
-                "description": "Aerial imagery from KMZ",
+                "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as the Geluk \"Lari Lakang.\" (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+LARI+LAKANG.tif",
-                "title": "T344A-9L-0730 LARI LAKANG"
+                "title": "Lari Lakang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2628,10 +2628,10 @@
             "properties": {
                 "id": "spsither.monkar_namseling_-_1963_-_u2_-_g",
                 "name": "Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2)_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Monkhar Namseling was the seat of the ruling incarnation line, Namseling Zhamar. The Namseling family oversaw a significant estate and Karma Kagyu Monastery, residing in Namseling Manor until 1959. The manor's structure remains today as one of the only 6 remaining in Tibet after the destruction incurred by the Cultural Revolution. It is on the World Monument Fund's watch list as a site of rare Tibetan vernacular architecture. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2)_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Monkar+Namseling+-+1963+-+U2+-+G3236+-+8R+-+966+(2)_1.tif",
-                "title": "Monkar Namseling - 1963 - U2 - G3236 - 8R - 966 (2)_1"
+                "title": "Monkhar Namseling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2704,10 +2704,10 @@
             "properties": {
                 "id": "spsither.kangmar_-_1964_-_u2_-_t334a_-_3_",
                 "name": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Khangmar Village, Shigatse. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327_1.tif",
-                "title": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327_1"
+                "title": "Khangmar High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2856,10 +2856,10 @@
             "properties": {
                 "id": "spsither.khorchak_gon_-_1963_-_u2_-_3227_",
                 "name": "Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3)_1",
-                "description": "Aerial imagery from KMZ",
+                "description": "Korchak Gonpa is located in Korchak Village, in western Tibet in the county of Purang. The Temple faces the Karnali River and is surrounded by a red enclosure wall. It was originally founded in 996 by King Korre as a Kadampa monastery, and later came under control of the Sakya sect. It has been considered part of the Ngor branch since the 14th century. The meaning of its Tibetan name, Korzhak, is a place that surrounds a sacred object. It is said that the sacred object of its name refers to an image of Jowo Manjuvajra that used to exist at the temple but has now been largely destroyed. In addition to this image, 30 of its original 32 chapels are now destroyed. The two that remain are called Yilhun and Tashi Tsekpei Lhakhang. ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3)_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Khorchak+Gon+-+1963+-+U2+-+3227+-+9R+-+0029+-1L+(3)_1.tif",
-                "title": "Khorchak Gon - 1963 - U2 - 3227 - 9R - 0029 -1L (3)_1"
+                "title": "Khorchak Gon High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
