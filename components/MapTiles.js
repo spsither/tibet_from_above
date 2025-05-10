@@ -172,7 +172,7 @@ export default function MapTiles() {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
             style: baseMapStyle,
-            center: [91.76423888888888, 29.22076111111111],
+            center: [91.11489905384795, 29.66030814313113],
             zoom: 12,
             attributionControl: false
         }).addControl(
