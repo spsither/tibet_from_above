@@ -6,7 +6,7 @@
             "properties": {
                 "id": "spsither.mount_kailash_-_1963_-_u2_positi",
                 "name": "Mount Kailash - 1963 - U2 Positive - High Res",
-                "description": "Mount Kailash, Gang Rinpoche or Gang Tise in Tibetan, is considered one of the most sacred Himalayan Mountains in Buddhism, Hinduism, and the Bonpo religion. Located in Ngari, it is a widely revered destination for pilgrimage in Western Tibet. Mount Kailash is located near the also sacred Lake Manasarowar, is 6,714 meters tall, and is part of the Kailash Mountain range. ",
+                "description": "Mount Kailash, Gang Rinpoche or Gang Tise in Tibetan, is considered one of the most sacred Himalayan Mountains in Buddhism, Hinduism, and the Bonpo religion. Located in Ngari, it is a widely revered destination for pilgrimage in Western Tibet. Mount Kailash is located near the also sacred Lake Manasarowar, is 6,714 meters tall, and is part of the Kailash Mountain range.",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Mount+Kailash+-+1963+-+U2+Positive+-+High+Res.png",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Mount+Kailash+-+1963+-+U2+Positive+-+High+Res.tif",
                 "title": "Mount Kailash High Resolution"
@@ -47,7 +47,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_3_2.tif",
-                "title": "T344A-9L-0720-2L_3_2"
+                "title": "Dakpo Shedrupling, Gongsha Ritro and Dhokha Ling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -85,7 +85,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_3_2.tif",
-                "title": "T344A-9L-0712-2L_3_2"
+                "title": "Changra Khathok"
             },
             "geometry": {
                 "type": "Polygon",
@@ -123,7 +123,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_3_2.tif",
-                "title": "T344A-9L-0704-2L_3_2"
+                "title": "Tsogyal and Ridakling Ritro"
             },
             "geometry": {
                 "type": "Polygon",
@@ -161,7 +161,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.tif",
-                "title": "T344A-9L-0368"
+                "title": "Ralung"
             },
             "geometry": {
                 "type": "Polygon",
@@ -275,7 +275,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729-1L_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729-1L_4_2.tif",
-                "title": "T344A-9L-0729-1L_4_2"
+                "title": "Reting Trungkhang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -389,7 +389,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.tif",
-                "title": "G3236-9R-0966"
+                "title": "Namseling"
             },
             "geometry": {
                 "type": "Polygon",
@@ -465,7 +465,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0733-1L_0_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0733-1L_0_2.tif",
-                "title": "T344A-9R-0733-1L_0_2"
+                "title": "Gazetteer"
             },
             "geometry": {
                 "type": "Polygon",
@@ -541,7 +541,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173-1L.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173-1L.tif",
-                "title": "T344A-9R-1173-1L"
+                "title": "Tolung Valley"
             },
             "geometry": {
                 "type": "Polygon",
@@ -579,7 +579,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730-V_0_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730-V_0_4_2.tif",
-                "title": "T344A-9L-0730-V_0_4_2"
+                "title": "Ganden Lin Lakang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -655,7 +655,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.tif",
-                "title": "3227-9R-0039"
+                "title": "Gangzi"
             },
             "geometry": {
                 "type": "Polygon",
@@ -731,7 +731,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0743-1R_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0743-1R_4_2.tif",
-                "title": "T344A-9L-0743-1R_4_2"
+                "title": "Nang Dzong"
             },
             "geometry": {
                 "type": "Polygon",
@@ -769,7 +769,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.tif",
-                "title": "3227-9R-0045"
+                "title": "Purang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -807,7 +807,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715-1R_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715-1R_4_2.tif",
-                "title": "T344A-9L-0715-1R_4_2"
+                "title": "Tsele"
             },
             "geometry": {
                 "type": "Polygon",
@@ -883,7 +883,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734-V_0_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734-V_0_4_2.tif",
-                "title": "T344A-9L-0734-V_0_4_2"
+                "title": "Chogyal Lhakang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -921,7 +921,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722-V_0_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722-V_0_4_2.tif",
-                "title": "T344A-9L-0722-V_0_4_2"
+                "title": "Ganden Rabten and Tashigang Lhakhang"
             },
             "geometry": {
                 "type": "Polygon",
@@ -997,7 +997,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758-V_4_1_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758-V_4_1_2.tif",
-                "title": "T344A-9R-0758-V_4_1_2"
+                "title": "Dungkar Drak"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1035,7 +1035,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735-1R_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735-1R_4_2.tif",
-                "title": "T344A-9L-0735-1R_4_2"
+                "title": "Bangrim Chode"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1073,7 +1073,7 @@
                 "description": "Aerial imagery from KMZ",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0710-V_0_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0710-V_0_2.tif",
-                "title": "T344A-9R-0710-V_0_2"
+                "title": "Semu Gon"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1146,7 +1146,7 @@
             "properties": {
                 "id": "spsither.t344a-9r-1173_kyurmolung",
                 "name": "T344A-9R-1173 Kyurmolung",
-                "description": "Kyormolung Monastery was founded in the Tolung Valley in the 12th century Balti Wangchuk Tsultrim. It was founded as a Kadampa monastery and converted to Geluk in the 14th century, with 3 colleges for religious study. A significant amount of its architecture and murals were preserved past the Cultural Revolution. Next to Kyromolung is Lhachu, a sacred spring of Tolung Valley. ",
+                "description": "Kyormolung Monastery was founded in the Tolung Valley in the 12th century Balti Wangchuk Tsultrim. It was founded as a Kadampa monastery and converted to Geluk in the 14th century, with 3 colleges for religious study. A significant amount of its architecture and murals were preserved past the Cultural Revolution. Next to Kyromolung is Lhachu, a sacred spring of Tolung Valley.",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173+Kyurmolung.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173+Kyurmolung.tif",
                 "title": "Kyormolung"
@@ -1757,7 +1757,7 @@
                 "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as the Geluk \"Ganden Lin Lakang.\" (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730+GANDEN+LIN+LAKANG.tif",
-                "title": "Ganden Lin Lakang"
+                "title": "Ganden Lin Lakang High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1985,7 +1985,7 @@
                 "description": "We believe that this Monastery might be what is labeled in a 2010 Chinese County Gazetteer as the Geluk \"Jiujie Lakang.\" (Source: Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734+JIUJIE+LAKANG.tif",
-                "title": "Chogyal Lhakang High Resolution "
+                "title": "Chogyal Lhakang High Resolution"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2664,47 +2664,9 @@
         {
             "type": "Feature",
             "properties": {
-                "id": "spsither.regang_village_shannan_-_1963_-_",
-                "name": "Regang Village_Shannan - 1963 - U2 - G3236 - 0998 - 1R_0",
-                "description": "Aerial imagery from KMZ",
-                "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R_0.jpg",
-                "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Regang+Village_Shannan+-+1963+-+U2+-+G3236+-+0998+-+1R_0.tif",
-                "title": "Regang Village_Shannan - 1963 - U2 - G3236 - 0998 - 1R_0"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            91.30859828873092,
-                            29.14951454751086
-                        ],
-                        [
-                            91.30766880264602,
-                            29.15591763068448
-                        ],
-                        [
-                            91.31894095051298,
-                            29.15683212324013
-                        ],
-                        [
-                            91.31898519533684,
-                            29.14843425568536
-                        ],
-                        [
-                            91.30859828873092,
-                            29.14951454751086
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "id": "spsither.kangmar_-_1964_-_u2_-_t334a_-_3_",
                 "name": "Kangmar - 1964 - U2 - T334A - 3 - 9L - 327_1",
-                "description": "Khangmar Village, Shigatse. ",
+                "description": "Khangmar Village, Shigatse.",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327_1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Kangmar+-+1964+-+U2+-+T334A+-+3+-+9L+-+327_1.tif",
                 "title": "Khangmar High Resolution"
