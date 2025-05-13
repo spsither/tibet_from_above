@@ -55,7 +55,7 @@ export default function MapTiles() {
                 source: sourceId,
                 slot: 'middle',
                 paint: {
-                    'raster-opacity': 0.85
+                    'raster-opacity': 1
                 },
                 layout: {
                     visibility: layerVisibility[id] !== false ? 'visible' : 'none'
@@ -99,6 +99,7 @@ export default function MapTiles() {
             if (imageInfo) {
                 setDownloadPopUp(imageInfo);
             }
+            flyToLayer(id);
         });
 
         map.on('mouseenter', 'image-footprint-layer', () => {
@@ -172,8 +173,8 @@ export default function MapTiles() {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
             style: baseMapStyle,
-            center: [91.11489905384795, 29.66030814313113],
-            zoom: 12,
+            center: [91.9544950924866,29.35149162607727],
+            zoom: 9,
             attributionControl: false
         }).addControl(
             new mapboxgl.AttributionControl({
@@ -415,7 +416,7 @@ export default function MapTiles() {
                                                     flyToLayer(layerId)
                                                 }
                                                 }
-                                                className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none"
+                                                className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none text-left w-full"
                                             >
                                                 { getTitleFromId(layerId) }
                                             </button>
