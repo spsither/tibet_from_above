@@ -44,7 +44,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0720-2l_3_2",
                 "name": "T344A-9L-0720-2L_3_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_3_2.tif",
                 "title": "Dakpo Shedrupling, Gongsha Ritro and Dhokha Ling"
@@ -82,7 +82,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0712-2l_3_2",
                 "name": "T344A-9L-0712-2L_3_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_3_2.tif",
                 "title": "Changra Khathok"
@@ -120,7 +120,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0704-2l_3_2",
                 "name": "T344A-9L-0704-2L_3_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_3_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_3_2.tif",
                 "title": "Tsogyal and Ridakling Ritro"
@@ -158,7 +158,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0368",
                 "name": "T344A-9L-0368",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368.tif",
                 "title": "Ralung"
@@ -196,7 +196,7 @@
             "properties": {
                 "id": "spsither.g3236-9r-0971",
                 "name": "G3236-9R-0971",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971.tif",
                 "title": "Samye Monastery"
@@ -234,7 +234,7 @@
             "properties": {
                 "id": "spsither.lhasa-1959-c6046-9l-9r-2303",
                 "name": "Lhasa-1959-C6046-9L-9R-2303",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Lhasa-1959-C6046-9L-9R-2303.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Lhasa-1959-C6046-9L-9R-2303.tif",
                 "title": "Lhasa"
@@ -272,7 +272,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0729-1l_4_2",
                 "name": "T344A-9L-0729-1L_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729-1L_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729-1L_4_2.tif",
                 "title": "Reting Trungkhang"
@@ -348,7 +348,7 @@
             "properties": {
                 "id": "spsither.g3236-9r-0998",
                 "name": "G3236-9R-0998",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998.tif",
                 "title": "Dingpoche Monastery and Regang Village"
@@ -386,7 +386,7 @@
             "properties": {
                 "id": "spsither.g3236-9r-0966",
                 "name": "G3236-9R-0966",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966.tif",
                 "title": "Namseling"
@@ -424,7 +424,7 @@
             "properties": {
                 "id": "spsither.c6042-9l-1674",
                 "name": "C6042-9L-1674",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/C6042-9L-1674.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/C6042-9L-1674.tif",
                 "title": "Ganden Tengyeling"
@@ -462,7 +462,7 @@
             "properties": {
                 "id": "spsither.t344a-9r-0733-1l_0_2",
                 "name": "T344A-9R-0733-1L_0_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0733-1L_0_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0733-1L_0_2.tif",
                 "title": "Gazetteer"
@@ -500,7 +500,7 @@
             "properties": {
                 "id": "spsither.g3236-9r-0940",
                 "name": "G3236-9R-0940",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940.tif",
                 "title": "Ngari Dratsang"
@@ -538,7 +538,7 @@
             "properties": {
                 "id": "spsither.t344a-9r-1173-1l",
                 "name": "T344A-9R-1173-1L",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173-1L.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173-1L.tif",
                 "title": "Tolung Valley"
@@ -576,7 +576,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0730-v_0_4_2",
                 "name": "T344A-9L-0730-V_0_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730-V_0_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730-V_0_4_2.tif",
                 "title": "Ganden Lin Lakang"
@@ -614,7 +614,7 @@
             "properties": {
                 "id": "spsither.g3236-9r-0948",
                 "name": "G3236-9R-0948",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948.tif",
                 "title": "Ganden Chokhor Ling and Nedong Tsetsokpa"
@@ -652,7 +652,7 @@
             "properties": {
                 "id": "spsither.3227-9r-0039",
                 "name": "3227-9R-0039",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0039.tif",
                 "title": "Gangzi"
@@ -690,7 +690,7 @@
             "properties": {
                 "id": "spsither.3227-9r-0029",
                 "name": "3227-9R-0029",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029.tif",
                 "title": "Khorchak Gon"
@@ -728,7 +728,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0743-1r_4_2",
                 "name": "T344A-9L-0743-1R_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0743-1R_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0743-1R_4_2.tif",
                 "title": "Nang Dzong"
@@ -766,7 +766,7 @@
             "properties": {
                 "id": "spsither.3227-9r-0045",
                 "name": "3227-9R-0045",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0045.tif",
                 "title": "Purang"
@@ -804,7 +804,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0715-1r_4_2",
                 "name": "T344A-9L-0715-1R_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715-1R_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715-1R_4_2.tif",
                 "title": "Tsele"
@@ -842,7 +842,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0306",
                 "name": "T344A-9L-0306",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0306.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0306.tif",
                 "title": "Drongtse"
@@ -880,7 +880,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0734-v_0_4_2",
                 "name": "T344A-9L-0734-V_0_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734-V_0_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734-V_0_4_2.tif",
                 "title": "Chogyal Lhakang"
@@ -918,7 +918,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0722-v_0_4_2",
                 "name": "T344A-9L-0722-V_0_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722-V_0_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722-V_0_4_2.tif",
                 "title": "Ganden Rabten and Tashigang Lhakhang"
@@ -956,7 +956,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0327",
                 "name": "T344A-9L-0327",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327.tif",
                 "title": "Khangmar and Nenying"
@@ -994,7 +994,7 @@
             "properties": {
                 "id": "spsither.t344a-9r-0758-v_4_1_2",
                 "name": "T344A-9R-0758-V_4_1_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758-V_4_1_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758-V_4_1_2.tif",
                 "title": "Dungkar Drak"
@@ -1032,7 +1032,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0735-1r_4_2",
                 "name": "T344A-9L-0735-1R_4_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735-1R_4_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735-1R_4_2.tif",
                 "title": "Bangrim Chode"
@@ -1070,7 +1070,7 @@
             "properties": {
                 "id": "spsither.t344a-9r-0710-v_0_2",
                 "name": "T344A-9R-0710-V_0_2",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0710-V_0_2.JPG",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0710-V_0_2.tif",
                 "title": "Semu Gon"
@@ -1108,7 +1108,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0274",
                 "name": "T344A-9L-0274",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0274.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0274.tif",
                 "title": "Gadong Gon"
@@ -2134,7 +2134,7 @@
             "properties": {
                 "id": "spsither.t344a-9l-0312_nangkuo_closer_1",
                 "name": "T344A-9L-0312 Nangkuo Closer 1",
-                "description": "Aerial imagery from KMZ",
+                "description": "",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0312+Nangkuo+Closer+1.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0312+Nangkuo+Closer+1.tif",
                 "title": "Nangkuo"
