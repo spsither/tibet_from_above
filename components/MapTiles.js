@@ -196,22 +196,28 @@ export default function MapTiles() {
             addImageTilesetLayers(map);
             addImageFootPrintLayer(map)
 
-            const popup = new mapboxgl.Popup({
+            const hoverPopup = new mapboxgl.Popup({
                 closeButton: false,
                 closeOnClick: false
             });
-
+            
+            let clickPopup = null;
+            
             map.on('mouseenter', 'tot', (e) => {
                 map.getCanvas().style.cursor = 'pointer';
+            
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const description = e.features[0].properties.description;
                 const name = e.features[0].properties.Tibetan;
-
+            
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
-
-                popup
+            
+                // Don't show hover popup if there's already a click popup
+                if (clickPopup) return;
+            
+                hoverPopup
                     .setLngLat(coordinates)
                     .setHTML(
                         `<div>
@@ -221,10 +227,38 @@ export default function MapTiles() {
                     )
                     .addTo(map);
             });
-
+            
             map.on('mouseleave', 'tot', () => {
                 map.getCanvas().style.cursor = '';
-                popup.remove();
+                if (!clickPopup) {
+                    hoverPopup.remove();
+                }
+            });
+            
+            map.on('click', 'tot', (e) => {
+                const coordinates = e.features[0].geometry.coordinates.slice();
+                const description = e.features[0].properties.description;
+                const name = e.features[0].properties.Tibetan;
+            
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+            
+                // Remove any existing click popup
+                if (clickPopup) clickPopup.remove();
+            
+                clickPopup = new mapboxgl.Popup({ closeOnClick: true })
+                    .setLngLat(coordinates)
+                    .setHTML(
+                        `<div>
+                            <h1 style="font-size: 1.25rem; color: #111;">${name}</h1>
+                            <p style="margin-top: 1rem; color: #7d7d7d;">${description}</p>
+                        </div>`
+                    )
+                    .addTo(map);
+            
+                // Remove hover popup
+                hoverPopup.remove();
             });
 
             const initialVisibility = {
