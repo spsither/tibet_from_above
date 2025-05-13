@@ -111,6 +111,14 @@ export default function MapTiles() {
         });
 
     }
+
+    function getCentroidLongitude(feature) {
+        const coords = feature.geometry.coordinates[0]; // outer ring of polygon
+        const longitudes = coords.map(coord => coord[0]); // extract longitudes
+        const avgLongitude = longitudes.reduce((a, b) => a + b, 0) / longitudes.length;
+        return avgLongitude;
+    }
+    
     function toggleSatelliteLayer() {
 
         const map = mapRef.current;
@@ -225,20 +233,26 @@ export default function MapTiles() {
                 'tot': true,
             };
 
+            
+            const sortedGeojson = {
+                ...geojson,
+                features: [...geojson.features].sort((a, b) => {
+                    const getCentroidLng = (feature) => {
+                        const coords = feature.geometry.coordinates[0];
+                        const lngs = coords.map(coord => coord[0]);
+                        return lngs.reduce((sum, lng) => sum + lng, 0) / lngs.length;
+                    };
+                    return getCentroidLng(a) - getCentroidLng(b); // west to east
+                }),
+            };
+            
+            
             // Add all raster image layer IDs explicitly
-            geojson.features.forEach(({ properties: { id: id } }) => {
+            sortedGeojson.features.forEach(({ properties: { id } }) => {
                 initialVisibility[id] = true;
             });
 
-            const sorted = Object.keys(initialVisibility)
-                .sort() // sorts the keys alphabetically
-                .reduce((acc, key) => {
-                    acc[key] = initialVisibility[key];
-                    return acc;
-                }, {});
-
-            console.log('Initial Layer Visibility:', sorted);
-            setLayerVisibility(sorted);
+            setLayerVisibility(initialVisibility);
         });
 
         return () => map.remove();
@@ -311,7 +325,7 @@ export default function MapTiles() {
                 <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 max-w-xs w-80">
                     <button
                         onClick={() => setDownloadPopUp(null)}
-                        className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
+                        className="absolute top-2 right-3 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
                         aria-label="Close"
                     >
                         <FaTimes />
@@ -345,7 +359,7 @@ export default function MapTiles() {
                 </div>
             )}
             {layerOpen ? (
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80 max-h-[85vh]">
+                <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80">
                     <button
                         onClick={() => setLayerOpen(false)}
                         className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-lg"
@@ -395,7 +409,7 @@ export default function MapTiles() {
                             <label className="font-bold">Aerial Images</label>
                         </div>
                         {aerialImagesGroupOpen && (
-                            <div className="pl-6 mt-2 space-y-1">
+                            <div className="pl-6 mt-2 space-y-1 max-h-[70vh] overflow-y-auto">
                                 {Object.entries(layerVisibility)
                                     .filter(([id]) => id.startsWith('spsither'))
                                     .map(([layerId, visible]) => (
