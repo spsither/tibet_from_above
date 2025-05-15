@@ -198,7 +198,6 @@ export default function MapTiles() {
 
             const hoverPopup = new mapboxgl.Popup({
                 closeButton: false,
-                closeOnClick: false
             });
             
             let clickPopup = null;
@@ -214,9 +213,6 @@ export default function MapTiles() {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
             
-                // Don't show hover popup if there's already a click popup
-                if (clickPopup) return;
-            
                 hoverPopup
                     .setLngLat(coordinates)
                     .setHTML(
@@ -230,9 +226,8 @@ export default function MapTiles() {
             
             map.on('mouseleave', 'tot', () => {
                 map.getCanvas().style.cursor = '';
-                if (!clickPopup) {
-                    hoverPopup.remove();
-                }
+                hoverPopup.remove();
+                
             });
             
             map.on('click', 'tot', (e) => {
@@ -245,7 +240,7 @@ export default function MapTiles() {
                 }
             
                 // Remove any existing click popup
-                if (clickPopup) clickPopup.remove();
+                // if (clickPopup) clickPopup.remove();
             
                 clickPopup = new mapboxgl.Popup({ closeOnClick: true })
                     .setLngLat(coordinates)
