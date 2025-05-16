@@ -145,7 +145,8 @@ export default function TimeSlices({ slices = [] }) {
     };
 
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      // setIsMobile(window.innerWidth <= 768);
+      setIsMobile(false);
     };
 
     checkMobile();
@@ -185,7 +186,7 @@ export default function TimeSlices({ slices = [] }) {
   }, []);
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-10">
+    <div>
       <div
         ref={containerRef}
         className="relative w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg bg-black"
