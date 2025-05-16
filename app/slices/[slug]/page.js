@@ -36,7 +36,7 @@ const slicesBySlug = {
     { image: '/images/Narthang 1965 Corona.jpg', label: '1965' },
     { image: '/images/Narthang 1968 Corona.jpg', label: '1968' },
     { image: '/images/Narthang 2025 Google Earth.jpg', label: '2025' },
-    { image: '/images/Narthang 2025 Studio Nyandak.jpg', label: '2025' }
+    { image: '/images/Narthang 2025 Studio Nyandak.jpg', label: '2025 SN' }
   ],
 };
 
