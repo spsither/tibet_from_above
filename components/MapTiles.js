@@ -365,6 +365,13 @@ export default function MapTiles() {
                         </button>
                     </h2>
                     <p className="text-sm mt-2">{downloadPopUp.description}</p>
+                    {downloadPopUp.mission_id && (
+                        <p className="text-sm mt-2">
+                            Mission ID: {downloadPopUp.mission_id}<br/>
+                            Captured on: {downloadPopUp.capture_date}
+                        </p>
+                    )}
+                    
                     <div className='mt-4 flex items-center justify-evenly '>
                         <a
                             href={downloadPopUp.downloadUrl}

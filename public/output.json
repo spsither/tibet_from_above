@@ -11,7 +11,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Mount+Kailash+-+1963+-+U2+Positive+-+High+Res_0.tif",
                 "title": "Mount Kailash hi-res",
                 "group": "Purang",
-                "mission_id": "3227"
+                "mission_id": "3227",
+                "capture_date": "9/29/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -51,7 +52,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720-2L_4.tif",
                 "title": "Dakpo Shedrupling, Gongsha Ritro and Dhokha Ling",
                 "group": "Gyatsa",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -91,7 +93,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712-2L_4.tif",
                 "title": "Changra Khathok",
                 "group": "Gyatsa",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -131,7 +134,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0704-2L_4.tif",
                 "title": "Tsogyal and Ridakling Ritro",
                 "group": "Gyatsa",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -171,7 +175,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0312.tif",
                 "title": "Nangkuo",
                 "group": "Gyantse",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -211,7 +216,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0368_3.tif",
                 "title": "Ralung",
                 "group": "Gyantse",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -251,7 +257,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0971_2_0.tif",
                 "title": "Samye Monastery",
                 "group": "Dranang",
-                "mission_id": "3236"
+                "mission_id": "3236",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -286,7 +293,7 @@
             "properties": {
                 "id": "spsither.lhasa-1959-c6046-9l-9r-2303_0_0",
                 "name": "Lhasa-1959-C6046-9L-9R-2303_0_0",
-                "description": "Capital city of Tibet",
+                "description": "Capital city of Lhasa",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Lhasa-1959-C6046-9L-9R-2303_0_0.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Lhasa-1959-C6046-9L-9R-2303_0_0.tif",
                 "title": "Lhasa",
@@ -331,7 +338,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0729-1L_5.tif",
                 "title": "Reting Trungkhang",
                 "group": "Gyatsa",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -372,7 +380,8 @@
                 "title": "Dakpo Shedrupling",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0720-2L"
+                "included_id_image_id": "T344A-9L-0720-2L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -412,7 +421,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0998_2_0.tif",
                 "title": "Yarjee Orgyenling amd Dingpoche Monastery",
                 "group": "Dranang",
-                "mission_id": "3236"
+                "mission_id": "3236",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -452,7 +462,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0966_3.tif",
                 "title": "Monakhar Namseling",
                 "group": "Dranang",
-                "mission_id": "3236"
+                "mission_id": "3236",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -492,7 +503,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/C6042-9L-1674_0_0.tif",
                 "title": "Ganden Tengyeling",
                 "group": "Tongkhor",
-                "mission_id": "C6042"
+                "mission_id": "C6042",
+                "capture_date": "9/9/1959"
             },
             "geometry": {
                 "type": "Polygon",
@@ -532,7 +544,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0940_2_0.tif",
                 "title": "Ngari Dratsang",
                 "group": "Nedong",
-                "mission_id": "3236"
+                "mission_id": "3236",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -572,7 +585,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173-1L_2.tif",
                 "title": "Kyormolung",
                 "group": "Lhasa",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -612,7 +626,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0730-V_0_4_2_1_0.tif",
                 "title": "Ganden Ling Lhakhang and Lari Lhakhang",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -652,7 +667,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/G3236-9R-0948_2_0.tif",
                 "title": "Ganden Chokhor Ling and Nedong Tsetsokpa",
                 "group": "Nedong",
-                "mission_id": "3236"
+                "mission_id": "3236",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -692,7 +708,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/3227-9R-0029_2_0.tif",
                 "title": "Khorchak Gon",
                 "group": "Purang",
-                "mission_id": "3227"
+                "mission_id": "3227",
+                "capture_date": "9/29/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -732,7 +749,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0743-1R_5.tif",
                 "title": "Nang Dzong",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -772,7 +790,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715-1R_5.tif",
                 "title": "Tsele",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -812,7 +831,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0306_0_0.tif",
                 "title": "Drongtse",
                 "group": "Panam",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -852,7 +872,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0734-V_1.tif",
                 "title": "Chogyal Lhakang",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -892,7 +913,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722-V_1.tif",
                 "title": "Ganden Rabten and Tashigang Lhakhang",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -932,7 +954,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0327_2_0.tif",
                 "title": "Khangmar and Nenying",
                 "group": "Khangmar",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -972,7 +995,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0758-V_5.tif",
                 "title": "Dungkar Drak",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1012,7 +1036,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0735-1R_5.tif",
                 "title": "Bangrim Chode",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1052,7 +1077,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-0710-V_2.tif",
                 "title": "Semu Gon",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1092,7 +1118,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0274_0_0.tif",
                 "title": "Gadong Gon",
                 "group": "Panam",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1132,7 +1159,8 @@
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0710-V.tif",
                 "title": "Gyal Choling",
                 "group": "Nang",
-                "mission_id": "T344A"
+                "mission_id": "T344A",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1170,10 +1198,11 @@
                 "description": "Kyormolung Monastery was founded in the Tolung Valley in the 12th century Balti Wangchuk Tsultrim. It was founded as a Kadampa monastery and converted to Geluk in the 14th century, with 3 colleges for religious study. A significant amount of its architecture and murals were preserved past the Cultural Revolution. Next to Kyromolung is Lhachu, a sacred spring of Tolung Valley.",
                 "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173+Kyormolung.jpg",
                 "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173+Kyormolung.tif",
-                "title": "Kyormolung hi-res",
+                "title": "Kyormolung",
                 "group": "Lhasa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9R-1173-1L"
+                "included_id_image_id": "T344A-9R-1173-1L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1253,7 +1282,8 @@
                 "title": "Tsogyal",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0704-2L"
+                "included_id_image_id": "T344A-9L-0704-2L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1333,7 +1363,8 @@
                 "title": "Changra Khathok hi-res",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0712-2L"
+                "included_id_image_id": "T344A-9L-0712-2L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1413,7 +1444,8 @@
                 "title": "Reting Trungkhang hi-res",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0729-1L"
+                "included_id_image_id": "T344A-9L-0729-1L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1454,7 +1486,8 @@
                 "title": "Ridakling Ritro",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0704-2L"
+                "included_id_image_id": "T344A-9L-0704-2L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1495,7 +1528,8 @@
                 "title": "Nedong Tsetsokpa hi-res",
                 "group": "Nedong",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0948"
+                "included_id_image_id": "G3236-9R-0948",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1536,7 +1570,8 @@
                 "title": "Ganden Tengyeling High Res",
                 "group": "Tongkhor",
                 "mission_id": "C6042",
-                "included_id_image_id": "C6042-9L-1674"
+                "included_id_image_id": "C6042-9L-1674",
+                "capture_date": "9/9/1959"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1616,7 +1651,8 @@
                 "title": "Semu hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9R-0710-V"
+                "included_id_image_id": "T344A-9R-0710-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1657,7 +1693,8 @@
                 "title": "Ganden Chokhor Ling hi-res",
                 "group": "Nedong",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0948"
+                "included_id_image_id": "G3236-9R-0948",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1739,7 +1776,8 @@
                 "title": "Dungkar Drak hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9R-0758-V"
+                "included_id_image_id": "T344A-9R-0758-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1780,7 +1818,8 @@
                 "title": "Bangrim Chode hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0735-1R"
+                "included_id_image_id": "T344A-9L-0735-1R",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1821,7 +1860,8 @@
                 "title": "Ganden Lin Lakang hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0730-V"
+                "included_id_image_id": "T344A-9L-0730-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1862,7 +1902,8 @@
                 "title": "Ralung hi-res",
                 "group": "Gyantse",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0368"
+                "included_id_image_id": "T344A-9L-0368",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1903,7 +1944,8 @@
                 "title": "Ngari Dratsang hi-res",
                 "group": "Nedong",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0940"
+                "included_id_image_id": "G3236-9R-0940",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1983,7 +2025,8 @@
                 "title": "Nang Dzong hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0743-1R"
+                "included_id_image_id": "T344A-9L-0743-1R",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2024,7 +2067,8 @@
                 "title": "Gongsha Ritro",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0720-2L"
+                "included_id_image_id": "T344A-9L-0720-2L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2065,7 +2109,8 @@
                 "title": "Chogyal Lhakang hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0734-V"
+                "included_id_image_id": "T344A-9L-0734-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2106,7 +2151,8 @@
                 "title": "Tsele hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0715-1R"
+                "included_id_image_id": "T344A-9L-0715-1R",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2147,7 +2193,8 @@
                 "title": "Daklha Gampo hi-res",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0729-1L"
+                "included_id_image_id": "T344A-9L-0729-1L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2188,7 +2235,8 @@
                 "title": "Drongtse hi-res",
                 "group": "Panam",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0306"
+                "included_id_image_id": "T344A-9L-0306",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2229,7 +2277,8 @@
                 "title": "Nangkuo hi-res",
                 "group": "Gyantse",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0312"
+                "included_id_image_id": "T344A-9L-0312",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2351,7 +2400,8 @@
                 "title": "Dokhaling",
                 "group": "Gyatsa",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0720-2L"
+                "included_id_image_id": "T344A-9L-0720-2L",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2392,7 +2442,8 @@
                 "title": "Yarjee Orgyenling",
                 "group": "Dranang",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0998"
+                "included_id_image_id": "G3236-9R-0998",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2433,7 +2484,8 @@
                 "title": "Gyal Choling hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0710-V"
+                "included_id_image_id": "T344A-9L-0710-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2474,7 +2526,8 @@
                 "title": "Dingpoche Monastery",
                 "group": "Dranang",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0998"
+                "included_id_image_id": "G3236-9R-0998",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2515,7 +2568,8 @@
                 "title": "Gadong Gon hi-res",
                 "group": "Panam",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0274"
+                "included_id_image_id": "T344A-9L-0274",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2556,7 +2610,8 @@
                 "title": "Samye Monastery hi-res",
                 "group": "Dranang",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0971"
+                "included_id_image_id": "G3236-9R-0971",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2597,7 +2652,8 @@
                 "title": "Nenying hi-res",
                 "group": "Khangmar",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0327"
+                "included_id_image_id": "T344A-9L-0327",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2638,7 +2694,8 @@
                 "title": "Ganden Rabten and Tashigang Lhakhang hi-res",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0722-V"
+                "included_id_image_id": "T344A-9L-0722-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2718,7 +2775,8 @@
                 "title": "Lari Lakang",
                 "group": "Nang",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0730-V"
+                "included_id_image_id": "T344A-9L-0730-V",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2759,7 +2817,8 @@
                 "title": "Monkhar Namseling hi-res",
                 "group": "Dranang",
                 "mission_id": "3236",
-                "included_id_image_id": "G3236-9R-0966"
+                "included_id_image_id": "G3236-9R-0966",
+                "capture_date": "10/30/1963"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2800,7 +2859,8 @@
                 "title": "Khangmar hi-res",
                 "group": "Khangmar",
                 "mission_id": "T344A",
-                "included_id_image_id": "T344A-9L-0327"
+                "included_id_image_id": "T344A-9L-0327",
+                "capture_date": "12/20/1964"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2960,7 +3020,8 @@
                 "title": "Khorchak Gon hi-res",
                 "group": "Purang",
                 "mission_id": "3227",
-                "included_id_image_id": "3227-9R-0029"
+                "included_id_image_id": "3227-9R-0029",
+                "capture_date": "9/29/1963"
             },
             "geometry": {
                 "type": "Polygon",
