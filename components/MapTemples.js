@@ -19,7 +19,7 @@ export default function MapTiles() {
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
     const [layerVisibility, setLayerVisibility] = useState({});
-    const [layerOpen, setLayerOpen] = useState(true);
+    const [layerOpen, setLayerOpen] = useState(false);
     
     function toggleSatelliteLayer() {
 

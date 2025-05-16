@@ -31,8 +31,9 @@ export default function Page() {
       <TimeSlices slices={slices} />
 
       <div className='flex justify-center'>
-        <Link href='map' className="text-blue-600 hover:underline">Map</Link>
-        <Link href="https://excalidraw.com/#json=BqQhPzxyFjq3qmx5aNM2C,SrT4-hpnxAgj11LElsZcYg" className='text-blue-600 hover:underline ml-2'>Outline</Link>
+        <Link href='map' className="p-1 text-blue-600 hover:underline">Map</Link>
+        <Link href='temples_of_tibet' className="p-1 text-blue-600 hover:underline">ToT</Link>
+        <Link href="https://excalidraw.com/#json=BqQhPzxyFjq3qmx5aNM2C,SrT4-hpnxAgj11LElsZcYg" className='p-1 text-blue-600 hover:underline'>Outline</Link>
       </div>
     </>
   );
