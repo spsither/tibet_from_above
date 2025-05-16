@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { FaExpand, FaCompress } from 'react-icons/fa';
 import Image from 'next/image';
 
-export default function TimeSlices({ slices = [] }) {
+export default function TimeSlices({ slices = [], description = '' }) {
   const [current, setCurrent] = useState(0);
   const [imageStates, setImageStates] = useState(() =>
     slices.map(() => ({ zoom: 100, position: { x: 0, y: 0 } }))
@@ -186,10 +186,11 @@ export default function TimeSlices({ slices = [] }) {
   }, []);
 
   return (
-    <div>
+    <div className="h-screen flex flex-col">
+      {/* Image Viewer Container */}
       <div
         ref={containerRef}
-        className="relative w-full aspect-[16/9] overflow-hidden rounded-xl shadow-lg bg-black"
+        className="relative flex-grow overflow-hidden shadow-lg bg-black aspect-video"
         onMouseDown={handleStart}
         onMouseMove={handleMove}
         onMouseUp={handleEnd}
@@ -201,17 +202,17 @@ export default function TimeSlices({ slices = [] }) {
           cursor: isDragging ? 'grabbing' : 'zoom-in',
         }}
       >
-
+        {/* Fullscreen Toggle Button */}
         <button
           onClick={toggleFullscreen}
           className="absolute top-3 right-3 z-20 p-2 bg-black/40 text-white hover:border-2 rounded-full backdrop-blur-lg shadow transition"
         >
           {isFullScreen ? <FaCompress size={20} /> : <FaExpand size={20} />}
         </button>
-
-
+  
+        {/* Main Image */}
         <Image
-          fill={true}
+          fill
           ref={imageRef}
           src={slices[current].image}
           alt={slices[current].label}
@@ -225,40 +226,27 @@ export default function TimeSlices({ slices = [] }) {
           }}
           draggable={false}
         />
-
-        {/* absolute top-2 left-2 bg-black/40 text-white text-[13px] px-1.5 py-0.5 rounded transition-opacity duration-500 */}
-        {!isMobile && (
-          <div className="absolute top-3 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center gap-2 z-20">
-            {slices.map((slice, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrent(index)}
-                className={`bg-black/40 text-white px-1.5 py-0.5 rounded ${index === current && 'border-2 border-white shadow-md'}`}
-              >
-                {slice.label}
-              </button>
-            ))}
-          </div>
-        )}
-
-      </div>
-
-      {isMobile && (
-        <div className="mt-2 px-2 flex flex-wrap justify-center gap-2 z-20">
+  
+        {/* Slice Buttons */}
+        <div className="absolute top-3 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center gap-2 z-20">
           {slices.map((slice, index) => (
             <button
               key={index}
               onClick={() => setCurrent(index)}
-              className={`px-2 py-1 text-sm rounded-md font-medium ${index === current
-                ? 'bg-black text-white'
-                : 'bg-gray-200 text-gray-800'
-                }`}
+              className={`bg-black/40 text-white px-1.5 py-0.5 rounded ${index === current && 'border-2 border-white shadow-md'}`}
             >
               {slice.label}
             </button>
           ))}
         </div>
-      )}
+      </div>
+  
+      {/* Description section pinned to bottom */}
+      <div className="w-full bg-white text-black text-sm md:text-base p-4 border-t shadow-inner">
+        {description}
+      </div>
     </div>
   );
+  
+  
 }
