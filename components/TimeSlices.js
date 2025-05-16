@@ -242,7 +242,7 @@ export default function TimeSlices({ slices = [], description = '' }) {
       </div>
   
       {/* Description section pinned to bottom */}
-      <div className="w-full bg-white text-black text-sm md:text-base p-4 border-t shadow-inner">
+      <div className="w-full bg-white text-black text-xs md:text-sm p-1">
         {description}
       </div>
     </div>
