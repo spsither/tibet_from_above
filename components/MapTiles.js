@@ -111,13 +111,6 @@ export default function MapTiles() {
         });
 
     }
-
-    function getCentroidLongitude(feature) {
-        const coords = feature.geometry.coordinates[0]; // outer ring of polygon
-        const longitudes = coords.map(coord => coord[0]); // extract longitudes
-        const avgLongitude = longitudes.reduce((a, b) => a + b, 0) / longitudes.length;
-        return avgLongitude;
-    }
     
     function toggleSatelliteLayer() {
 
@@ -200,8 +193,6 @@ export default function MapTiles() {
                 closeButton: false,
             });
             
-            let clickPopup = null;
-            
             map.on('mouseenter', 'tot', (e) => {
                 map.getCanvas().style.cursor = 'pointer';
             
@@ -238,10 +229,7 @@ export default function MapTiles() {
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
-            
-                // Remove any existing click popup
-                // if (clickPopup) clickPopup.remove();
-            
+
                 clickPopup = new mapboxgl.Popup({ closeOnClick: true })
                     .setLngLat(coordinates)
                     .setHTML(
