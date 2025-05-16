@@ -11,33 +11,25 @@ const slicesBySlug = {
     { image: '/images/Potala 1968 Corona.jpg', label: '1968' },
     { image: '/images/Potala 1982 Hexagon.jpg', label: '1982' }
   ],
-  jokhang: [
-    { image: '/images/Jokhang 1959 U2.jpg', label: '1959' },
-    { image: '/images/Jokhang 1968 Corona.jpg', label: '1968' },
-    { image: '/images/Jokhang 1982 Google Earth.png', label: '1982' }
-  ],
-
   drepung: [
     { image: '/images/Drepung 1959 U2.jpg', label: '1959' },
     { image: '/images/Drepung 1968 Corona.jpg', label: '1968' },
     { image: '/images/Drepung 1982 Hexagon.jpg', label: '1982' }
   ],
-
   jokhang: [
     { image: '/images/Jokhang 1959 U2.jpg', label: '1959' },
     { image: '/images/Jokhang 1968 Corona.jpg', label: '1968' },
     { image: '/images/Jokhang 1982 Hexagon.jpg', label: '1982' }
-  ]
-  ,
+  ],
   sera: [
     { image: '/images/Sera 1959 U2.jpg', label: '1959' },
     { image: '/images/Sera 1968 Corona.jpg', label: '1968' },
     { image: '/images/Sera 1982 Hexagon.jpg', label: '1982' }
   ],
   tashi_lhunpo: [
-    { image: '/images/Tashi Lhunpo 1962 U2.jpg',     label: '1962' },
+    { image: '/images/Tashi Lhunpo 1962 U2.jpg', label: '1962' },
     { image: '/images/Tashi Lhunpo 1968 Corona.jpg', label: '1968' },
-    { image: '/images/Tashi Lhunpo 1972 Hexagon.jpg',label: '1972' }
+    { image: '/images/Tashi Lhunpo 1972 Hexagon.jpg', label: '1972' }
   ],
   narthang: [
     { image: '/images/Narthang 1959 U2.jpg', label: '1959' },
@@ -58,5 +50,5 @@ export default async function Page({ params }) {
 
   return (
     <TimeSlices slices={slices} />
-);
+  );
 }

@@ -3,36 +3,27 @@ import JourneyThroughTime from '@/components/JourneyThroughTime';
 import TimeSlices from '@/components/TimeSlices';
 import Link from 'next/link';
 export default function Page() {
-  const images = [
-    '/images/Ganden - 1963 - U2.jpg',
-    '/images/Ganden - 1976 - Hexagon.png',
-  ];
 
   const items = [
-    { image: '/images/Ganden - 1963 - U2.jpg', label: 'Ganden - 1963', description: 'Before the imperial Chinese forces destroyed Ganden we have a sacred monastery untouched by modernization and the CCP. Existing in the same form for centuries.' },
-    { image: '/images/Ganden - 1976 - Hexagon.png', label: 'Ganden - 1976', description: 'After the devastating destruction during the Cultural revolution we can see the monastery has been destroyed off of the mountain.' },
-    { image: '/images/Ganden - 2006 - Google Earth.jpg', label: 'Ganden - 2006', description: 'During relaxed period of Hu Jintao we can see the Ganden being rebuild' },
-    { image: '/images/Ganden - 2024 - Google Earth.jpg', label: 'Ganden - 2024', description: 'At present Ganden has been rebuild but under tight control' },
+    { image: '/images/Ganden 1963 U2.jpg', label: 'Ganden - 1963', description: 'Before the imperial Chinese forces destroyed Ganden we have a sacred monastery untouched by modernization and the CCP. Existing in the same form for centuries.' },
+    { image: '/images/Ganden 1969 Corona.jpg', label: 'Ganden - 1969', description: 'After the devastating destruction during the Cultural revolution we can see the monastery has been destroyed off of the mountain.' },
+    { image: '/images/Ganden 1972 Hexagon.jpg', label: 'Ganden - 1972', description: 'During relaxed period of Hu Jintao we can see the Ganden being rebuild' },
   ];
 
   const slices = [
-    { image: '/images/Ganden - 2006 - Google Earth.jpg', label: '2006' },
-    { image: '/images/Ganden - 2007 - Google Earth.jpg', label: '2007' },
-    { image: '/images/Ganden - 2009 - Google Earth.jpg', label: '2009' },
-    { image: '/images/Ganden - 2010 - Google Earth.jpg', label: '2010' },
-    { image: '/images/Ganden - 2017 - Google Earth.jpg', label: '2017' },
-    { image: '/images/Ganden - 2021 - Google Earth.jpg', label: '2021' },
-    { image: '/images/Ganden - 2024 - Google Earth.jpg', label: '2024' }
+    { image: '/images/Jokhang 1959 U2.jpg', label: '1959' },
+    { image: '/images/Jokhang 1968 Corona.jpg', label: '1968' },
+    { image: '/images/Jokhang 1982 Hexagon.jpg', label: '1982' },
   ]
   return (
     <>
       <BeforeAfterSlider
-        before="/images/Ganden - 1963 - U2.jpg"
-        after="/images/Ganden - 1976 - Hexagon.png"
+        before="/images/Sera 1959 U2.jpg"
+        after ="/images/Sera 1982 Hexagon.jpg"
         alt="Before and After Comparison"
-        description="Ganden 1963 U2 vs 1976 after the cultural revolution"
-        beforeLabel='1963'
-        afterLabel='1976'
+        description="Sera Monastery 1959 U2 vs 1982 after the cultural revolution"
+        beforeLabel='1959'
+        afterLabel='1982'
       />
 
       <JourneyThroughTime items={items} />

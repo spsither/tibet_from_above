@@ -3,12 +3,12 @@ export default function Page() {
     return (
 
         <BeforeAfterSlider
-            before="/images/Ganden - 1963 - U2.jpg"
-            after="/images/Ganden - 1976 - Hexagon.png"
+            before="/images/Sera 1959 U2.jpg"
+            after="/images/Sera 1982 Hexagon.jpg"
             alt="Before and After Comparison"
-            description="Ganden 1963 U2 vs 1976 after the cultural revolution"
-            beforeLabel='1963'
-            afterLabel='1976'
+            description="Sera Monastery 1959 U2 vs 1982 after the cultural revolution"
+            beforeLabel='1959'
+            afterLabel='1982'
         />
 
     );
