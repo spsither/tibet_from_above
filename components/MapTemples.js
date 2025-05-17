@@ -3,28 +3,22 @@ import mapboxgl from 'mapbox-gl';
 import { useEffect, useRef, useState } from 'react';
 import {
     FaTimes,
-    FaImage,
-    FaFileDownload,
-    FaChevronDown,
-    FaChevronRight,
-    FaLayerGroup,
-    FaEye,
-    FaEyeSlash
+    FaLayerGroup
 } from 'react-icons/fa';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 export default function MapTiles() {
-    const [baseMapStyle, setBaseMapStyle] = useState('mapbox://styles/spsither/cm9airhyv003y01qk0utl3821')
+    const [baseMapStyle, setBaseMapStyle] = useState('mapbox://styles/spsither/cmarml0ea005y01s3ff7jgm87')
     const [isSatellite, setIsSatellite] = useState(false);
     const mapRef = useRef(null);
     const mapContainerRef = useRef(null);
     const [layerVisibility, setLayerVisibility] = useState({});
     const [layerOpen, setLayerOpen] = useState(false);
-    
+
     function toggleSatelliteLayer() {
 
         const map = mapRef.current;
-        const layerId = 'tot';
+        const layerId = 'temples';
 
         const layer = map.getLayer(layerId);
         if (layer) {
@@ -37,9 +31,9 @@ export default function MapTiles() {
             console.warn(`Layer ${layerId} not found`);
         }
 
-        const newStyle = baseMapStyle.includes('cma2txklf002k01qp4is4e2rq')
-            ? 'mapbox://styles/spsither/cm9airhyv003y01qk0utl3821'  // back to custom street view
-            : 'mapbox://styles/spsither/cma2txklf002k01qp4is4e2rq'; // switch to Mapbox satellite
+        const newStyle = baseMapStyle.includes('cmarn7h8000rl01sd9uokcvos')
+            ? 'mapbox://styles/spsither/cmarml0ea005y01s3ff7jgm87'  // back to custom street view
+            : 'mapbox://styles/spsither/cmarn7h8000rl01sd9uokcvos'; // switch to Mapbox satellite
 
         setBaseMapStyle(newStyle);
         mapRef.current.setStyle(newStyle);
@@ -47,6 +41,35 @@ export default function MapTiles() {
 
     }
 
+    function generateTableRows(properties) {
+        const sect = properties.Sect;
+        const country = properties.Country;
+        const county = properties.County;
+        const province = properties.Province;
+        const region = properties.Region;
+        const latlng = properties.LatLng;
+
+        let tableRows = '';
+        if (sect) {
+            tableRows += `<tr style=""><td style="padding-right: 0.25rem;">Sect:</td><td>${sect}</td></tr>`;
+        }
+        if (region) {
+            tableRows += `<tr style=""><td style="padding-right: 0.25rem;">Region:</td><td>${region}</td></tr>`;
+        }
+        if (country) {
+            tableRows += `<tr style=""><td style="padding-right: 0.25rem;">Country:</td><td>${country}</td></tr>`;
+        }
+        if (county) {
+            tableRows += `<tr style=""><td style="padding-right: 0.25rem;">County:</td><td>${county}</td></tr>`;
+        }
+        if (province) {
+            tableRows += `<tr style=""><td style="padding-right: 0.25rem;">Province:</td><td>${province}</td></tr>`;
+        }
+        if (latlng) {
+            tableRows += `<tr style=""><td style="padding-right: 0.25rem;">Lat,Lng:</td><td>${latlng}</td></tr>`;
+        }
+        return tableRows;
+    }
     useEffect(() => {
         mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
 
@@ -70,49 +93,52 @@ export default function MapTiles() {
                 closeButton: false,
             });
 
-            map.on('mouseenter', 'tot', (e) => {
+            map.on('mouseenter', 'temples', (e) => {
                 map.getCanvas().style.cursor = 'pointer';
-
                 const coordinates = e.features[0].geometry.coordinates.slice();
-                const description = e.features[0].properties.description;
-                const name = e.features[0].properties.Tibetan;
+                const properties = e.features[0].properties;
+
+                const name = properties.Tibetan;
 
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
 
+                const tableRows = generateTableRows(properties);
                 hoverPopup
                     .setLngLat(coordinates)
                     .setHTML(
                         `<div>
                             <h1 style="font-size: 1.25rem; color: #111;">${name}</h1>
-                            <p style="margin-top: 1rem; color: #7d7d7d;">${description}</p>
+                            ${tableRows ? `<table style="margin-top: 0.5rem; color: #333; font-size: 0.7rem; line-height: 1.2;">${tableRows}</table>` : ''}
                         </div>`
                     )
                     .addTo(map);
             });
 
-            map.on('mouseleave', 'tot', () => {
+
+
+            map.on('mouseleave', 'temples', () => {
                 map.getCanvas().style.cursor = '';
                 hoverPopup.remove();
 
             });
 
-            map.on('click', 'tot', (e) => {
+            map.on('click', 'temples', (e) => {
                 const coordinates = e.features[0].geometry.coordinates.slice();
-                const description = e.features[0].properties.description;
                 const name = e.features[0].properties.Tibetan;
 
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
 
-                clickPopup = new mapboxgl.Popup({ closeOnClick: true })
+                const tableRows = generateTableRows(e.features[0].properties);
+                new mapboxgl.Popup({ closeOnClick: true })
                     .setLngLat(coordinates)
                     .setHTML(
                         `<div>
                             <h1 style="font-size: 1.25rem; color: #111;">${name}</h1>
-                            <p style="margin-top: 1rem; color: #7d7d7d;">${description}</p>
+                            ${tableRows ? `<table style="margin-top: 0.5rem; color: #333; font-size: 0.7rem; line-height: 1.2;">${tableRows}</table>` : ''}
                         </div>`
                     )
                     .addTo(map);
@@ -123,7 +149,7 @@ export default function MapTiles() {
 
             const initialVisibility = {
                 satellite: false,
-                'tot': true,
+                'temples': true,
             };
 
             setLayerVisibility(initialVisibility);
@@ -163,9 +189,9 @@ export default function MapTiles() {
                     <div className="flex items-center">
                         <input
                             type="checkbox"
-                            checked={layerVisibility['tot'] ?? true}
+                            checked={layerVisibility['temples'] ?? true}
                             onChange={(e) =>
-                                toggleLayer('tot', e.target.checked)
+                                toggleLayer('temples', e.target.checked)
                             }
                         />
                         <label className="font-bold ml-2">Temples of Tibet</label>
