@@ -111,7 +111,7 @@ export default function MapTiles() {
         });
 
     }
-    
+
     function toggleSatelliteLayer() {
 
         const map = mapRef.current;
@@ -205,7 +205,7 @@ export default function MapTiles() {
         const map = new mapboxgl.Map({
             container: mapContainerRef.current,
             style: baseMapStyle,
-            center: [91.9544950924866,29.35149162607727],
+            center: [91.9544950924866, 29.35149162607727],
             zoom: 9,
             attributionControl: false
         }).addControl(
@@ -223,18 +223,18 @@ export default function MapTiles() {
             const hoverPopup = new mapboxgl.Popup({
                 closeButton: false,
             });
-            
+
             map.on('mouseenter', 'temples', (e) => {
                 map.getCanvas().style.cursor = 'pointer';
-            
+
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const properties = e.features[0].properties;
                 const name = e.features[0].properties.Tibetan;
-            
+
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
-            
+
                 const tableRows = generateTableRows(properties);
                 hoverPopup
                     .setLngLat(coordinates)
@@ -246,17 +246,17 @@ export default function MapTiles() {
                     )
                     .addTo(map);
             });
-            
+
             map.on('mouseleave', 'temples', () => {
                 map.getCanvas().style.cursor = '';
                 hoverPopup.remove();
-                
+
             });
-            
+
             map.on('click', 'temples', (e) => {
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const name = e.features[0].properties.Tibetan;
-            
+
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
@@ -271,7 +271,7 @@ export default function MapTiles() {
                         </div>`
                     )
                     .addTo(map);
-            
+
                 // Remove hover popup
                 hoverPopup.remove();
             });
@@ -283,19 +283,29 @@ export default function MapTiles() {
             };
 
             
+            // const sortedGeojson = {
+            //     ...geojson,
+            //     features: [...geojson.features].sort((a, b) => {
+            //         const getCentroidLng = (feature) => {
+            //             const coords = feature.geometry.coordinates[0];
+            //         const lngs = coords.map(coord => coord[0]);
+            //             return lngs.reduce((sum, lng) => sum + lng, 0) / lngs.length;
+            //         };
+            //         return getCentroidLng(a) - getCentroidLng(b); // west to east
+            //     }),
+            // };
+
+            // sort by title
             const sortedGeojson = {
                 ...geojson,
-                features: [...geojson.features].sort((a, b) => {
-                    const getCentroidLng = (feature) => {
-                        const coords = feature.geometry.coordinates[0];
-                        const lngs = coords.map(coord => coord[0]);
-                        return lngs.reduce((sum, lng) => sum + lng, 0) / lngs.length;
-                    };
-                    return getCentroidLng(a) - getCentroidLng(b); // west to east
-                }),
+                features: geojson.features.sort((a, b) => {
+                    const titleA = a.properties.title || '';
+                    const titleB = b.properties.title || '';
+                    return titleA.localeCompare(titleB);
+                })
             };
             
-            
+
             // Add all raster image layer IDs explicitly
             sortedGeojson.features.forEach(({ properties: { id } }) => {
                 initialVisibility[id] = true;
@@ -371,10 +381,10 @@ export default function MapTiles() {
                 ref={mapContainerRef}
             />
             {downloadPopUp && (
-                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 max-w-xs w-70">
+                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 max-w-xs w-80">
                     <button
                         onClick={() => setDownloadPopUp(null)}
-                        className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-xl"
+                        className="absolute top-1 left-1 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-md cursor-pointer"
                         aria-label="Close"
                     >
                         <FaTimes />
@@ -386,12 +396,23 @@ export default function MapTiles() {
                     </h2>
                     <p className="text-sm mt-2">{downloadPopUp.description}</p>
                     {downloadPopUp.mission_id && (
-                        <p className="text-sm mt-2">
-                            Mission ID: {downloadPopUp.mission_id}<br/>
+                        <p className="text-xs mt-2">
+                            Mission ID: {downloadPopUp.mission_id}<br />
                             Captured on: {downloadPopUp.capture_date}
                         </p>
                     )}
-                    
+
+                    {downloadPopUp.description_source && (
+                        <p className="text-xs mt-2">
+                            Source:{" "}
+                            <span
+                                dangerouslySetInnerHTML={{
+                                    __html: downloadPopUp.description_source.replace(/\r\n/g, '<br/>'),
+                                }}
+                            />
+                        </p>
+                    )}
+
                     <div className='mt-4 flex items-center justify-evenly '>
                         <a
                             href={downloadPopUp.downloadUrl}
@@ -418,7 +439,7 @@ export default function MapTiles() {
                 <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80">
                     <button
                         onClick={() => setLayerOpen(false)}
-                        className="absolute top-2 right-2 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-xl cursor-pointer"
+                        className="absolute top-1 left-1 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-md cursor-pointer"
                         aria-label="Close"
                     >
                         <FaTimes />
@@ -488,7 +509,7 @@ export default function MapTiles() {
                                                 }
                                                 className="ml-2 text-blue-600 dark:text-blue-300 hover:underline focus:outline-none text-left w-full"
                                             >
-                                                { getTitleFromId(layerId) }
+                                                {getTitleFromId(layerId)}
                                             </button>
                                         </div>
                                     ))}
