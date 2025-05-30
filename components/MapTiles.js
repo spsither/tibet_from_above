@@ -381,10 +381,10 @@ export default function MapTiles() {
                 ref={mapContainerRef}
             />
             {downloadPopUp && (
-                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 max-w-xs w-80">
+                <div className="absolute top-4 left-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 text-sm rounded-lg shadow-lg p-4 max-w-xs w-80">
                     <button
                         onClick={() => setDownloadPopUp(null)}
-                        className="absolute top-1 left-1 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-md cursor-pointer"
+                        className="absolute top-1 left-1 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white cursor-pointer"
                         aria-label="Close"
                     >
                         <FaTimes />
@@ -439,7 +439,7 @@ export default function MapTiles() {
                 <div className="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 rounded-lg shadow-lg p-4 overflow-y-auto text-sm space-y-2 z-50 w-80">
                     <button
                         onClick={() => setLayerOpen(false)}
-                        className="absolute top-1 left-1 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white text-md cursor-pointer"
+                        className="absolute top-1 left-1 text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white cursor-pointer"
                         aria-label="Close"
                     >
                         <FaTimes />
