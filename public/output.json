@@ -6,14 +6,14 @@
         "properties": {
           "id": "spsither.mount_kailash_-_1963_-_u2_positi",
           "name": "Mount Kailash - 1963 - U2 Positive - High Res_0",
-          "description": "Mount Kailash, Gang Rinpoche or Gang Tise in Tibetan, is considered one of the most sacred Himalayan Mountains in Buddhism, Hinduism, and the Bonpo religion. Located in Ngari, it is a widely revered destination for pilgrimage in Western Tibet. Mount Kailash is located near the sacred Lake Manasarowar, is 6,714 meters tall, and is part of the Kailash Mountain range.",
+          "description": "Mount Kailash, Gang Rinpoche or Gang Tise in Tibetan, is considered one of the most sacred Himalayan Mountains in the Buddhism, Hinduism, and the Bonpo religions. Located in Ngari, it is a widely revered destination for pilgrimage in Western Tibet. Mount Kailash is located near the sacred Lake Manasarowar, is 6,714 meters tall, and is part of the Kailash Mountain range.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Mount+Kailash+-+1963+-+U2+Positive+-+High+Res_0.png",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Mount+Kailash+-+1963+-+U2+Positive+-+High+Res_0.tif",
           "title": "Mount Kailash hi-res",
           "group": "Purang",
           "mission_id": "3227",
           "capture_date": "9/29/1963",
-          "description_source": "1. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, pp. 32. \r\n 2. Ryavec, Karl. 2015. A Historical Atlas of Tibet. Chicago: The University of Chicago Press, p. 14.\r\n 3. Kvaerne, Per. “The Bon Religion of Tibet.” In The Tibetan History Reader, edited by Tuttle, Gray and Kurtis Schaeffer, 192. Chichester, NY: Columbia University Press, 2013.\r\n 4. “Kailash,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region, Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Kailash."
+          "description_source": "1. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, pp. 32. \n 2. Ryavec, Karl. 2015. A Historical Atlas of Tibet. Chicago: The University of Chicago Press, p. 14.\n 3. Kvaerne, Per. “The Bon Religion of Tibet.” In The Tibetan History Reader, edited by Tuttle, Gray and Kurtis Schaeffer, 192. Chichester, NY: Columbia University Press, 2013.\n 4. “Kailash,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region, Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Kailash."
         },
         "geometry": {
           "type": "Polygon",
@@ -300,12 +300,13 @@
         "properties": {
           "id": "spsither.lhasa-1959-c6046-9l-9r-2303_0_0",
           "name": "Lhasa-1959-C6046-9L-9R-2303_0_0",
-          "description": "Capital city of Tibet",
+          "description": "Capital city of Tibet.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Lhasa-1959-C6046-9L-9R-2303_0_0.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Lhasa-1959-C6046-9L-9R-2303_0_0.tif",
           "title": "Lhasa",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "description_source": ""
         },
         "geometry": {
@@ -383,7 +384,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0720_dwags_po_bshad_sgr",
           "name": "T344A-9L-0720 DWAGS PO BSHAD SGRUB GLING, GELUK_2_0",
-          "description": "Dakpo Shedrupling (Tib. Dwags po bshad sgrub gling), also known as Dakpo Dratsang, was founded in the mid-15th century by Je Lodro Tenzin, student of Je Tsongkhapa,  founder of the Geluk sect of Buddhism. Lodro Tenzin’s students eventually settled at the site which had formerly been a Kagyu monastery founded by the 9th Karmapa. 200 monks lived at Dakpo Shedrupling, while about 500 at a time were associated with the monastery but had roles travelling.",
+          "description": "Dakpo Shedrupling (Tib. Dwags po bshad sgrub gling), also known as Dakpo Dratsang, was founded in the mid-15th century by Je Lodro Tenzin, student of Je Tsongkhapa, founder of the Geluk sect of Buddhism. Lodro Tenzin’s students eventually settled at the site which had formerly been a Kagyu monastery founded by the 9th Karmapa. 200 monks lived at Dakpo Shedrupling, while about 500 at a time were associated with the monastery but had roles travelling.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK_2_0.JPG",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+DWAGS+PO+BSHAD+SGRUB+GLING,+GELUK_2_0.tif",
           "title": "Dakpo Shedrupling",
@@ -391,7 +392,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0720-2L",
           "capture_date": "12/20/1964",
-          "description_source": ""
+          "description_source": "1. “Places: Dakpo Shedrupling,” KMAPS. SHANTI at the University of Virginia. Accessed May 19th, 2025. https://places.kmaps.virginia.edu/features/22385.\n 2. Gyis brtsams, Chos ‘phel. 2010. “lho kha sa khul gyi gnas yig.” In gangs can bod kyi gnas bshad lam yig gsar ma. Charlottesville, VA: The Tibetan & Himalayan Library. https://www.thlib.org/places/monasteries/publications/chosphel-book.php#!book=/lho-kha-gnas-yig/wb/a1/.\n 3. “Dakpo Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Dakpo-Dratsang-.\n 4. “History,” The Dagpo Educational Fund. The Dagpo Fund. Accessed May 20th, 2025. https://thedagpofund.org/en/history/."
         },
         "geometry": {
           "type": "Polygon",
@@ -1224,7 +1225,7 @@
         "properties": {
           "id": "spsither.t344a-9r-1173_kyormolung",
           "name": "T344A-9R-1173 Kyormolung",
-          "description": "Kyormolung (Tib. skyor mo lung) Monastery was founded in the Tolung Valley in the 12th century Balti Wangchuk Tsultrim. It was founded as a Kadampa monastery and converted to Geluk in the 14th century, with 3 colleges for religious study. A significant amount of its architecture and murals were preserved past the Cultural Revolution. Next to Kyromolung is Lhachu, a sacred spring of Tolung Valley.",
+          "description": "Kyormolung (Tib. skyor mo lung) Monastery was founded in the Tolung Valley in the 12th century by Balti Wangchuk Tsultrim. It was founded as a Kadampa monastery and converted to Geluk in the 14th century, with 3 colleges for religious study. A significant amount of its architecture and murals were preserved past the Cultural Revolution. Next to Kyromolung is Lhachu, a sacred spring of Tolung Valley.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173+Kyormolung.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9R-1173+Kyormolung.tif",
           "title": "Kyormolung hi-res",
@@ -1232,7 +1233,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9R-1173-1L",
           "capture_date": "12/20/1964",
-          "description_source": "1. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 670-673.\r\n 2. “Kyormolung,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Kyormolung-."
+          "description_source": "1. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 670-673.\n 2. “Kyormolung,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Kyormolung-."
         },
         "geometry": {
           "type": "Polygon",
@@ -1267,12 +1268,12 @@
         "properties": {
           "id": "spsither.labrang_monastery_1962_0_0",
           "name": "Labrang Monastery 1962_0_0",
-          "description": "Labrang Monastery (Tib. bla brang bkra shis 'khyil) is a Geluk monastery in Amdo. It is one of six historic, major Gelukpa monasteries in Tibet, founded in 1709 by Jamyang Zhepa Ngawang Tsondru. It is a site of pilgrimage still today, with many of its structures still standing even after the Cultural Revolution. Historically, it was also a site for religious education, with size colleges that taught different focuses within the Geluk sect of Tibetan Buddhism.",
+          "description": "Labrang Monastery (Tib. bla brang bkra shis 'khyil) is a Geluk monastery in Amdo. It is one of six historic major Gelukpa monasteries in Tibet, founded in 1709 by Jamyang Zhepa Ngawang Tsondru. It is still a site of pilgrimage today, many of its structures still standing even after the Cultural Revolution. Historically, it was also a site for religious education, with size colleges that taught different focuses within the Geluk sect of Tibetan Buddhism.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Labrang+Monastery+1962_0_0.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Labrang+Monastery+1962_0_0.tif",
           "title": "Labrang",
           "group": "Sangchu",
-          "description_source": "1. Osada, Yukiyasu, Gavin Allwright, and Atushi Kanamaru. 2004. Mapping the Tibetan World. Tokyo: Kotan Publishing, Inc., p. 182. \r\n 2. “Labrang Tashikhyil,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Labrang-Tashikhyil."
+          "description_source": "1. Osada, Yukiyasu, Gavin Allwright, and Atushi Kanamaru. 2004. Mapping the Tibetan World. Tokyo: Kotan Publishing, Inc., p. 182. \n 2. “Labrang Tashikhyil,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Labrang-Tashikhyil."
         },
         "geometry": {
           "type": "Polygon",
@@ -1390,7 +1391,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0712_ican_rag_kha_thog_",
           "name": "T344A-9L-0712 ICAN RAG KHA THOG, GELUK_2_0",
-          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Lhading Karduo.\" Lhading Karduo was founded as a Geluk monastery.",
+          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Lhading Karduo.\" Lhading Karduo was founded as a Geluk monastery.        ",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK_2_0.JPG",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0712+ICAN+RAG+KHA+THOG,+GELUK_2_0.tif",
           "title": "Changra Khathok hi-res",
@@ -1559,7 +1560,7 @@
         "properties": {
           "id": "spsither.nedong_tsetsokpa_-_1963_-_u2_-_g",
           "name": "Nedong Tsetsokpa - 1963 - U2 - G3236 - 8R - 0948 - 1L",
-          "description": "Nedong Tsetsokpa (Tib. sne gdong rtse tshogs pa) was established in the 13th century by Shakyashri, disciple of Pakpa Lordro Gyeltsen. It was established as a Sakya monastery, built in the city of Nedong, along the bank of the Yarlung river. Its surrounding city of Nedong was once the capitol city of Tibet, and the seat of the Pakmodru Dynasty in the 15th century. Nedong Tsetsokpa was entirely destroyed in the 1960s and is longer standing.",
+          "description": "Nedong Tsetsokpa (Tib. sne gdong rtse tshogs pa) was established in the 13th century by Shakyashri, disciple of Pakpa Lordro Gyeltsen. It was established as a Sakya monastery, built in the city of Nedong along the bank of the Yarlung river. Its surrounding city of Nedong was once the capitol city of Tibet and the seat of the Pakmodru Dynasty in the 15th century. Nedong Tsetsokpa was entirely destroyed in the 1960s and is longer standing.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nedong+Tsetsokpa+-+1963+-+U2+-+G3236+-+8R+-+0948+-+1L.tif",
           "title": "Nedong Tsetsokpa hi-res",
@@ -1567,7 +1568,7 @@
           "mission_id": "3236",
           "included_id_image_id": "G3236-9R-0948",
           "capture_date": "10/30/1963",
-          "description_source": "1. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, p. 224. \r\n 2. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 410-411.\r\n 3. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 193.\r\n 4. “Nedong Tsetsokpa,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/bo/institution/Nedong-Tsetsokpa."
+          "description_source": "1. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, p. 224. \n 2. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 410-411.\n 3. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 193.\n 4. “Nedong Tsetsokpa,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/bo/institution/Nedong-Tsetsokpa."
         },
         "geometry": {
           "type": "Polygon",
@@ -1736,7 +1737,7 @@
           "mission_id": "3236",
           "included_id_image_id": "G3236-9R-0948",
           "capture_date": "10/30/1963",
-          "description_source": "1. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, p. 195. \r\n 2. “Ganden Chokhor Ling,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Ganden-Chokhor-Ling."
+          "description_source": "1. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, p. 195. \n 2. “Ganden Chokhor Ling,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Ganden-Chokhor-Ling."
         },
         "geometry": {
           "type": "Polygon",
@@ -1777,8 +1778,9 @@
           "title": "Sera Monastery",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "included_id_image_id": "Lhasa-1959-C6046-9L-9R-2308",
-          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 118-119.\r\n 2. Cabezon, Jose and Penpa Dorjee. 2019. “Introduction.” Sera Monastery. Somerville, MA: Wisdom Publications, pp. 1-28."
+          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 118-119.\n 2. Cabezon, Jose and Penpa Dorjee. 2019. “Introduction.” Sera Monastery. Somerville, MA: Wisdom Publications, pp. 1-28."
         },
         "geometry": {
           "type": "Polygon",
@@ -1950,7 +1952,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0368",
           "capture_date": "12/20/1964",
-          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 266.\r\n 2. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, p. 487.\r\n 3. “Ralung,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Ralung-Monastery."
+          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 266.\n 2. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, p. 487.\n 3. “Ralung,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Ralung-Monastery."
         },
         "geometry": {
           "type": "Polygon",
@@ -1985,7 +1987,7 @@
         "properties": {
           "id": "spsither.ngari_dratsang_-_1963_-_u2_-_g32",
           "name": "Ngari Dratsang - 1963 - U2 - G3236 - 8R - 940 - 1L (1)_1_2_0",
-          "description": "Ngari Dratsang, located in on Valley in Western Tibet, was built in 1541, founded by the Second Dalai Lama, Genden Gyatso. It was founded as a Geluk Monastery amidst the 15th-16th century period of growing support for Geluk teachings in its region of Ngari.",
+          "description": "Ngari Dratsang, located in Western Tibet, was built in 1541, founded by the Second Dalai Lama, Genden Gyatso. It was founded as a Geluk Monastery amidst the 15th-16th century period of growing support for Geluk teachings in its region of Ngari.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1)_1_2_0.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Ngari+Dratsang+-+1963+-+U2+-+G3236+-+8R+-+940+-+1L+(1)_1_2_0.tif",
           "title": "Ngari Dratsang hi-res",
@@ -1993,7 +1995,7 @@
           "mission_id": "3236",
           "included_id_image_id": "G3236-9R-0940",
           "capture_date": "10/30/1963",
-          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 194.\r\n 2. Adams, Miranda. “Teacher: Dalai Lama II, Gendun Gyatso,” Himalayan Art Resources. September, 2008. https://www.himalayanart.org/search/set.cfm?setID=965.\r\n 3. “Ngari Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Ngari-Dratsang."
+          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 194.\n 2. Adams, Miranda. “Teacher: Dalai Lama II, Gendun Gyatso,” Himalayan Art Resources. September, 2008. https://www.himalayanart.org/search/set.cfm?setID=965.\n 3. “Ngari Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Ngari-Dratsang."
         },
         "geometry": {
           "type": "Polygon",
@@ -2111,7 +2113,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0720_gongsha_ritro_2_0",
           "name": "T344A-9L-0720 GONGSHA RITRO_2_0",
-          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as Gongsha Ritro. (Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
+          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Gongsha Ritro.\"",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO_2_0.JPG",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+GONGSHA+RITRO_2_0.tif",
           "title": "Gongsha Ritro",
@@ -2119,7 +2121,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0720-2L",
           "capture_date": "12/20/1964",
-          "description_source": ""
+          "description_source": "Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)"
         },
         "geometry": {
           "type": "Polygon",
@@ -2197,7 +2199,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0715_zilie_si_2_0",
           "name": "T344A-9L-0715 ZILIE SI_2_0",
-          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as Zilie si. Zilie si was founded in 1200 as a Nyingma monastery, and converted in 1650 to the Geluk sect. (Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
+          "description": "f",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI_2_0.JPG",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0715+ZILIE+SI_2_0.tif",
           "title": "Tsele hi-res",
@@ -2205,7 +2207,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0715-1R",
           "capture_date": "12/20/1964",
-          "description_source": ""
+          "description_source": "Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company."
         },
         "geometry": {
           "type": "Polygon",
@@ -2248,7 +2250,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0729-1L",
           "capture_date": "12/20/1964",
-          "description_source": "1. Ryavec, Karl. 2015. A Historical Atlas of Tibet. Chicago: The University of Chicago Press, p. 64.\r\n 2. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 394-340.\r\n 3. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 232.\r\n 4. “Places: Daklha Gampo,” KMAPS. SHANTI at the University of Virginia. Accessed May 19th, 2025. https://places.kmaps.virginia.edu/features/22389.\r\n 5. Gyis brtsams, Chos ‘phel. 2010. “lho kha sa khul gyi gnas yig.” In gangs can bod kyi gnas bshad lam yig gsar ma. Charlottesville, VA: The Tibetan & Himalayan Library. https://www.thlib.org/places/monasteries/publications/chosphel-book.php#!book=/lho-kha-gnas-yig/wb/a1/.\r\n 6. “Daklha Gampo,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Daklha-Gampo."
+          "description_source": "1. Ryavec, Karl. 2015. A Historical Atlas of Tibet. Chicago: The University of Chicago Press, p. 64.\n 2. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 394-340.\n 3. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 232.\n 4. “Places: Daklha Gampo,” KMAPS. SHANTI at the University of Virginia. Accessed May 19th, 2025. https://places.kmaps.virginia.edu/features/22389.\n 5. Gyis brtsams, Chos ‘phel. 2010. “lho kha sa khul gyi gnas yig.” In gangs can bod kyi gnas bshad lam yig gsar ma. Charlottesville, VA: The Tibetan & Himalayan Library. https://www.thlib.org/places/monasteries/publications/chosphel-book.php#!book=/lho-kha-gnas-yig/wb/a1/.\n 6. “Daklha Gampo,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Daklha-Gampo."
         },
         "geometry": {
           "type": "Polygon",
@@ -2283,7 +2285,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0306_drongtse",
           "name": "T344A-9L-0306 Drongtse",
-          "description": "Drongtse Monastery (Tib. 'brong dkar rtse dgon pa) was founded as a Geluk monastery in 1442 by Rinchen Gyatso. It is said that Rinchen Gyatso founded the monastery after it was prophesied by scholar and religious leader, Tsongkhapa. Drongtse held colleges for religious study and was eventually considered a branch of the nearby Tashilhunpo Monastery. Today, the only active structure on its campus is the renovated assembly hall.",
+          "description": "Drongtse Monastery (Tib. 'brong dkar rtse dgon pa) was founded as a Geluk monastery in 1442 by Rinchen Gyatso. It is said that he founded the monastery after it was prophesied by scholar and religious leader, Tsongkhapa. Drongtse held colleges for religious study and was eventually considered a branch of the nearby Tashilhunpo Monastery. Today, the only active structure on its campus is the renovated assembly hall.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0306+Drongtse.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0306+Drongtse.tif",
           "title": "Drongtse hi-res",
@@ -2291,7 +2293,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0306",
           "capture_date": "12/20/1964",
-          "description_source": "1. “Drongtse,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Drongtse.\r\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 328-329, 165."
+          "description_source": "1. “Drongtse,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Drongtse.\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 328-329, 165."
         },
         "geometry": {
           "type": "Polygon",
@@ -2375,8 +2377,9 @@
           "title": "Norbu Lingka",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "included_id_image_id": "Lhasa-1959-C6046-9L-9R-2305",
-          "description_source": "1. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, p. 180-192.\r\n 2. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 107.\r\n 3. “Norbulingkha,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Norbulingkha."
+          "description_source": "1. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, p. 180-192.\n 2. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 107.\n 3. “Norbulingkha,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Norbulingkha."
         },
         "geometry": {
           "type": "Polygon",
@@ -2411,13 +2414,14 @@
         "properties": {
           "id": "spsither.drepung_and_nechung_monasteries_",
           "name": "Drepung and Nechung Monasteries - 1959 - U2 Positive - High Res 2_0_0",
-          "description": "Drepung (Tib. ‘bras spungs) Monastery was founded by Jamyang Choje in 1416, 8 km west of Lhasa. The monastery was known as Tibet’s largest, housing up to 10,000 monks by the early 17th century. Just southeast of Drepung is Nechung (Tib. gnas chung) Monastery, the seat the Nechung Oracle. The Nechung Oracle is the main Oracle of Tibet and has historically held great political influence. This influence, along with Drepung’s significant size and patronage, have made the pair an especially powerful institution in Tibet.",
+          "description": "Drepung (Tib. ‘bras spungs) Monastery was founded by Jamyang Choje in 1416, 8 km west of Lhasa. The monastery was known as Tibet’s largest, housing up to 10,000 monks by the early 17th century. Just southeast of Drepung is Nechung (Tib. gnas chung) Monastery, the seat the Nechung Oracle. The Nechung Oracle is the main Oracle of Tibet and has historically held great political influence. This influence, along with Drepung’s significant size and patronage, have made the pair an especially powerful institutions in Tibet.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Drepung+and+Nechung+Monasteries+-+1959+-+U2+Positive+-+High+Res+2_0_0.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Drepung+and+Nechung+Monasteries+-+1959.tif",
           "title": "Drepung and Nechung",
           "group": "Lhasa",
           "mission_id": "C6046",
-          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 109-114.\r\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 145, 165.\r\n 3. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc., pp. 67-69.\r\n 4. “Drepung Monastery,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Drepung-Monastery.\r\n 5. “Nechung,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Nechung."
+"capture_date": "11/05/1959",
+          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 109-114.\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 145, 165.\n 3. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc., pp. 67-69.\n 4. “Drepung Monastery,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Drepung-Monastery.\n 5. “Nechung,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Nechung."
         },
         "geometry": {
           "type": "Polygon",
@@ -2452,7 +2456,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0720_rdo_kha_gling__nyi",
           "name": "T344A-9L-0720 RDO KHA GLING, NYINGMA_2_0",
-          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as Duojilin si. Duojilin si was founded in 1180 as a Nyingma monastery. (Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
+          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Duojilin si.\" Duojilin si was founded in 1180 as a Nyingma monastery.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA_2_0.JPG",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0720+RDO+KHA+GLING,+NYINGMA_2_0.tif",
           "title": "Dokhaling",
@@ -2460,7 +2464,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0720-2L",
           "capture_date": "12/20/1964",
-          "description_source": ""
+          "description_source": "Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company."
         },
         "geometry": {
           "type": "Polygon",
@@ -2589,7 +2593,7 @@
           "mission_id": "3236",
           "included_id_image_id": "G3236-9R-0998",
           "capture_date": "10/30/1963",
-          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, pp. 174-175.\r\n 2. “Dingpoche,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Dingpoche."
+          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, pp. 174-175.\n 2. “Dingpoche,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Dingpoche."
         },
         "geometry": {
           "type": "Polygon",
@@ -2632,7 +2636,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0274",
           "capture_date": "12/20/1964",
-          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 138.\r\n 2. “Gadong,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Gadong."
+          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 138.\n 2. “Gadong,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/en/institution/Gadong."
         },
         "geometry": {
           "type": "Polygon",
@@ -2667,7 +2671,7 @@
         "properties": {
           "id": "spsither.samye_monastery_-_1963_-_u2_-_32",
           "name": "Samye Monastery - 1963 - U2 - 3236 - 9R - 971 (11)_1_2_0",
-          "description": "Samye Gonpa is one of the most well-known monasteries in Tibet, its establishment iconic of the Tibetan Empire’s 8th century budding endorsement of Buddhism. Samye was commissioned to be built by Tibetan Emperor Trisong Detsen in 766 in Yarlung Valley, 50 km Southeast of Lhasa. Difficulties in the construction process are said to have been quelled by rituals performed by the Nyingma Tantric master, Padmasambhava. Its campus was arranged in the shape of a Mandala, with its central temple, Tsuglakhang, representing the Buddhist holy mountain, Mount Meru. The monastic campus is surrounded by a large, circular enclosure wall with four gateway points, pointing due North, South, East, and West. Throughout its long history, it has been ruled under the Kadam, then Sakya, and lastly Geluk sects. The monastery is now restored, and continues as a key religious and pilgrimage site across sects.",
+          "description": "Samye Gonpa is one of the most well-known monasteries in Tibet, its establishment iconic of the Tibetan Empire’s 8th century budding endorsement of Buddhism. Samye was commissioned to be built by Tibetan Emperor Trisong Detsen in 766 in Yarlung Valley, 50 km Southeast of Lhasa. Difficulties in the construction process are said to have been quelled by rituals performed by the Nyingma Tantric master, Padmasambhava. Its campus was arranged in the shape of a Mandala, with its central temple, Tsuglakhang, representing the Buddhist holy mountain, Mount Meru. The monastic campus is surrounded by a large, circular enclosure wall with four gateway points, pointing due North, South, East, and West, respective;y. Throughout its long history, it was ruled under the Kadam, then Sakya, and lastly Geluk sects. The monastery is now restored, and continues as a key religious and pilgrimage site across sects.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11)_1_2_0.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Samye+Monastery+-+1963+-+U2+-+3236+-+9R+-+971+(11)_1_2_0.tif",
           "title": "Samye Monastery hi-res",
@@ -2675,7 +2679,7 @@
           "mission_id": "3236",
           "included_id_image_id": "G3236-9R-0971",
           "capture_date": "10/30/1963",
-          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 305-328.\r\n 2. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, pp. 168- 179. \r\n 3. “Samye Monastery,” Samye Pathways. Samye Institute. Accessed May 19th, 2025. https://pathways.samyeinstitute.org/wiki/samye-monastery/.\r\n 4. “Samye,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Samye."
+          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 305-328.\n 2. Lange, Diana. 2020. An Atlas of the Himalayas by a 19th Century Tibetan Monk. Leiden, Boston: Brill, pp. 168- 179. \n 3. “Samye Monastery,” Samye Pathways. Samye Institute. Accessed May 19th, 2025. https://pathways.samyeinstitute.org/wiki/samye-monastery/.\n 4. “Samye,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Samye."
         },
         "geometry": {
           "type": "Polygon",
@@ -2718,7 +2722,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0327",
           "capture_date": "12/20/1964",
-          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 308.\r\n 2. “Nenying,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Nenying."
+          "description_source": "1. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 308.\n 2. “Nenying,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Nenying."
         },
         "geometry": {
           "type": "Polygon",
@@ -2753,7 +2757,7 @@
         "properties": {
           "id": "spsither.t344a-9l-0722_ganden_rabten_and_",
           "name": "T344A-9L-0722 GANDEN RABTEN AND TASHIGANG LHAKHANG_2_0",
-          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as Gandanraodeng si. Gandanraodeng si was founded in 1855 as a Geluk monastery. (Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company.)",
+          "description": "We believe that this site might be what is labeled in a 2010 Chinese County Gazetteer as \"Gandanraodeng si.\" Gandanraodeng si was founded in 1855 as a Geluk monastery.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG_2_0.JPG",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/T344A-9L-0722+GANDEN+RABTEN+AND+TASHIGANG+LHAKHANG_2_0.tif",
           "title": "Ganden Rabten and Tashigang Lhakhang hi-res",
@@ -2761,7 +2765,7 @@
           "mission_id": "T344A",
           "included_id_image_id": "T344A-9L-0722-V",
           "capture_date": "12/20/1964",
-          "description_source": ""
+          "description_source": "Jiacha County Editorial Committee. (2010). Jiacha xianzhi [Jiacha County Gazetteer]. Beijing: Zhonghua Book Company."
         },
         "geometry": {
           "type": "Polygon",
@@ -2801,7 +2805,7 @@
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Tholing+1962_0_0.tif",
           "title": "Tholing",
           "group": "Tsamda",
-          "description_source": "1. Ryavec, Karl. 2015. A Historical Atlas of Tibet. Chicago: The University of Chicago Press, pp. 72-77.\r\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 425-429.\r\n 6. “Toling,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Toling-Monastery."
+          "description_source": "1. Ryavec, Karl. 2015. A Historical Atlas of Tibet. Chicago: The University of Chicago Press, pp. 72-77.\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, pp. 425-429.\n 6. “Toling,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Toling-Monastery."
         },
         "geometry": {
           "type": "Polygon",
@@ -2887,7 +2891,7 @@
           "mission_id": "3236",
           "included_id_image_id": "G3236-9R-0966",
           "capture_date": "10/30/1963",
-          "description_source": "1. “Namseling Manor,” World Monuments Fund. Accessed May 19th, 2025. https://www.wmf.org/monuments/namseling-manor.\r\n 2. “Monkhar Namseling,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Monkhar-Namseling."
+          "description_source": "1. “Namseling Manor,” World Monuments Fund. Accessed May 19th, 2025. https://www.wmf.org/monuments/namseling-manor.\n 2. “Monkhar Namseling,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Monkhar-Namseling."
         },
         "geometry": {
           "type": "Polygon",
@@ -2970,7 +2974,7 @@
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Tsechen1962_0_0.tif",
           "title": "Tsechen",
           "group": "Gyantse",
-          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 497-498.\r\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, p. 414.\r\n 3. “Tsechen,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Tsechen."
+          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, pp. 497-498.\n 2. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, p. 414.\n 3. “Tsechen,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Tsechen."
         },
         "geometry": {
           "type": "Polygon",
@@ -3010,7 +3014,7 @@
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/Nartang+-+1959+-+U2+-+Positive+-+High+Res_0_0.tif",
           "title": "Nartang",
           "group": "Shigatse",
-          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, p. 566.\r\n 2. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc.,p. 274."
+          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, p. 566.\n 2. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc.,p. 274."
         },
         "geometry": {
           "type": "Polygon",
@@ -3045,14 +3049,15 @@
         "properties": {
           "id": "spsither.c6046_2303_potala_nov_5_1959_0_0",
           "name": "C6046 2303_Potala_Nov 5 1959_0_0",
-          "description": "The Potala Palace (Tib. pho brang po ta la), is located on top of the Red Mountain in Lhasa and represents the historic seat of the political and religious central Tibetan administration. Until the mid-1900s, the Potala served as the main palace of the Dalai Lama incarnation line. The construction of the original structure was completed by Tibet’s first king, Songtsen Gampo, in 637, though its significant 17th century expansion is attributed to the 5th Dalai Lama. The Potala Palace is now a UNESCO world heritage site due to the uniquely designed harmony between its architecture and the surrounding landscape, as well as the historic and religious significance of the site.",
+          "description": "The Potala Palace (Tib. pho brang po ta la), is located on top of the Red Mountain in Lhasa and represents the historic seat of the political and religious central Tibetan administration. Until the mid-1900s, the Potala served as the main palace of the Dalai Lama incarnation line. The construction of the original structure was completed by Tibet’s first king, Songtsen Gampo in 637, though its significant 17th century expansion is attributed to the 5th Dalai Lama. The Potala Palace is now a UNESCO world heritage site due to the uniquely designed harmony between its architecture and the surrounding landscape, as well as the historic and religious significance of the site.",
           "downloadUrl": "https://tibet-from-above.s3.us-east-1.amazonaws.com/C6046+2303_Potala_Nov+5+1959_0_0.jpg",
           "downloadUrlTIFF": "https://tibet-from-above.s3.us-east-1.amazonaws.com/C6046+2303_Potala_Nov+5+1959_0_0.tif",
           "title": "Potala",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "included_id_image_id": "Lhasa-1959-C6046-9L-9R-2306",
-          "description_source": "1. Kimmet, Natasha. 2023. “Potala Palace: A Monument of Tibetan Cultural Identity.” In Himalayan Art in 108 Objects, edited by Debreczeny, Karl and Elena Pakhoutova, 308-311. New York: Rubin Museum of Art in association with Scala Art Publishers, Inc.\r\n 2. “Historic Ensemble of the Potala Palace, Lhasa.” UNESCO World Heritage Convention. UNESCO World Heritage Centre. Accessed May 20th, 2025. https://whc.unesco.org/en/list/707/.\r\n 3. “Potala,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Potala."
+          "description_source": "1. Kimmet, Natasha. 2023. “Potala Palace: A Monument of Tibetan Cultural Identity.” In Himalayan Art in 108 Objects, edited by Debreczeny, Karl and Elena Pakhoutova, 308-311. New York: Rubin Museum of Art in association with Scala Art Publishers, Inc.\n 2. “Historic Ensemble of the Potala Palace, Lhasa.” UNESCO World Heritage Convention. UNESCO World Heritage Centre. Accessed May 20th, 2025. https://whc.unesco.org/en/list/707/.\n 3. “Potala,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Potala."
         },
         "geometry": {
           "type": "Polygon",
@@ -3136,8 +3141,9 @@
           "title": "Ramoche",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "included_id_image_id": "Lhasa-1959-C6046-9L-9R-2307",
-          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, p. 81.\r\n 2. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 88."
+          "description_source": "1. Akester, Matthew, and Mkhyen-brtseʼi-dbang-po. 2016. Jamyang Khyentsé Wangpo's Guide to Central Tibet. Chicago: Serindia Publications, p. 81.\n 2. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 88."
         },
         "geometry": {
           "type": "Polygon",
@@ -3178,8 +3184,9 @@
           "title": "Jokhang",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "included_id_image_id": "Lhasa-1959-C6046-9L-9R-2304",
-          "description_source": "1. Dorje, Gyurme. “Introduction.” In Jokhang: Tibet’s Most Sacred Buddhist Temple, edited by Dorje, Gyurme, Tashi Tsering, Heather Stoddard, and Andre Alexander, pp. 7-30. London: Edition Hansjorg Mayer, 2010. \r\n 2. Heller, Amy. 2023. “Jokhang Temple, Lhasa: Tibet’s Most Sacred Temple.” In Himalayan Art in 108 Objects, edited by Debreczeny, Karl and Elena Pakhoutova, 52-55. New York: Rubin Museum of Art in association with Scala Art Publishers, Inc.\r\n 3. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc., p. 41."
+          "description_source": "1. Dorje, Gyurme. “Introduction.” In Jokhang: Tibet’s Most Sacred Buddhist Temple, edited by Dorje, Gyurme, Tashi Tsering, Heather Stoddard, and Andre Alexander, pp. 7-30. London: Edition Hansjorg Mayer, 2010. \n 2. Heller, Amy. 2023. “Jokhang Temple, Lhasa: Tibet’s Most Sacred Temple.” In Himalayan Art in 108 Objects, edited by Debreczeny, Karl and Elena Pakhoutova, 52-55. New York: Rubin Museum of Art in association with Scala Art Publishers, Inc.\n 3. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc., p. 41."
         },
         "geometry": {
           "type": "Polygon",
@@ -3220,8 +3227,9 @@
           "title": "Gyume and Meru Dratsang",
           "group": "Lhasa",
           "mission_id": "C6046",
+"capture_date": "11/05/1959",
           "included_id_image_id": "Lhasa-1959-C6046-9L-9R-2303",
-          "description_source": "1. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, p. 171.\r\n 2. “Gyume Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Gyume-Dratsang\r\n 3. “Meru Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Meru-Dratsang.\r\n 4. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc., p. 61.\r\n 5. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 90."
+          "description_source": "1. Chan, Victor. 1994. Tibet Handbook: A Pilgrimage Guide. Chico, CA: Moon Publications, Inc, p. 171.\n 2. “Gyume Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Gyume-Dratsang\n 3. “Meru Dratsang,” The Treasury of Lives: A Biographical Encyclopedia of Tibet, Inner Asia and the Himalayan Region. Treasury of Lives Inc. Accessed May 19th, 2025. https://treasuryoflives.org/institution/Meru-Dratsang.\n 4. Dowman, Keith. 1988. The Power-Places of Central Tibet: The Pilgrim’s Guide. New York: Routledge & Kegan Paul Inc., p. 61.\n 5. Dorje, Gyurme. 2004. Tibet Handbook. Bath: Footprint, p. 90."
         },
         "geometry": {
           "type": "Polygon",

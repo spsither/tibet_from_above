@@ -407,7 +407,7 @@ export default function MapTiles() {
                             Source:{" "}
                             <span
                                 dangerouslySetInnerHTML={{
-                                    __html: downloadPopUp.description_source.replace(/\r\n/g, '<br/>'),
+                                    __html: downloadPopUp.description_source.replace(/\n/g, '<br/>'),
                                 }}
                             />
                         </p>
