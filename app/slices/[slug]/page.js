@@ -44,11 +44,17 @@ const slicesBySlug = {
     { image: '/images/Tashi Lhunpo 1972 Hexagon.jpg', label: '1972' }
   ],
   narthang: [
-    { image: '/images/Narthang 1959 U2.jpg', label: '1959' },
-    { image: '/images/Narthang 1965 Corona.jpg', label: '1965' },
-    { image: '/images/Narthang 1968 Corona.jpg', label: '1968' },
-    { image: '/images/Narthang 2025 Google Earth.jpg', label: '2025' },
-    { image: '/images/Narthang 2025 Studio Nyandak.jpg', label: '2025 SN' }
+    // { image: '/images/Narthang 1959 U2.jpg', label: '1959' },
+    // { image: '/images/Narthang 1965 Corona.jpg', label: '1965' },
+    // { image: '/images/Narthang 1968 Corona.jpg', label: '1968' },
+    // { image: '/images/Narthang 2025 Google Earth.jpg', label: '2025' },
+    // { image: '/images/Narthang 2025 Studio Nyandak.jpg', label: '2025 SN' }
+
+    { image: '/images/Nartang-1959_U2.jpg', label: '1959' },
+    { image: '/images/Nartang-1968_Corona.jpg', label: '1968' },
+    { image: '/images/Nartang-2011_Google Earth.jpg', label: '2011' },
+    { image: '/images/Nartang-2025_Google Earth.jpg', label: '2025 GE' },
+    { image: '/images/Nartang-2025_Studio Nyandak.jpg', label: '2025 SN' }
   ],
 };
 
