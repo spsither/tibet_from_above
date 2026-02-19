@@ -115,7 +115,7 @@ export default function MapTiles() {
     function toggleSatelliteLayer() {
 
         const map = mapRef.current;
-        const layerId = 'TOT';
+        const layerId = 'gonpas';
 
         const layer = map.getLayer(layerId);
         if (layer) {
@@ -224,7 +224,7 @@ export default function MapTiles() {
                 closeButton: false,
             });
 
-            map.on('mouseenter', 'TOT', (e) => {
+            map.on('mouseenter', 'gonpas', (e) => {
                 map.getCanvas().style.cursor = 'pointer';
 
                 const coordinates = e.features[0].geometry.coordinates.slice();
@@ -247,13 +247,13 @@ export default function MapTiles() {
                     .addTo(map);
             });
 
-            map.on('mouseleave', 'TOT', () => {
+            map.on('mouseleave', 'gonpas', () => {
                 map.getCanvas().style.cursor = '';
                 hoverPopup.remove();
 
             });
 
-            map.on('click', 'TOT', (e) => {
+            map.on('click', 'gonpas', (e) => {
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const name = e.features[0].properties.Tibetan;
 
@@ -279,7 +279,7 @@ export default function MapTiles() {
             const initialVisibility = {
                 satellite: false,
                 'image-footprint-layer': true,
-                'TOT': true,
+                'gonpas': true,
             };
 
             
@@ -448,9 +448,9 @@ export default function MapTiles() {
                     <div className="flex items-center">
                         <input
                             type="checkbox"
-                            checked={layerVisibility['TOT'] ?? true}
+                            checked={layerVisibility['gonpas'] ?? true}
                             onChange={(e) =>
-                                toggleLayer('TOT', e.target.checked)
+                                toggleLayer('gonpas', e.target.checked)
                             }
                         />
                         <label className="font-bold ml-2">Temples of Tibet</label>
