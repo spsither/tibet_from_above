@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "mapbox-gl": "^3.11.0",
-    "next": "15.3.0",
+    "next": "15.3.8",
     "pnpm": "^10.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
